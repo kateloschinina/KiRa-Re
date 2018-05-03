@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './images/logo/0-logo.png';
-import Planet from './components/Planet';
+import Planet from './components/Planet/Planet';
 import './App.css';
 
 import imageProjectBird from './projects/bird/bird-main-image.png';

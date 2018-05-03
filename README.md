@@ -1,7 +1,21 @@
 # KiRa-Re
 Website for the artist KiRa Zhigalina
 
-(the information below is temporary for referece purposes)
+### Initial Plan
+
+ - Clean React default elements and write an initial plan
+ - Create a very first draft of the front page with the logo and the sphere
+ - Create sphere component
+ - Create a dummy work page component; make sure that all elements work: photos, videos
+ - Create about component
+ - Create menu that interacts at some way with "planets"
+ - Polish design
+ - Create mobile version
+
+
+#################################################
+
+_(the information below is temporary for referece purposes)_
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 

@@ -4,13 +4,15 @@ import Planet from './components/Planet';
 import './App.css';
 
 import imageProjectBird from './projects/bird/bird-main-image.png';
+import settingsProjectBird from './projects/bird/planetSettings'
 
 class App extends Component {
 	render() {
+		console.log(settingsProjectBird.style)
 		return (
 			<div>
 				<img className="front-page-logo" src={logo} />
-				<Planet image={imageProjectBird}/>
+				<Planet image={imageProjectBird} style={settingsProjectBird.style} />
 			</div>
 		);
 	}

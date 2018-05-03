@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './images/logo/0-logo.png';
-import image from './images/0-bird1.png'
+import Planet from './components/Planet'
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<div>
 				<img className="front-page-logo" src={logo} />
-				<img className="sphere" src={image} />
+				<Planet />
 			</div>
 		);
 	}

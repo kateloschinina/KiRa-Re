@@ -5,9 +5,3 @@
     transform: translate(-50%, -50%);
     width: 40vw;
 }
-
-.sphere {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}

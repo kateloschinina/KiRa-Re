@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Planet.css';
 
 class Planet extends Component {
 	render() {
 		return (
-			<img className="sphere" src={this.props.image} style={this.props.style} />
+			<img className="planet" src={this.props.image} style={this.props.style} />
 		);
 	}
 }

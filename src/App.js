@@ -8,7 +8,6 @@ import settingsProjectBird from './projects/bird/planetSettings'
 
 class App extends Component {
 	render() {
-		console.log(settingsProjectBird.style)
 		return (
 			<div>
 				<img className="front-page-logo" src={logo} />

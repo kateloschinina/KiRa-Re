@@ -4,7 +4,7 @@ import './Planet.css';
 class Planet extends Component {
 	render() {
 		return (
-			<img className="planet" src={this.props.image} style={this.props.style} />
+			<img className="planet" src={this.props.mainImage} style={this.props.style} />
 		);
 	}
 }

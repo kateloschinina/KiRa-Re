@@ -10,7 +10,7 @@ class App extends Component {
 		return (
 			<div>
 				<img className="front-page-logo" src={logo} />
-				<Planet style={projectBird.style} mainImage={projectBird.mainImage} />
+				<Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} />
 			</div>
 		);
 	}

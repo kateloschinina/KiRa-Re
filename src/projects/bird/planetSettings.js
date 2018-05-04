@@ -1,4 +1,5 @@
-import mainImage from './bird-main-image.png'
+import mainImage from './bird-main-image.png';
+import blurredImage from './bird-blurred-image.png';
 
 const style = {
     top: '20vh',
@@ -8,5 +9,6 @@ const style = {
 
 export default {
     style,
-    mainImage
+    mainImage,
+    blurredImage
 };

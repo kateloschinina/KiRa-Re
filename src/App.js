@@ -3,7 +3,7 @@ import logo from './images/logo/0-logo.png';
 import Planet from './components/Planet/Planet';
 import './App.css';
 
-import projectBird from './projects/bird/planetSettings'
+import projectBird from './projects/bird/planetSettings';
 
 class App extends Component {
 	render() {

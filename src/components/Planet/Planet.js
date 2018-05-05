@@ -25,7 +25,11 @@ class Planet extends Component {
 	
 	render() {
 		return (
-			<img className="planet" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.imgSrc} style={this.props.style} />
+			<img className="planet"
+				onMouseOver={this.handleMouseOver}
+				onMouseOut={this.handleMouseOut}
+				src={this.state.imgSrc}
+				style={this.props.style} />
 		);
 	}
 }

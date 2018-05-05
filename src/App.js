@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logo from './images/logo/0-logo.png';
-import Planet from './components/Planet/Planet';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
-import projectBird from './projects/bird/planetSettings';
+import LandingPage from './components/LandingPage/LandingPage';
 
 class App extends Component {
 	render() {
 		return (
-			<div>
-				<img className="front-page-logo" src={logo} />
-				<Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} />
-			</div>
+			<Router>
+				<div>
+					<Route exact path="/" component={LandingPage} />
+				</div>
+			</Router>
 		);
 	}
 }

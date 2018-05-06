@@ -5,16 +5,12 @@ import './LandingPage.css';
 import logo from './../../images/logo/0-logo.png';
 import filmVideo from './../../images/film-video.png';
 import spiral from './../../images/spiral.png';
-import gif from './../../images/gif.gif';
 
 import Graph from 'react-graph-vis';
 
 import projectBird from './../../projects/bird/planetSettings';
 
 class App extends Component {
-	clickOnTheGraph(e) {
-		console.log(e)
-	}
 	render() {
 		const graph = {
 			nodes: [

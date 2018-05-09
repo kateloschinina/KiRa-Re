@@ -10,6 +10,7 @@ class App extends Component {
 			<Router>
 				<div>
 					<Route exact path="/" component={LandingPage} />
+					<Route exact path="/symbiosis" component={LandingPage} />
 				</div>
 			</Router>
 		);

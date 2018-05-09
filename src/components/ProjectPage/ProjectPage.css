@@ -1,3 +1,6 @@
-h1 {
+.project-container {
+    max-width: 1000px;
+    margin: 1em auto;
     color: white;
+    text-align: justify;
 }

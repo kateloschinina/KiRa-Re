@@ -1,8 +1,26 @@
 import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
+import ImageGallery from 'react-image-gallery';
+
 import './ProjectPage.css';
 
 class ProjectPage extends Component {
 	render() {
+		const images = [
+			{
+				original: 'https://picsum.photos/200/300',
+				thumbnail: 'https://picsum.photos/200/300'
+			},
+			{
+				original: 'https://picsum.photos/200/300',
+				thumbnail: 'https://picsum.photos/200/300'
+			},
+			{
+				original: 'https://picsum.photos/200/300',
+				thumbnail: 'https://picsum.photos/200/300'
+			}
+		];
+
 		return (
 			<div className="project-container">
 				<h1>Symbiosis</h1>
@@ -16,6 +34,8 @@ class ProjectPage extends Component {
 				<p>
 					Symbiosis #6 at Lightwaves, Salford Quays, Manchester December 2017
 				</p>
+				<ReactPlayer url='https://vimeo.com/251900220' />
+				<ImageGallery items={images} />
 			</div>
 		);
 	}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Redirect } from 'react-router';
 import Graph from 'react-graph-vis';
 import './LandingPage.css';
 
@@ -48,6 +49,10 @@ import still from './../../images/still.png';
 import projectBird from './../../projects/bird/planetSettings';
 
 class App extends Component {
+	state = {
+		redirect: false
+	}
+
 	render() {
 		const graph = {
 			nodes: [
@@ -211,12 +216,21 @@ class App extends Component {
 			}
 		};
 
+		const events = {
+			doubleClick: event => {
+				console.log(event)
+				this.setState({redirect: true});
+			}
+		}
+
 		return (
 			<div>
 				<img className="front-page-logo" src={logo} alt="logo" />
 				{/* <Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} /> */}
+				{(this.state.redirect) ? <Redirect to='/symbiosis' /> : null}
 				<Graph graph={graph}
 					options={options}
+					events={events}
 					style={{ height: "100vh" }} />
 			</div>
 		);

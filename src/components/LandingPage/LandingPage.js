@@ -50,7 +50,8 @@ import projectBird from './../../projects/bird/planetSettings';
 
 class App extends Component {
 	state = {
-		redirect: false
+		redirect: false,
+		redirectTo: '/'
 	}
 
 	render() {
@@ -218,8 +219,11 @@ class App extends Component {
 
 		const events = {
 			doubleClick: event => {
-				console.log(event)
-				this.setState({redirect: true});
+				console.log(event.nodes[0])
+				if (event.nodes[0] === 12) {
+					this.setState({redirect: true});
+					this.setState({redirectTo: '/symbiosis'});
+				}
 			}
 		}
 
@@ -227,7 +231,7 @@ class App extends Component {
 			<div>
 				<img className="front-page-logo" src={logo} alt="logo" />
 				{/* <Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} /> */}
-				{(this.state.redirect) ? <Redirect to='/symbiosis' /> : null}
+				{(this.state.redirect) ? <Redirect to={this.state.redirectTo} /> : null}
 				<Graph graph={graph}
 					options={options}
 					events={events}

@@ -6,6 +6,8 @@ import './LandingPage.css';
 // import Planet from './../Planet/Planet';
 import logo from './../../images/logo/0-logo.png';
 
+import projects from './../../../src/projects/index'
+
 // projects
 import contemplation from './../../images/contemplation.png';
 import drawingsea from './../../images/drawingsea.png';
@@ -69,7 +71,7 @@ class App extends Component {
 				{ id: 9, shape: 'circularImage', image: potosi, size: 30 },
 				{ id: 10, shape: 'circularImage', image: shadow, size: 30 },
 				{ id: 11, shape: 'circularImage', image: sphere, size: 30 },
-				{ id: 12, shape: 'circularImage', image: symbiosis, size: 30 },
+				{ id: projects.symbiosis.id, shape: 'circularImage', image: projects.symbiosis.data.planet, size: 30 },
 				{ id: 13, shape: 'circularImage', image: within, size: 30 },
 				{ id: 14, shape: 'circularImage', image: polarbear, size: 30 },
 				{ id: 15, shape: 'circularImage', image: painting, size: 30 },
@@ -112,7 +114,7 @@ class App extends Component {
 			edges: [
 				// installation
 				{ from: 32, to: 16 },
-				{ from: 32, to: 12 },
+				{ from: 32, to: projects.symbiosis.id },
 				{ from: 32, to: 44 },
 
 				// holographic
@@ -136,7 +138,7 @@ class App extends Component {
 
 				// interactive
 				{ from: 45, to: 44 },
-				{ from: 45, to: 12 },
+				{ from: 45, to: projects.symbiosis.id },
 
 				// accord
 				{ from: 44, to: 7 },
@@ -219,10 +221,13 @@ class App extends Component {
 
 		const events = {
 			doubleClick: event => {
-				console.log(event.nodes[0])
-				if (event.nodes[0] === 12) {
+				const selectedProject = Object.keys(projects).find(key => {
+					return projects[key].id === event.nodes[0]
+				})
+
+				if (selectedProject) {
 					this.setState({redirect: true});
-					this.setState({redirectTo: '/symbiosis'});
+					this.setState({redirectTo: projects[selectedProject].url});
 				}
 			}
 		}

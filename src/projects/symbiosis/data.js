@@ -20,7 +20,7 @@ const projectPage = [
 	},
 	{
 		tag: 'gallery',
-		images = [
+		images: [
 			{
 				original: './gallery/breathing.jpg',
 				thumbnail: './gallery/breathing.jpg'

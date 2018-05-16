@@ -6,7 +6,6 @@ import './ProjectPage.css';
 
 class ProjectPage extends Component {
 	render() {
-		console.log(this.props.location)
 		const images = [
 			{
 				original: 'https://picsum.photos/200/300',

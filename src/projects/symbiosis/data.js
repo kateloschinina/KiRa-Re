@@ -1,5 +1,10 @@
 import planet from './symbiosis-planet.png';
 
+// images
+import breathing from './gallery/breathing.jpg'
+import flower from './gallery/flower.jpg'
+import icosahedron from './gallery/icosahedron.jpg'
+
 const projectPage = [
 	{
 		tag: 'header',
@@ -16,22 +21,23 @@ const projectPage = [
 	{
 		tag: 'video',
 		url: 'https://vimeo.com/251900220',
-		tag: 'Symbiosis #6 at Lightwaves, Salford Quays, Manchester December 2017'
+		highlight: 'Symbiosis #6 at Lightwaves, Salford Quays, Manchester December 2017'
 	},
 	{
 		tag: 'gallery',
+		highlight: 'bla bla highlight',
 		images: [
 			{
-				original: './gallery/breathing.jpg',
-				thumbnail: './gallery/breathing.jpg'
+				original: breathing,
+				thumbnail: breathing
 			},
 			{
-				original: './gallery/flower.jpg',
-				thumbnail: './gallery/flower.jpg'
+				original: flower,
+				thumbnail: flower
 			},
 			{
-				original: './gallery/icosahedron.jpg',
-				thumbnail: './gallery/icosahedron.jpg'
+				original: icosahedron,
+				thumbnail: icosahedron
 			}
 		]
 	}

@@ -4,7 +4,6 @@ import ImageGallery from 'react-image-gallery';
 
 import './ProjectPage.css';
 import projects from './../../../src/projects/index'
-import flower from './../../projects/symbiosis/gallery/flower.jpg'
 
 class ProjectPage extends Component {
 	render() {

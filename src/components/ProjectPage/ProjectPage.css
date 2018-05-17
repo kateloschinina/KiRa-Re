@@ -1,0 +1,18 @@
+@import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+.project-container {
+    max-width: 800px;
+    margin: 1em auto;
+    color: white;
+    text-align: justify;
+}
+
+.project-container h1 {
+    font-size: 64px;
+    line-height: 2em;
+    margin-bottom: 0.3em;
+}
+
+.project-container p {
+    font-size: 18px;
+}

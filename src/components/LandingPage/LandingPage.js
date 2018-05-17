@@ -53,7 +53,8 @@ import projectBird from './../../projects/bird/planetSettings';
 class App extends Component {
 	state = {
 		redirect: false,
-		redirectTo: '/'
+		redirectTo: '/',
+		projectProps: {}
 	}
 
 	render() {
@@ -227,7 +228,8 @@ class App extends Component {
 
 				if (selectedProject) {
 					this.setState({redirect: true});
-					this.setState({redirectTo: projects[selectedProject].url});
+					this.setState({redirectTo: `/${projects[selectedProject].projectName}`});
+					this.setState({projectProps: projects[selectedProject].data.projectPage})
 				}
 			}
 		}

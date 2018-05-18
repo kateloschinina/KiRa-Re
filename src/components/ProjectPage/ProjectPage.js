@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
-import ImageGallery from 'react-image-gallery';
+import React, { Component } from 'react'
+import ReactPlayer from 'react-player'
+import ImageGallery from 'react-image-gallery'
 
-import './ProjectPage.css';
+import './ProjectPage.css'
 import projects from './../../../src/projects/index'
 
 class ProjectPage extends Component {
@@ -34,8 +34,8 @@ class ProjectPage extends Component {
 				}
 			}) }
 			</div>
-		);
+		)
 	}
 }
 
-export default ProjectPage;
+export default ProjectPage

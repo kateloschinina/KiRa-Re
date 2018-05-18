@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Redirect } from 'react-router'
+import { Redirect } from 'react-router'
 import Graph from 'react-graph-vis'
 import './LandingPage.css'
 

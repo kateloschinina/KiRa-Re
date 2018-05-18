@@ -1,4 +1,4 @@
-import planet from './symbiosis-planet.png';
+import planet from './symbiosis-planet.png'
 
 // images
 import breathing from './gallery/breathing.jpg'
@@ -46,4 +46,4 @@ const projectPage = [
 export default {
 	planet,
 	projectPage
-};
+}

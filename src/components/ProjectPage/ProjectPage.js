@@ -31,6 +31,8 @@ class ProjectPage extends Component {
 							<p>{pageElement.highlight}</p>
 							<ImageGallery items={pageElement.images} />
 						</div>
+					default:
+						return <p>KiRa is awesome</p>
 				}
 			}) }
 			</div>

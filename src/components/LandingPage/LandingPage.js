@@ -1,54 +1,53 @@
-import React, { Component } from 'react';
-import { Route, Redirect } from 'react-router';
-import Graph from 'react-graph-vis';
-import './LandingPage.css';
+import React, { Component } from 'react'
+import { Route, Redirect } from 'react-router'
+import Graph from 'react-graph-vis'
+import './LandingPage.css'
 
-// import Planet from './../Planet/Planet';
-import logo from './../../images/logo/0-logo.png';
+import logo from './../../images/logo/0-logo.png'
 
 import projects from './../../../src/projects/index'
 
 // projects
-import contemplation from './../../images/contemplation.png';
-import drawingsea from './../../images/drawingsea.png';
-import echo from './../../images/echo.png';
-import elegies from './../../images/elegies.png';
-import king from './../../images/king.png';
-import nebula from './../../images/nebula.png';
-import piano from './../../images/piano.png';
-import potosi from './../../images/potosi.png';
-import shadow from './../../images/shadow.png';
-import sphere from './../../images/sphere.png';
-import symbiosis from './../../images/symbiosis.png';
-import within from './../../images/within.png';
-import polarbear from './../../images/polarbear.png';
-import painting from './../../images/painting.png';
-import tricksters from './../../images/tricksters.png';
-import ovalspace from './../../images/ovalspace.png';
-import two from './../../images/two.png';
-import recycle from './../../images/recycle.png';
-import yurugi from './../../images/yurugi.png';
-import soundbath from './../../images/soundbath.png';
-import wordlife from './../../images/wordlife.png';
-import lifeinbalance from './../../images/lifeinbalance.png';
-import serpent from './../../images/serpent.png';
+import contemplation from './../../images/contemplation.png'
+import drawingsea from './../../images/drawingsea.png'
+import echo from './../../images/echo.png'
+import elegies from './../../images/elegies.png'
+import king from './../../images/king.png'
+import nebula from './../../images/nebula.png'
+import piano from './../../images/piano.png'
+import potosi from './../../images/potosi.png'
+import shadow from './../../images/shadow.png'
+import sphere from './../../images/sphere.png'
+import symbiosis from './../../images/symbiosis.png'
+import within from './../../images/within.png'
+import polarbear from './../../images/polarbear.png'
+import painting from './../../images/painting.png'
+import tricksters from './../../images/tricksters.png'
+import ovalspace from './../../images/ovalspace.png'
+import two from './../../images/two.png'
+import recycle from './../../images/recycle.png'
+import yurugi from './../../images/yurugi.png'
+import soundbath from './../../images/soundbath.png'
+import wordlife from './../../images/wordlife.png'
+import lifeinbalance from './../../images/lifeinbalance.png'
+import serpent from './../../images/serpent.png'
 
 // categories
-import filmVideo from './../../images/film-video.png';
-import fashion from './../../images/fashion.png';
-import lco from './../../images/lco.png';
-import holographic from './../../images/holographic.png';
-import projections from './../../images/projections.png';
-import musicVideo from './../../images/music-video.png';
-import performance from './../../images/performance.png';
-import installation from './../../images/installation.png';
-import promovideos from './../../images/promovideos.png';
-import secretCinema from './../../images/secret-cinema.png';
-import vessel from './../../images/vessel.png';
-import sound from './../../images/sound.png';
-import still from './../../images/still.png';
+import filmVideo from './../../images/film-video.png'
+import fashion from './../../images/fashion.png'
+import lco from './../../images/lco.png'
+import holographic from './../../images/holographic.png'
+import projections from './../../images/projections.png'
+import musicVideo from './../../images/music-video.png'
+import performance from './../../images/performance.png'
+import installation from './../../images/installation.png'
+import promovideos from './../../images/promovideos.png'
+import secretCinema from './../../images/secret-cinema.png'
+import vessel from './../../images/vessel.png'
+import sound from './../../images/sound.png'
+import still from './../../images/still.png'
 
-import projectBird from './../../projects/bird/planetSettings';
+import projectBird from './../../projects/bird/planetSettings'
 
 class App extends Component {
 	state = {
@@ -188,7 +187,7 @@ class App extends Component {
 				{ from: 26, to: 20 },
 				{ from: 26, to: 18 },
 			]
-		};
+		}
 		
 		const options = {
 			nodes: {
@@ -218,7 +217,7 @@ class App extends Component {
 					from:   { enabled: false, scaleFactor: 1, type: 'bar' }
 				}
 			}
-		};
+		}
 
 		const events = {
 			doubleClick: event => {
@@ -227,8 +226,8 @@ class App extends Component {
 				})
 
 				if (selectedProject) {
-					this.setState({redirect: true});
-					this.setState({redirectTo: `/${projects[selectedProject].projectName}`});
+					this.setState({redirect: true})
+					this.setState({redirectTo: `/${projects[selectedProject].projectName}`})
 					this.setState({projectProps: projects[selectedProject].data.projectPage})
 				}
 			}
@@ -244,8 +243,8 @@ class App extends Component {
 					events={events}
 					style={{ height: "100vh" }} />
 			</div>
-		);
+		)
 	}
 }
 
-export default App;
+export default App

@@ -18,7 +18,6 @@ class ProjectPage extends Component {
 				switch (pageElement.tag) {
 					case 'header':
 						return <h1>{pageElement.text}</h1>
-						break
 					case 'paragraph':
 						return <p>{pageElement.text}</p>
 					case 'video':

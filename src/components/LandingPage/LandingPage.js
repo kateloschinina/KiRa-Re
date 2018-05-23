@@ -5,7 +5,6 @@ import './LandingPage.css'
 
 import logo from './../../images/logo/0-logo.png'
 
-import input from './../../../src/input/index'
 import graphData from './graph'
 
 class App extends Component {
@@ -17,17 +16,17 @@ class App extends Component {
 
 	render() {
 		const events = {
-			doubleClick: event => {
-				const selectedProject = Object.keys(input).find(key => {
-					return projects[key].id === event.nodes[0]
-				})
+			// doubleClick: event => {
+			// 	const selectedProject = Object.keys(input).find(key => {
+			// 		return input.projects[key].id === event.nodes[0]
+			// 	})
 
-				if (selectedProject) {
-					this.setState({redirect: true})
-					this.setState({redirectTo: `/${projects[selectedProject].projectName}`})
-					this.setState({projectProps: projects[selectedProject].data.projectPage})
-				}
-			}
+			// 	if (selectedProject) {
+			// 		this.setState({redirect: true})
+			// 		this.setState({redirectTo: `/${input.projects[selectedProject].projectName}`})
+			// 		this.setState({projectProps: input.projects[selectedProject].data.projectPage})
+			// 	}
+			// }
 		}
 
 		return (

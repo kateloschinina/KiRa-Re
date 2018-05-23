@@ -12,7 +12,7 @@ import vessel from './vessel.png'
 import sound from './sound.png'
 import still from './still.png'
 
-const categories = {
+const categories = [
     filmVideo,
     fashion,
     lco,
@@ -26,7 +26,7 @@ const categories = {
     vessel,
     sound,
     still    
-}
+]
 
 
 export default categories

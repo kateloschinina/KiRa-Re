@@ -11,8 +11,7 @@ const nodeOptions = {
 const allInputArray = [ ...input.categories ]
 
 const id = (nodeName) => {
-    const idWithThisName = allInputArray.findIndex(element => element.name === nodeName)
-    return idWithThisName ? idWithThisName + 1 : false
+    return allInputArray.findIndex(element => element.name === nodeName) + 1
 }
 
 const categoriesNodes = input.categories.map((category, key) => {
@@ -26,7 +25,7 @@ const categoriesNodes = input.categories.map((category, key) => {
 
 const nodes = [ ...categoriesNodes ]
 
-const edges = edgesWeWant.filter(edge => edge.from && edge.to).map(edge => {
+const edges = edgesWeWant.filter(edge => edge.from > 0 && edge.to > 0).map(edge => {
     return { from: edge.from, to: edge.to }
 })
 

@@ -26,6 +26,10 @@ const categoriesNodes = input.categories.map((category, key) => {
 
 const nodes = [ ...categoriesNodes ]
 
+const edges = edgesWeWant.filter(edge => edge.from && edge.to).map(edge => {
+    return { from: edge.from, to: edge.to }
+})
+
 const graphData = {
     graph: {
         nodes,

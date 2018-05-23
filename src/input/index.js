@@ -1,9 +1,10 @@
 import projects from './projects'
+import categories from './categories'
 
 const input = {
     projects: projects,
-    categories: [ ]
+    categories: categories
 }
 
 
-export default projects
+export default input

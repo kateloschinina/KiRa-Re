@@ -25,21 +25,6 @@ import wordlife from './../../images/wordlife.png'
 import lifeinbalance from './../../images/lifeinbalance.png'
 import serpent from './../../images/serpent.png'
 
-// categories
-import filmVideo from './../../images/film-video.png'
-import fashion from './../../images/fashion.png'
-import lco from './../../images/lco.png'
-import holographic from './../../images/holographic.png'
-import projections from './../../images/projections.png'
-import musicVideo from './../../images/music-video.png'
-import performance from './../../images/performance.png'
-import installation from './../../images/installation.png'
-import promovideos from './../../images/promovideos.png'
-import secretCinema from './../../images/secret-cinema.png'
-import vessel from './../../images/vessel.png'
-import sound from './../../images/sound.png'
-import still from './../../images/still.png'
-
 const graphData = {
     graph: {
         nodes: [

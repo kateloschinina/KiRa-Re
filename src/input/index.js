@@ -1,11 +1,9 @@
-import symbiosis from './symbiosis/data'
+import projects from './projects'
 
-const projects = {
-    symbiosis: {
-        id: 12,
-        projectName: 'symbiosis',
-        data: symbiosis
-    }
+const input = {
+    projects: projects,
+    categories: [ ]
 }
+
 
 export default projects

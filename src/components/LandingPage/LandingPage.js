@@ -5,7 +5,7 @@ import './LandingPage.css'
 
 import logo from './../../images/logo/0-logo.png'
 
-import projects from './../../../src/projects/index'
+import input from './../../../src/input/index'
 import graphData from './graph'
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
 	render() {
 		const events = {
 			doubleClick: event => {
-				const selectedProject = Object.keys(projects).find(key => {
+				const selectedProject = Object.keys(input).find(key => {
 					return projects[key].id === event.nodes[0]
 				})
 

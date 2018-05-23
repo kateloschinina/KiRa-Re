@@ -13,19 +13,58 @@ import sound from './sound.png'
 import still from './still.png'
 
 const categories = [
-    filmVideo,
-    fashion,
-    lco,
-    holographic,
-    projections,
-    musicVideo,
-    performance,
-    installation,
-    promovideos,
-    secretCinema,
-    vessel,
-    sound,
-    still    
+    {
+        name: 'filmVideo',
+        image: filmVideo
+    },
+    {
+        name: 'fashion',
+        image: fashion
+    },
+    {
+        name: 'lco',
+        image: lco
+    },
+    {
+        name: 'holographic',
+        image: holographic
+    },
+    {
+        name: 'projections',
+        image: projections
+    },
+    {
+        name: 'musicVideo',
+        image: musicVideo
+    },
+    {
+        name: 'performance',
+        image: performance
+    },
+    {
+        name: 'installation',
+        image: installation
+    },
+    {
+        name: 'promovideos',
+        image: promovideos
+    },
+    {
+        name: 'secretCinema',
+        image: secretCinema
+    },
+    {
+        name: 'vessel',
+        image: vessel
+    },
+    {
+        name: 'sound',
+        image: sound
+    },
+    {
+        name: 'still',
+        image: still
+    }        
 ]
 
 

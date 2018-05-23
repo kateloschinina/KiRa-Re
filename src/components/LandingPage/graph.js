@@ -25,7 +25,31 @@ import wordlife from './../../images/wordlife.png'
 import lifeinbalance from './../../images/lifeinbalance.png'
 import serpent from './../../images/serpent.png'
 
+const nodeOptions = {
+    categories: {
+        size: 40,
+        shape: 'circularImage'
+    }
+}
 
+const allInputArray = [ ...input.categories ]
+
+const id = (nodeName) => {
+    return allInputArray.findIndex(element => element.name === nodeName) + 1
+}
+
+console.log(id('filmVideo'))
+
+const categoriesNodes = input.categories.map((category, key) => {
+    return {
+        id: id(category.name),
+        shape: nodeOptions.categories.shape,
+        image: category.image || category.name,
+        size: nodeOptions.categories.size
+    }
+})
+
+const nodes = [ ...categoriesNodes ]
 
 // const nodes = [
 //     // projects
@@ -84,7 +108,7 @@ import serpent from './../../images/serpent.png'
 const edges = [
     // installation
     { from: 32, to: 16 },
-    { from: 32, to: projects.symbiosis.id },
+    { from: 32, to: input.projects.symbiosis.id },
     { from: 32, to: 44 },
 
     // holographic
@@ -108,7 +132,7 @@ const edges = [
 
     // interactive
     { from: 45, to: 44 },
-    { from: 45, to: projects.symbiosis.id },
+    { from: 45, to: input.projects.symbiosis.id },
 
     // accord
     { from: 44, to: 7 },

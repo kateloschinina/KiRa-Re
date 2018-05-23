@@ -3,8 +3,7 @@ import input from './../../../src/input/index'
 const allInputArray = [ ...input.categories ]
 
 const id = (nodeName) => {
-    const idWithThisName = allInputArray.findIndex(element => element.name === nodeName)
-    return idWithThisName ? idWithThisName + 1 : false
+    return allInputArray.findIndex(element => element.name === nodeName) + 1
 }
 
 const edgesWeWant = [
@@ -55,7 +54,7 @@ const edgesWeWant = [
 
     // lco
     { from: id('lco'), to: id('aldwich') },
-    { from: id('lco'), to: 'ovalspace' },
+    { from: id('lco'), to: id('ovalspace') },
 
     // secret cinema
     { from: id('secretCinema'), to: id('tricksters') },

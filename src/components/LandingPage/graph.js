@@ -1,4 +1,4 @@
-import projects from './../../../src/projects/index'
+import input from './../../../src/input/index'
 import projectBird from './../../projects/bird/planetSettings'
 
 // projects
@@ -24,6 +24,8 @@ import soundbath from './../../images/soundbath.png'
 import wordlife from './../../images/wordlife.png'
 import lifeinbalance from './../../images/lifeinbalance.png'
 import serpent from './../../images/serpent.png'
+
+
 
 // const nodes = [
 //     // projects

@@ -35,10 +35,9 @@ const nodeOptions = {
 const allInputArray = [ ...input.categories ]
 
 const id = (nodeName) => {
-    return allInputArray.findIndex(element => element.name === nodeName) + 1
+    const idWithThisName = allInputArray.findIndex(element => element.name === nodeName)
+    return idWithThisName ? idWithThisName + 1 : false
 }
-
-console.log(id('filmVideo'))
 
 const categoriesNodes = input.categories.map((category, key) => {
     return {
@@ -101,85 +100,85 @@ const nodes = [ ...categoriesNodes ]
 //     { id: 42, shape: 'circular', label: 'aldwich', size: 30 },
 //     { id: 43, shape: 'circular', label: 'ballet', size: 30 },
 //     { id: 44, shape: 'circular', label: 'accord', size: 40 },
-//     { id: 45, shape: 'circular', label: 'interative', size: 40 },
+//     { id: 45, shape: 'circular', label: 'interactive', size: 40 },
 //     { id: 46, shape: 'circular', label: 'mountain', size: 30 },
 // ]
 
-const edges = [
+const edgesWeWant = [
     // installation
-    { from: 32, to: 16 },
-    { from: 32, to: input.projects.symbiosis.id },
-    { from: 32, to: 44 },
+    { from: id('installation'), to: id('tricksters') },
+    { from: id('installation'), to: id('symbiosis') },
+    { from: id('installation'), to: id('accord') },
 
     // holographic
-    { from: 28, to: 31 },
-    { from: 28, to: 40 },
-    { from: 28, to: 25 },
-    { from: 28, to: 23 },
+    { from: id('holographic'), to: id('performance') },
+    { from: id('holographic'), to: id('animamundi') },
+    { from: id('holographic'), to: id('filmVideo') },
+    { from: id('holographic'), to: id('lifeinbalance') },
 
     // performance
-    { from: 31, to: 23 },
+    { from: id('performance'), to: id('lifeinbalance') },
 
     // still
-    { from: 37, to: 46 },
-    { from: 37, to: 24 },
-    { from: 37, to: 3 },
-    { from: 37, to: 25 },
+    { from: id('still'), to: id('mountain') },
+    { from: id('still'), to: id('serpent') },
+    { from: id('still'), to: id('drawingsea') },
+    { from: id('still'), to: id('filmVideo') },
 
     // sound
-    { from: 36, to: 46 },
-    { from: 36, to: 3 },
+    { from: id('sound'), to: id('mountain') },
+    { from: id('sound'), to: id('drawingsea') },
 
     // interactive
-    { from: 45, to: 44 },
-    { from: 45, to: input.projects.symbiosis.id },
+    { from: id('interactive'), to: id('accord') },
+    { from: id('interactive'), to: id('symbiosis') },
 
     // accord
-    { from: 44, to: 7 },
+    { from: id('accord'), to: id('nebula') },
 
     // film video
-    { from: 25, to: 35 },
-    { from: 25, to: 33 },
-    { from: 25, to: 29 },
-    { from: 25, to: 40 },
+    { from: id('filmVideo'), to: id('vessel') },
+    { from: id('filmVideo'), to: id('promovideos') },
+    { from: id('filmVideo'), to: id('projections') },
+    { from: id('filmVideo'), to: id('animamundi') },
 
     // projections
-    { from: 29, to: 34 },
-    { from: 29, to: 27 },
-    { from: 29, to: 41 },
-    { from: 29, to: 21 },
-    { from: 29, to: 5 },
-    { from: 29, to: 22 },
+    { from: id('projections'), to: id('secretCinema') },
+    { from: id('projections'), to: id('lco') },
+    { from: id('projections'), to: id('stlukes') },
+    { from: id('projections'), to: id('soundbath') },
+    { from: id('projections'), to: id('elegies') },
+    { from: id('projections'), to: id('wordlife') },
 
     // lco
-    { from: 27, to: 42 },
-    { from: 27, to: 17 },
+    { from: id('lco'), to: id('aldwich') },
+    { from: id('lco'), to: 'ovalspace' },
 
     // secret cinema
-    { from: 34, to: 16 },
-    { from: 34, to: 43 },
+    { from: id('secretCinema'), to: id('tricksters') },
+    { from: id('secretCinema'), to: id('ballet') },
 
     // vessel
-    { from: 35, to: 24 },
-    { from: 35, to: 1 },
-    { from: 35, to: 11 },
+    { from: id('vessel'), to: id('serpent') },
+    { from: id('vessel'), to: id('bird') },
+    { from: id('vessel'), to: id('sphere') },
 
     // promo videos
-    { from: 33, to: 30 },
-    { from: 33, to: 26 },
-    { from: 33, to: 38 },
+    { from: id('promovideos'), to: id('musicVideo') },
+    { from: id('promovideos'), to: id('fashion') },
+    { from: id('promovideos'), to: id('rambert') },
 
     // music videos
-    { from: 30, to: 6 },
-    { from: 30, to: 14 },
-    { from: 30, to: 4 },
-    { from: 30, to: 8 },
+    { from: id('musicVideo'), to: id('king') },
+    { from: id('musicVideo'), to: id('polarbear') },
+    { from: id('musicVideo'), to: id('echo') },
+    { from: id('musicVideo'), to: id('piano') },
 
     // fashion
-    { from: 26, to: 19 },
-    { from: 26, to: 39 },
-    { from: 26, to: 20 },
-    { from: 26, to: 18 },
+    { from: id('fashion'), to: id('recycle') },
+    { from: id('fashion'), to: id('shinton') },
+    { from: id('fashion'), to: id('yurugi') },
+    { from: id('fashion'), to: id('two') },
 ]
 
 const graphData = {

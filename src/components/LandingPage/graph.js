@@ -1,29 +1,5 @@
 import input from './../../../src/input/index'
-import projectBird from './../../projects/bird/planetSettings'
-
-// projects
-import contemplation from './../../images/contemplation.png'
-import drawingsea from './../../images/drawingsea.png'
-import echo from './../../images/echo.png'
-import elegies from './../../images/elegies.png'
-import king from './../../images/king.png'
-import nebula from './../../images/nebula.png'
-import piano from './../../images/piano.png'
-import potosi from './../../images/potosi.png'
-import shadow from './../../images/shadow.png'
-import sphere from './../../images/sphere.png'
-import within from './../../images/within.png'
-import polarbear from './../../images/polarbear.png'
-import painting from './../../images/painting.png'
-import tricksters from './../../images/tricksters.png'
-import ovalspace from './../../images/ovalspace.png'
-import two from './../../images/two.png'
-import recycle from './../../images/recycle.png'
-import yurugi from './../../images/yurugi.png'
-import soundbath from './../../images/soundbath.png'
-import wordlife from './../../images/wordlife.png'
-import lifeinbalance from './../../images/lifeinbalance.png'
-import serpent from './../../images/serpent.png'
+import edgesWeWant from './graphInput'
 
 const nodeOptions = {
     categories: {

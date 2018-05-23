@@ -3,14 +3,14 @@ import ReactPlayer from 'react-player'
 import ImageGallery from 'react-image-gallery'
 
 import './ProjectPage.css'
-import projects from './../../../src/projects/index'
+import input from './../../../src/input/index'
 
 class ProjectPage extends Component {
 	render() {
-		const selectedProject = Object.keys(projects).find(key => {
-			return projects[key].projectName === this.props.match.params.projectName
+		const selectedProject = Object.keys(input).find(key => {
+			return input[key].projectName === this.props.match.params.projectName
 		})
-		const pageData = projects[selectedProject].data.projectPage
+		const pageData = input[selectedProject].data.projectPage
 
 		return (
 			<div className="project-container">

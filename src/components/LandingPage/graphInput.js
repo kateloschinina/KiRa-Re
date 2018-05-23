@@ -1,3 +1,12 @@
+import input from './../../../src/input/index'
+
+const allInputArray = [ ...input.categories ]
+
+const id = (nodeName) => {
+    const idWithThisName = allInputArray.findIndex(element => element.name === nodeName)
+    return idWithThisName ? idWithThisName + 1 : false
+}
+
 const edgesWeWant = [
     // installation
     { from: id('installation'), to: id('tricksters') },

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
-import ImageGallery from 'react-image-gallery';
+import React, { Component } from 'react'
+import ReactPlayer from 'react-player'
+import ImageGallery from 'react-image-gallery'
 
-import './ProjectPage.css';
+import './ProjectPage.css'
 import projects from './../../../src/projects/index'
 
 class ProjectPage extends Component {
@@ -18,7 +18,6 @@ class ProjectPage extends Component {
 				switch (pageElement.tag) {
 					case 'header':
 						return <h1>{pageElement.text}</h1>
-						break
 					case 'paragraph':
 						return <p>{pageElement.text}</p>
 					case 'video':
@@ -31,11 +30,13 @@ class ProjectPage extends Component {
 							<p>{pageElement.highlight}</p>
 							<ImageGallery items={pageElement.images} />
 						</div>
+					default:
+						return <p>KiRa is awesome</p>
 				}
 			}) }
 			</div>
-		);
+		)
 	}
 }
 
-export default ProjectPage;
+export default ProjectPage

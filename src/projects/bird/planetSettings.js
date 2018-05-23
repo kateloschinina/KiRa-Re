@@ -1,5 +1,5 @@
-import mainImage from './bird-main-image.png';
-import blurredImage from './bird-blurred-image.png';
+import mainImage from './bird-main-image.png'
+import blurredImage from './bird-blurred-image.png'
 
 const style = {
     top: '20vh', // from the top, % view height
@@ -11,4 +11,4 @@ export default {
     style,
     mainImage,
     blurredImage
-};
+}

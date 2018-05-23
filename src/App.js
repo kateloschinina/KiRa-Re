@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import './App.css'
 
-import LandingPage from './components/LandingPage/LandingPage';
-import ProjectPage from './components/ProjectPage/ProjectPage';
+import LandingPage from './components/LandingPage/LandingPage'
+import ProjectPage from './components/ProjectPage/ProjectPage'
 
 class App extends Component {
 	render() {
@@ -14,8 +14,8 @@ class App extends Component {
 					<Route exact path="/:projectName" component={ProjectPage} />
 				</div>
 			</Router>
-		);
+		)
 	}
 }
 
-export default App;
+export default App

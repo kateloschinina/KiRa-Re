@@ -29,9 +29,6 @@ const edges = edgesWeWant.filter(edge => edge.from > 0 && edge.to > 0).map(edge 
     return { from: edge.from, to: edge.to }
 })
 
-console.log('nodes', nodes)
-console.log('edges', edges)
-
 const graphData = {
     graph: {
         nodes,

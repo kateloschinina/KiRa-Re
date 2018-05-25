@@ -7,10 +7,12 @@ import input from './../../../src/input/index'
 
 class ProjectPage extends Component {
 	render() {
-		const selectedProject = Object.keys(input).find(key => {
-			return input[key].projectName === this.props.match.params.projectName
+		console.log(this.props.match.params);
+		console.log(input.projects);
+		const selectedProject = Object.keys(input.projects).find(key => {
+			return input.projects[key].name === this.props.match.params.projectName
 		})
-		const pageData = input[selectedProject].data.projectPage
+		const pageData = input.projects[selectedProject].data.projectPage
 
 		return (
 			<div className="project-container">

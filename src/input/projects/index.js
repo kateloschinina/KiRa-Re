@@ -3,11 +3,11 @@ import contemplation from './contemplation/data'
 
 const projects = [
     {
-        projectName: 'symbiosis',
+        name: 'symbiosis',
         data: symbiosis
     },
     {
-        projectName: 'contemplation',
+        name: 'contemplation',
         data: contemplation
     }
 ]

@@ -1,16 +1,16 @@
-import input from './../../../src/input/index'
-import edgesWeWant from './graphInput'
+import input from "./../../../src/input/index"
+import edgesWeWant from "./graphInput"
 
 const nodeOptions = {
     categories: {
         size: 40,
-        shape: 'circularImage'
+        shape: "circularImage"
     }
 }
 
-const allInputArray = [ ...input.categories ]
+const allInputArray = [...input.categories, ...input.projects]
 
-const id = (nodeName) => {
+const id = nodeName => {
     return allInputArray.findIndex(element => element.name === nodeName) + 1
 }
 
@@ -23,13 +23,16 @@ const categoriesNodes = input.categories.map((category, key) => {
     }
 })
 
-const nodes = [ ...categoriesNodes ]
+const nodes = [...categoriesNodes]
 
-const edges = edgesWeWant.filter(edge => edge.from > 0 && edge.to > 0).map(edge => {
-    return { from: edge.from, to: edge.to }
-})
+const edges = edgesWeWant
+    .filter(edge => edge.from > 0 && edge.to > 0)
+    .map(edge => {
+        return { from: edge.from, to: edge.to }
+    })
 
 const graphData = {
+    allInputArray,
     graph: {
         nodes,
         edges
@@ -40,30 +43,29 @@ const graphData = {
             borderWidthSelected: 4,
             size: 30,
             color: {
-                border: '#222222',
-                background: '#666666',
+                border: "#222222",
+                background: "#666666",
                 highlight: {
-                    border: '#222222',
-                    background: '#666666'
+                    border: "#222222",
+                    background: "#666666"
                 },
                 hover: {
-                    border: '#222222',
-                    background: '#666666'
+                    border: "#222222",
+                    background: "#666666"
                 }
             },
-            font: { color:'#eeeeee' }
+            font: { color: "#eeeeee" }
         },
         edges: {
-            color: 'lightgray',
+            color: "lightgray",
             width: 2,
             arrows: {
-                to:     { enabled: false, scaleFactor: 1, type: 'bar' },
-                middle: { enabled: false, scaleFactor: 1, type: 'bar' },
-                from:   { enabled: false, scaleFactor: 1, type: 'bar' }
+                to: { enabled: false, scaleFactor: 1, type: "bar" },
+                middle: { enabled: false, scaleFactor: 1, type: "bar" },
+                from: { enabled: false, scaleFactor: 1, type: "bar" }
             }
         }
     }
 }
-
 
 export default graphData

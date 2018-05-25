@@ -1,13 +1,13 @@
-import symbiosis from './symbiosis/data'
-import contemplation from './contemplation/data'
+import symbiosis from "./symbiosis/data"
+import contemplation from "./contemplation/data"
 
 const projects = [
     {
-        name: 'symbiosis',
+        name: "symbiosis",
         data: symbiosis
     },
     {
-        name: 'contemplation',
+        name: "contemplation",
         data: contemplation
     }
 ]

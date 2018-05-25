@@ -16,24 +16,24 @@ class ProjectPage extends Component {
 
 		return (
 			<div className="project-container">
-			{ pageData.map(pageElement => {
+			{ pageData.map((pageElement, key) => {
 				switch (pageElement.tag) {
 					case 'header':
-						return <h1>{pageElement.text}</h1>
+						return <h1 key={`header-${key}`}>{pageElement.text}</h1>
 					case 'paragraph':
-						return <p>{pageElement.text}</p>
+						return <p key={`paragraph-${key}`}>{pageElement.text}</p>
 					case 'video':
-						return <div>
+						return <div key={`video-${key}`}>
 							<p>{pageElement.highlight}</p>
 							<ReactPlayer url={pageElement.url} />
 						</div>
 					case 'gallery':
-						return <div>
+						return <div key={`gallery-${key}`}>
 							<p>{pageElement.highlight}</p>
 							<ImageGallery items={pageElement.images} />
 						</div>
 					default:
-						return <p>KiRa is awesome</p>
+						return <p key={`paragraph-${key}`}>KiRa is awesome</p>
 				}
 			}) }
 			</div>

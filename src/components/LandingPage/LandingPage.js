@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Redirect } from "react-router"
-// import Graph from 'react-graph-vis'
 import vis from "vis"
 import "./LandingPage.css"
 

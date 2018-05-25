@@ -7,8 +7,6 @@ import input from "./../../../src/input/index"
 
 class ProjectPage extends Component {
     render() {
-        console.log(this.props.match.params)
-        console.log(input.projects)
         const selectedProject = Object.keys(input.projects).find(key => {
             return (
                 input.projects[key].name === this.props.match.params.projectName

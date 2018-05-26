@@ -3,7 +3,7 @@ import edgesWeWant from "./graphInput"
 
 const nodeOptions = {
     categories: {
-        size: 40,
+        size: 45,
         shape: "circularImage"
     }
 }
@@ -43,15 +43,15 @@ const graphData = {
             borderWidthSelected: 4,
             size: 30,
             color: {
-                border: "#222222",
-                background: "#666666",
+                border: "#444",
+                background: "#000",
                 highlight: {
-                    border: "#222222",
-                    background: "#666666"
+                    border: "#888",
+                    background: "#000"
                 },
                 hover: {
-                    border: "#222222",
-                    background: "#666666"
+                    border: "#555",
+                    background: "#000"
                 }
             },
             font: { color: "#eeeeee" }

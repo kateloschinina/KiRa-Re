@@ -5,6 +5,7 @@
     width: 20vw;
 }
 
-#interactive-graph {
-    height: 100vh;
+.landing-page {
+    background-image: url("./../../images/background/cropped-rays3-copy2.jpg");
+    background-size: cover;
 }

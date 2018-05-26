@@ -1,42 +1,58 @@
-import React, { Component } from 'react'
-import ReactPlayer from 'react-player'
-import ImageGallery from 'react-image-gallery'
+import React, { Component } from "react"
+import ReactPlayer from "react-player"
+import ImageGallery from "react-image-gallery"
 
-import './ProjectPage.css'
-import projects from './../../../src/projects/index'
+import "./ProjectPage.css"
+import input from "./../../../src/input/index"
 
 class ProjectPage extends Component {
-	render() {
-		const selectedProject = Object.keys(projects).find(key => {
-			return projects[key].projectName === this.props.match.params.projectName
-		})
-		const pageData = projects[selectedProject].data.projectPage
+    render() {
+        const selectedProject = Object.keys(input.projects).find(key => {
+            return (
+                input.projects[key].name === this.props.match.params.projectName
+            )
+        })
+        const pageData = input.projects[selectedProject].data.projectPage
 
-		return (
-			<div className="project-container">
-			{ pageData.map(pageElement => {
-				switch (pageElement.tag) {
-					case 'header':
-						return <h1>{pageElement.text}</h1>
-					case 'paragraph':
-						return <p>{pageElement.text}</p>
-					case 'video':
-						return <div>
-							<p>{pageElement.highlight}</p>
-							<ReactPlayer url={pageElement.url} />
-						</div>
-					case 'gallery':
-						return <div>
-							<p>{pageElement.highlight}</p>
-							<ImageGallery items={pageElement.images} />
-						</div>
-					default:
-						return <p>KiRa is awesome</p>
-				}
-			}) }
-			</div>
-		)
-	}
+        return (
+            <div className="project-container">
+                {pageData.map((pageElement, key) => {
+                    switch (pageElement.tag) {
+                        case "header":
+                            return (
+                                <h1 key={`header-${key}`}>
+                                    {pageElement.text}
+                                </h1>
+                            )
+                        case "paragraph":
+                            return (
+                                <p key={`paragraph-${key}`}>
+                                    {pageElement.text}
+                                </p>
+                            )
+                        case "video":
+                            return (
+                                <div key={`video-${key}`}>
+                                    <p>{pageElement.highlight}</p>
+                                    <ReactPlayer url={pageElement.url} />
+                                </div>
+                            )
+                        case "gallery":
+                            return (
+                                <div key={`gallery-${key}`}>
+                                    <p>{pageElement.highlight}</p>
+                                    <ImageGallery items={pageElement.images} />
+                                </div>
+                            )
+                        default:
+                            return (
+                                <p key={`paragraph-${key}`}>KiRa is awesome</p>
+                            )
+                    }
+                })}
+            </div>
+        )
+    }
 }
 
 export default ProjectPage

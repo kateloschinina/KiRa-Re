@@ -5618,15 +5618,6 @@ react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
-react-graph-vis@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-graph-vis/-/react-graph-vis-1.0.2.tgz#b553c2f43e546fd2daf94478ed4091d4c46bfbe3"
-  dependencies:
-    lodash "^4.17.4"
-    prop-types "^15.5.10"
-    uuid "^2.0.1"
-    vis "^4.18.1"
-
 react-image-gallery@^0.8.7:
   version "0.8.7"
   resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-0.8.7.tgz#9be02a154a33a562947857db0e6ddb78ad30343c"
@@ -6933,7 +6924,7 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
-uuid@^2.0.1, uuid@^2.0.2:
+uuid@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
@@ -6968,7 +6959,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vis@^4.18.1:
+vis@^4.21.0:
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/vis/-/vis-4.21.0.tgz#dd71638bff7f6495d00bc9f40c253526133ded6b"
   dependencies:

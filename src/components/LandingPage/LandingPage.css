@@ -4,3 +4,7 @@
     left: 0;
     width: 20vw;
 }
+
+#interactive-graph {
+    height: 100vh;
+}

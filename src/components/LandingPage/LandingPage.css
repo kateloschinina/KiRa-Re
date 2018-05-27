@@ -50,6 +50,32 @@
     background-size: cover;
 }
 
+.instructions {
+    position: absolute;
+    background-color: #000;
+    opacity: .8;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 360px;
+    z-index: 10;
+
+    color: white;
+    text-align: right;
+
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.instructions-heading {
+    font-weight: 900;
+    margin: 20px;
+}
+
+.instructions-text {
+    font-weight: 200;
+    margin: 20px;
+}
+
 @keyframes logoAnimation {
     0% {
         opacity: 1;

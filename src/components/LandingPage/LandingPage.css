@@ -1,10 +1,128 @@
-.front-page-logo {
+.header {
     position: absolute;
+    background-color: #000;
+    opacity: .8;
     top: 0;
     left: 0;
-    width: 20vw;
+    width: 300px;
+    height: 360px;
+    z-index: 10;
 }
 
-#interactive-graph {
-    height: 100vh;
+.front-page-logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    margin: 20px;
+}
+
+.front-page-pointer {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    width: 30px;
+    margin: 20px;
+}
+
+.menu-item-first {
+    margin-top: 200px;
+}
+
+.menu-item {
+    font-family: 'Sarpanch', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+.menu-item-selected {
+    font-weight: 900;
+}
+
+.menu-item:hover {
+    font-weight: 800;
+}
+
+.landing-page {
+    background-image: url("./../../images/background/cropped-rays3-copy2.jpg");
+    background-size: cover;
+}
+
+.instructions {
+    position: absolute;
+    background-color: #000;
+    opacity: .8;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 360px;
+    z-index: 10;
+
+    color: white;
+    text-align: right;
+
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.instructions-heading {
+    font-weight: 900;
+    margin: 20px;
+}
+
+.instructions-text {
+    font-weight: 200;
+    margin: 20px;
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes logoAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes logoAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes logoAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animate-logo {
+    -webkit-animation: logoAnimation 3s infinite;
+    -moz-animation: logoAnimation 3s infinite;
+    -o-animation: logoAnimation 3s infinite;
+    animation: logoAnimation 3s infinite;
 }

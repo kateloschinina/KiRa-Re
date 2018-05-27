@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Redirect } from "react-router"
 
 import vis from "vis"
+import "./Graph.css"
 
 import graphData from "./graphHelpers"
 import edgesWeWant from "./graphInput"
@@ -45,36 +46,45 @@ class App extends Component {
 
         const events = {
             doubleClick: event => {
-				const nodeId = event.nodes[0]
-				
-				if (nodeId > graphData.graph.nodes.length) {
-					if (nodeId <= graphData.allInputArray.length) {
-						this.setState({redirect: true})
-						this.setState({redirectTo: `/${graphData.allInputArray[nodeId - 1].name}`})
-						this.setState({projectProps: graphData.allInputArray[nodeId - 1].data.projectPage})
-					}
-				} else {
-					edgesWeWant.filter(edge => edge.to).forEach(edge => {
-						if (edge.from === nodeId) {
-							if (edge.to > graphData.graph.nodes.length) {
-								try {
-									this.nodes.add([
-										{
-											id: edge.to,
-											shape: "circularImage",
-											image:
-												graphData.allInputArray[edge.to - 1]
-													.data.planet,
-											size: 30
-										}
-									])
-								} catch (error) {
-									console.log(error)
-								}
-							}
-						}
-					})
-				}
+                const nodeId = event.nodes[0]
+
+                if (nodeId > graphData.graph.nodes.length) {
+                    if (nodeId <= graphData.allInputArray.length) {
+                        this.setState({ redirect: true })
+                        this.setState({
+                            redirectTo: `/${
+                                graphData.allInputArray[nodeId - 1].name
+                            }`
+                        })
+                        this.setState({
+                            projectProps:
+                                graphData.allInputArray[nodeId - 1].data
+                                    .projectPage
+                        })
+                    }
+                } else {
+                    edgesWeWant.filter(edge => edge.to).forEach(edge => {
+                        if (edge.from === nodeId) {
+                            if (edge.to > graphData.graph.nodes.length) {
+                                try {
+                                    this.nodes.add([
+                                        {
+                                            id: edge.to,
+                                            shape: "circularImage",
+                                            image:
+                                                graphData.allInputArray[
+                                                    edge.to - 1
+                                                ].data.planet,
+                                            size: 30
+                                        }
+                                    ])
+                                } catch (error) {
+                                    console.log(error)
+                                }
+                            }
+                        }
+                    })
+                }
             }
         }
 
@@ -87,7 +97,7 @@ class App extends Component {
                 {this.state.redirect ? (
                     <Redirect to={this.state.redirectTo} />
                 ) : null}
-                <div id="interactive-graph"></div>
+                <div id="interactive-graph" />
             </div>
         )
     }

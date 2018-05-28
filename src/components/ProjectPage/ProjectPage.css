@@ -1,10 +1,19 @@
 @import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
+.project-page {
+    background-image: url("./../../images/background/ripple.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
 .project-container {
+    top: 0;
     max-width: 800px;
-    margin: 1em auto;
+    margin: 0 auto;
     color: white;
     text-align: justify;
+    background-color: black;
+    opacity: 0.8;
 }
 
 .project-container h1 {
@@ -15,4 +24,16 @@
 
 .project-container p {
     font-size: 18px;
+}
+
+.project-description {
+    margin: 40px;
+}
+
+.link-to-home a h2 {
+    color: white;
+}
+
+.link-to-home a {
+    text-decoration: none;
 }

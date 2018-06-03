@@ -1,7 +1,7 @@
 @import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 .project-page {
-    background-image: url("./../../images/background/ripple.jpg");
+    background-image: url("./../../images/background/sandwet.jpg");
     background-size: cover;
     margin: 0;
 }
@@ -13,7 +13,7 @@
     color: white;
     text-align: justify;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 .project-container h1 {

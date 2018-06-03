@@ -1,5 +1,6 @@
 import symbiosis from "./symbiosis/data"
 import contemplation from "./contemplation/data"
+import sphere from "./sphere/data"
 
 const projects = [
     {
@@ -9,6 +10,10 @@ const projects = [
     {
         name: "contemplation",
         data: contemplation
+    },
+    {
+        name: "sphere",
+        data: sphere
     }
 ]
 

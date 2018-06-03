@@ -16,15 +16,14 @@ class ProjectPage extends Component {
         const pageData = input.projects[selectedProject].data.projectPage
 
         return (
-            <div className="project-page">
-                <div className="project-container">
-                    <div className="link-to-home">
+            <div className="project-page-container">
+                <div className="project-info-container">
+                    <div className="close-the-project">
                         <a href="/">
-                            <h2>back to ----></h2>
-                            <img className="project-page-logo" src={logo} alt="logo" />
+                            <p>x</p>
                         </a>
                     </div>
-                    <div className="project-description">
+                    <div className="project-info">
                         {pageData.map((pageElement, key) => {
                             switch (pageElement.tag) {
                                 case "header":

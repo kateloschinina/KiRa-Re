@@ -17,13 +17,6 @@ class App extends Component {
                     <h2 className="menu-item">dump of all projects</h2>
                     <h2 className="menu-item">about KiRa</h2>
                 </div>
-                <div className="instructions">
-                    <p className="instructions-heading">how to navigate the map</p>
-                    <p className="instructions-text">observe</p>
-                    <p className="instructions-text">to see projects double click on the category</p>
-                    <p className="instructions-text">to see project details double click on the project</p>
-                    <p className="instructions-text">be happy</p>
-                </div>
                 {/* <Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} /> */}
                 <Graph />
             </div>

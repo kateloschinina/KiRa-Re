@@ -3,6 +3,7 @@
 .project-page-container {
     background-image: url("./../../images/background/sandwet.jpg");
     background-size: cover;
+    padding-top: 40px;
 }
 
 .project-info-container {
@@ -32,8 +33,15 @@
 .close-the-project a {
     color: white;
     text-align: right;
+    text-decoration: none;
 }
 
 .close-the-project a p {
     margin: 0 10px 0 10px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.close-the-project a p:hover {
+    font-weight: 900;
 }

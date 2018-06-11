@@ -11,6 +11,7 @@ import secretCinema from './secret-cinema.png'
 import vessel from './vessel.png'
 import sound from './sound.png'
 import still from './still.png'
+import interactive from './interactive.png'
 
 const categories = [
     {
@@ -64,7 +65,11 @@ const categories = [
     {
         name: 'still',
         image: still
-    }        
+    },
+    {
+        name: 'interactive',
+    image: interactive
+    }   
 ]
 
 

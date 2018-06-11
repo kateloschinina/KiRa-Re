@@ -25,7 +25,7 @@ const edgesWeWant = [
     { from: id("still"), to: id("mountain") },
     { from: id("still"), to: id("serpent") },
     { from: id("still"), to: id("drawingsea") },
-    { from: id("still"), to: id("filmVideo") },
+    // { from: id("still"), to: id("filmVideo") },
 
     // sound
     { from: id("sound"), to: id("mountain") },

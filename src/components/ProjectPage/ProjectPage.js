@@ -41,14 +41,14 @@ class ProjectPage extends Component {
                                 case "video":
                                     return (
                                         <div key={`video-${key}`}>
-                                            <p>{pageElement.highlight}</p>
-                                            <ReactPlayer url={pageElement.url} />
+                                            <p className='project-info__highlight'>{pageElement.highlight}</p>
+                                            <ReactPlayer className='project-info__video' url={pageElement.url} />
                                         </div>
                                     )
                                 case "gallery":
                                     return (
                                         <div key={`gallery-${key}`}>
-                                            <p>{pageElement.highlight}</p>
+                                            <p className='project-info__highlight'>{pageElement.highlight}</p>
                                             <ImageGallery items={pageElement.images} />
                                         </div>
                                     )

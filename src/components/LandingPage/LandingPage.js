@@ -13,8 +13,6 @@ class LandingPage extends Component {
             <div className="landing-page">
                 <img className="front-page-background" src={logo} alt="logo" />
                 <div className="header">
-                    <img className="front-page-logo animate-logo" src={logo} alt="logo" />
-                    <img className="front-page-pointer animate-logo" src={pointer} alt="pointer" />
                     <h2 className="menu-item menu-item-first menu-item-selected">map of my consiousness</h2>
                     <h2 className="menu-item">dump of all projects</h2>
                     <h2 className="menu-item">about KiRa</h2>

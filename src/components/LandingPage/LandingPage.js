@@ -11,6 +11,7 @@ class LandingPage extends Component {
     render() {
         return (
             <div className="landing-page">
+                <img className="front-page-background" src={logo} alt="logo" />
                 <div className="header">
                     <img className="front-page-logo animate-logo" src={logo} alt="logo" />
                     <img className="front-page-pointer animate-logo" src={pointer} alt="pointer" />

@@ -2,11 +2,12 @@ import React, { Component } from "react"
 import "./LandingPage.css"
 
 import Graph from "./../Graph/Graph"
+import Footer from "./../Footer/Footer"
 
 import logo from "./../../images/logo/0-logo.png"
 import pointer from "./../../images/background/pointer.png"
 
-class App extends Component {
+class LandingPage extends Component {
     render() {
         return (
             <div className="landing-page">
@@ -19,9 +20,10 @@ class App extends Component {
                 </div>
                 {/* <Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} /> */}
                 <Graph />
+                <Footer />
             </div>
         )
     }
 }
 
-export default App
+export default LandingPage

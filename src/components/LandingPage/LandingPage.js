@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./LandingPage.css"
 
+import Menu from "./../Menu/Menu"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 
@@ -12,11 +13,7 @@ class LandingPage extends Component {
         return (
             <div className="landing-page">
                 <img className="front-page-background" src={logo} alt="logo" />
-                <div className="header">
-                    <h2 className="menu-item menu-item-first menu-item-selected">map of my consiousness</h2>
-                    <h2 className="menu-item">dump of all projects</h2>
-                    <h2 className="menu-item">about KiRa</h2>
-                </div>
+                <Menu />
                 {/* <Planet style={projectBird.style} mainImage={projectBird.mainImage} blurredImage={projectBird.blurredImage} /> */}
                 <Graph />
                 <Footer />

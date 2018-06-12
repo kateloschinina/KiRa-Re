@@ -1,0 +1,14 @@
+.menu--container {
+    top: 0;
+    z-index: 10;
+    margin: auto;
+    width: 800px;
+
+    padding-top: 20px;
+    text-align: center;
+}
+
+.menu--container img {
+    height: 24px;
+    padding: 5px;
+}

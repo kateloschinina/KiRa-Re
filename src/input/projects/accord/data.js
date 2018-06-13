@@ -11,16 +11,20 @@ const projectPage = [
 	},
 	{
 		tag: 'paragraph',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+		text: '“Accord” is an interactive sound installation, in which the movements of the audience create the soundscape. The concept of the installation is based on the Pythagorean idea of The Harmonies of Celestial Spheres. The participants become individual planets, each of them carrying a different sound, which change and develop, depending where the participants are positioned in the space, and in relation to each other. The space will be mapped to form a celestial sound “mandala”.'
 	},
 	{
 		tag: 'paragraph',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+		text: 'The experience asks for people to tune to their bodies, and to their environment, which would create sense of presence and spatial awareness, as they move around the space and interact with each other. Accord is an interactive space where people communicate through their body movements and the sound they create. '
 	},
 	{
 		tag: 'video',
 		url: 'https://youtu.be/OSJ1yJoIhVw',
-		highlight: 'accord video'
+		highlight: 'Аccord test II'
+	},
+	{
+		tag: 'paragraph',
+		text: 'The installation is in active development in collaboration with Andrey Novikov (sound designer) and Adrian Godwin (engineer). '
 	},
 	// {
 	// 	tag: 'gallery',

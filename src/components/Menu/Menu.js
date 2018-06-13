@@ -15,9 +15,9 @@ class Menu extends Component {
         return (
             <div className="menu--container">
                 <HoverImage src={interactive} hoverSrc={interactiveBold} />
-                <img src={dot} />
+                <img src={dot} alt="dot" />
                 <HoverImage src={allProjects} hoverSrc={allProjectsBold} />
-                <img src={dot} />
+                <img src={dot} alt="dot" />
                 <HoverImage src={about} hoverSrc={aboutBold} />
             </div>
         )

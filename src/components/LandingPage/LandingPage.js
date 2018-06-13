@@ -6,7 +6,6 @@ import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 
 import logo from "./../../images/logo-background.png"
-import pointer from "./../../images/background/pointer.png"
 
 class LandingPage extends Component {
     render() {

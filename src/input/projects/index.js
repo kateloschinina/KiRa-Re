@@ -3,6 +3,7 @@ import contemplation from "./contemplation/data"
 import sphere from "./sphere/data"
 import accord from "./accord/data"
 
+
 const projects = [
     {
         name: "symbiosis",

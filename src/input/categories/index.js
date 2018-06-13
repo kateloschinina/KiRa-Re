@@ -1,3 +1,4 @@
+import dot from './dot.png'
 import filmVideo from './film-video.png'
 import fashion from './fashion.png'
 import lco from './lco.png'
@@ -14,6 +15,10 @@ import still from './still.png'
 import interactive from './interactive.png'
 
 const categories = [
+    {
+        name: 'dot',
+        image: dot
+    },
     {
         name: 'filmVideo',
         image: filmVideo
@@ -68,7 +73,7 @@ const categories = [
     },
     {
         name: 'interactive',
-    image: interactive
+        image: interactive
     }   
 ]
 

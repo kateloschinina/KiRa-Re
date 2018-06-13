@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import "./Footer.css"
 import facebook from "./../../images/icons/facebook_icon.png"
 
-class App extends Component {
+class Footer extends Component {
     render() {
         return (
             <div className="footer--container">
@@ -14,4 +14,4 @@ class App extends Component {
     }
 }
 
-export default App
+export default Footer

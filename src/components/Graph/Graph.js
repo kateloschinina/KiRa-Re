@@ -16,15 +16,23 @@ class App extends Component {
     state = {
         redirect: false,
         redirectTo: "/",
-        projectProps: {}
+        projectProps: {},
+        nodesState: Array(graphData.graph.nodes.length)
     }
 
-    componentDidMount() {
+    initiateGraph(nodes, edges) {
         this.edges = new vis.DataSet()
         this.edges.add(graphData.graph.edges)
         this.nodes = new vis.DataSet()
         this.nodes.add(graphData.graph.nodes)
         this.updateGraph()
+    } 
+
+    componentDidMount() {
+        const nodes = graphData.graph.nodes
+        const edges = graphData.graph.edges       
+        
+        this.initiateGraph(nodes, edges)
     }
 
     componentDidUpdate() {

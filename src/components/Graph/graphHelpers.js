@@ -14,14 +14,16 @@ const id = nodeName => {
     return allInputArray.findIndex(element => element.name === nodeName) + 1
 }
 
-const categoriesNodes = input.categories.map((category, key) => {
-    return {
-        id: id(category.name),
-        shape: nodeOptions.categories.shape,
-        image: category.image || category.name,
-        size: nodeOptions.categories.size
-    }
-})
+const categoriesNodes = input.categories
+    .filter(category => category.pioneer === true)
+    .map((category, key) => {
+        return {
+            id: id(category.name),
+            shape: nodeOptions.categories.shape,
+            image: category.image || category.name,
+            size: nodeOptions.categories.size
+        }
+    })
 
 const nodes = [...categoriesNodes]
 

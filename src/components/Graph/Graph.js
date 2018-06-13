@@ -56,7 +56,7 @@ class App extends Component {
             doubleClick: event => {
                 const nodeId = event.nodes[0]
 
-                if (nodeId > graphData.graph.nodes.length) {
+                if (nodeId > graphData.howManyCategories) {
                     if (nodeId <= graphData.allInputArray.length) {
                         this.setState({ redirect: true })
                         this.setState({
@@ -73,22 +73,25 @@ class App extends Component {
                 } else {
                     edgesWeWant.filter(edge => edge.to).forEach(edge => {
                         if (edge.from === nodeId) {
-                            if (edge.to > graphData.graph.nodes.length) {
-                                try {
-                                    this.nodes.add([
-                                        {
-                                            id: edge.to,
-                                            shape: "circularImage",
-                                            image:
-                                                graphData.allInputArray[
-                                                    edge.to - 1
-                                                ].data.planet,
-                                            size: 30
-                                        }
-                                    ])
-                                } catch (error) {
-                                    console.log(error)
-                                }
+                            const nodeImage = edge.to > graphData.howManyCategories ? graphData.allInputArray[
+                                edge.to - 1
+                            ].data.planet : graphData.allInputArray[
+                                edge.to - 1
+                            ].image
+
+                            const nodeSize = edge.to > graphData.howManyCategories ? 30 : 40
+
+                            try {
+                                this.nodes.add([
+                                    {
+                                        id: edge.to,
+                                        shape: "circularImage",
+                                        image: nodeImage,
+                                        size: nodeSize
+                                    }
+                                ])
+                            } catch (error) {
+                                console.log(error)
                             }
                         }
                     })

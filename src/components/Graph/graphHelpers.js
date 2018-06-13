@@ -14,7 +14,7 @@ const id = nodeName => {
     return allInputArray.findIndex(element => element.name === nodeName) + 1
 }
 
-const categoriesNodes = input.categories
+const pioneerNodes = input.categories
     .filter(category => category.pioneer === true)
     .map((category, key) => {
         return {
@@ -25,7 +25,7 @@ const categoriesNodes = input.categories
         }
     })
 
-const nodes = [...categoriesNodes]
+const nodes = [...pioneerNodes]
 
 const edges = edgesWeWant
     .filter(edge => edge.from > 0 && edge.to > 0)
@@ -35,6 +35,7 @@ const edges = edgesWeWant
 
 const graphData = {
     allInputArray,
+    howManyCategories: input.categories.length,
     graph: {
         nodes,
         edges

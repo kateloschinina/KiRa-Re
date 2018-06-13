@@ -48,7 +48,8 @@ const categories = [
     },
     {
         name: 'performance',
-        image: performance
+        image: performance,
+        pioneer: true
     },
     {
         name: 'installation',

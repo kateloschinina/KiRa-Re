@@ -22,7 +22,6 @@ const edgesWeWant = [
     { from: id("installation"), to: id("accord") },
 
     // holographic
-    { from: id("holographic"), to: id("performance") },
     { from: id("holographic"), to: id("animamundi") },
     { from: id("holographic"), to: id("lifeinbalance") },
 

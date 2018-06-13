@@ -3,9 +3,6 @@ import planet from './sphere-planet.png'
 // images
 // IMPORT IMAGES FROM GALLERY USING THE FOLLOWING FORMAT
 // import [imageName] from './gallery/[imageName].jpg'
-import imageOne from './gallery/img_5601.jpg'
-import imageTwo from './gallery/img_9577.jpg'
-import imageThree from './gallery/john1.jpg'
 
 const projectPage = [
 	{
@@ -14,41 +11,18 @@ const projectPage = [
 	},
 	{
 		tag: 'paragraph',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+		text: '"In the 1980s, Andrei Linde, scientist from the Lebedev’s Institute of physics, developed the theory of multiple universes. Linde explained: Space consists of many inflating spheres, which give rise to similar spheres, and those, in turn, produce spheres in even greater numbers, and so on to infinity. In the universe, they are spaced apart. They are not aware of each other’s existence. But they represent parts of the same physical universe."'
 	},
 	{
 		tag: 'paragraph',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+		text: 'Sphere was born from a lucid dream of seeing oneself as a sphere of swirling emotions and expereinces. It is part of Vessel Project which explores the psyche as a visual map. '
 	},
 	{
 		tag: 'video',
-		url: 'https://vimeo.com/240879630',
-		highlight: 'a dummy video from me'
+		url: 'https://vimeo.com/188573535',
+		highlight: 'Sphere III'
 	},
-	{
-		tag: 'gallery',
-		highlight: 'gallery one',
-		images: [
-			{
-				original: imageOne,
-				thumbnail: imageOne
-			},
-			{
-				original: imageTwo,
-				thumbnail: imageTwo
-			}
-		]
-	},
-	{
-		tag: 'gallery',
-		highlight: 'gallery two',
-		images: [
-			{
-				original: imageThree,
-				thumbnail: imageThree
-			}
-		]
-	}
+
 ]
 
 // 

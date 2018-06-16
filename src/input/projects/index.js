@@ -10,6 +10,7 @@ import drawingSea from "./drawing-sea/data"
 import nebula from "./nebula/data"
 import lifeInBalance from "./life-in-balance/data"
 import tricksters from "./tricksters/data"
+import yurugi from "./yurugi/data"
 
 const projects = [
     {
@@ -59,6 +60,10 @@ const projects = [
     {
         name: "tricksters",
         data: tricksters
+    },
+    {
+        name: "yurugi",
+        data: yurugi
     }
 ]
 

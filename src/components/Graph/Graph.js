@@ -18,8 +18,7 @@ class App extends Component {
     state = {
         redirect: false,
         redirectTo: "/",
-        projectProps: {},
-        // nodesOpennessState: Array(graphData.howManyCategories)
+        projectProps: {}
     }
 
     initiateGraph(nodes, edges) {

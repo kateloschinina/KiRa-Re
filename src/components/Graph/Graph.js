@@ -41,14 +41,6 @@ class App extends Component {
         this.updateGraph()
     }
 
-    changeOpenessStateForNode(nodeId, value) {
-        const statesCopy = [...this.state.nodesOpennessState]
-
-        statesCopy[nodeId] = value
-
-        this.setState({nodesOpennessState: statesCopy})
-    }
-
     updateGraph() {
         let container = document.getElementById("interactive-graph")
         let options = graphData.options
@@ -97,7 +89,6 @@ class App extends Component {
                         })
 
                         nodesOpennessState[nodeId] = false
-                        // this.changeOpenessStateForNode(nodeId, false)
                     } else {
                         edgesWeWant.filter(edge => edge.to).forEach(edge => {
                             if (edge.from === nodeId) {
@@ -124,7 +115,6 @@ class App extends Component {
                             }
 
                             nodesOpennessState[nodeId] = true
-                            // this.changeOpenessStateForNode(nodeId, true)
                         })
                     }
                 }

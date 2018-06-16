@@ -15,14 +15,14 @@ class ProjectPage extends Component {
         const pageData = input.projects[selectedProject].data.projectPage
 
         return (
-            <div className="project-page-container">
-                <div className="project-info-container">
-                    <div className="close-the-project">
+            <div className="project-page">
+                <div className="project-page__container">
+                    <div className="project-page__close">
                         <a href="/">
                             <p>x</p>
                         </a>
                     </div>
-                    <div className="project-info">
+                    <div className="project-page__content">
                         {pageData.map((pageElement, key) => {
                             switch (pageElement.tag) {
                                 case "header":
@@ -40,14 +40,14 @@ class ProjectPage extends Component {
                                 case "video":
                                     return (
                                         <div key={`video-${key}`}>
-                                            <p className='project-info__highlight'>{pageElement.highlight}</p>
-                                            <ReactPlayer className='project-info__video' url={pageElement.url} />
+                                            <p className='project-page__content__highlight'>{pageElement.highlight}</p>
+                                            <ReactPlayer className='project-page__content__video' url={pageElement.url} />
                                         </div>
                                     )
                                 case "gallery":
                                     return (
                                         <div key={`gallery-${key}`}>
-                                            <p className='project-info__highlight'>{pageElement.highlight}</p>
+                                            <p className='project-page__content__highlight'>{pageElement.highlight}</p>
                                             <ImageGallery items={pageElement.images} />
                                         </div>
                                     )

@@ -13,7 +13,7 @@ class Planet extends Component {
 
 	handleMouseOver () {
 		this.setState({
-			imgSrc: this.props.blurredImage
+			imgSrc: this.props.blurredImage || this.props.mainImage
 		})
 	}
 	
@@ -28,8 +28,7 @@ class Planet extends Component {
 			<img className="planet" alt="planet"
 				onMouseOver={this.handleMouseOver}
 				onMouseOut={this.handleMouseOut}
-				src={this.state.imgSrc}
-				style={this.props.style} />
+				src={this.state.imgSrc} />
 		)
 	}
 }

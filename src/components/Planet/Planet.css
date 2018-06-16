@@ -1,5 +1,5 @@
 .planet {
-    position: absolute;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
+    height: 100px;
+    margin: 25px;
 }

@@ -10,13 +10,13 @@ import logo from "./../../images/logo-background.png"
 
 class LandingPage extends Component {
     state = {
-        showGraph: true
+        showGraph: false
     }
 
     render() {
         return (
             <div className="landing-page">
-                <img className="front-page-background" src={logo} alt="logo" />
+                <img className="landing-page__background" src={logo} alt="logo" />
                 <Menu />
                 { this.state.showGraph ? <Graph /> : <AllProjectsPage /> }
                 <Footer />

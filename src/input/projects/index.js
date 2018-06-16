@@ -12,6 +12,7 @@ import lifeInBalance from "./life-in-balance/data"
 import tricksters from "./tricksters/data"
 import yurugi from "./yurugi/data"
 import recycle from "./recycle/data"
+import two from "./two/data"
 
 const projects = [
     {
@@ -69,6 +70,10 @@ const projects = [
     {
         name: "recycle",
         data: recycle
+    },
+    {
+        name: "two",
+        data: two
     }
 ]
 

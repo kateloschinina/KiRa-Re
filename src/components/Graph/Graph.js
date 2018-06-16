@@ -63,7 +63,7 @@ class App extends Component {
                     if (nodeId <= graphData.allInputArray.length) {
                         this.setState({ redirect: true })
                         this.setState({
-                            redirectTo: `/${
+                            redirectTo: `/projects/${
                                 graphData.allInputArray[nodeId - 1].name
                             }`
                         })

@@ -4,6 +4,7 @@ import './App.css'
 
 import LandingPage from './components/LandingPage/LandingPage'
 import ProjectPage from './components/ProjectPage/ProjectPage'
+import AboutPage from './components/AboutPage/AboutPage'
 
 class App extends Component {
 	render() {
@@ -11,7 +12,8 @@ class App extends Component {
 			<Router>
 				<div>
 					<Route exact path="/" component={LandingPage} />
-					<Route exact path="/:projectName" component={ProjectPage} />
+					<Route exact path="/about" component={AboutPage} />
+					<Route exact path="/projects/:projectName" component={ProjectPage} />
 				</div>
 			</Router>
 		)

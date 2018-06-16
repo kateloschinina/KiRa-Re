@@ -11,6 +11,7 @@ import nebula from "./nebula/data"
 import lifeInBalance from "./life-in-balance/data"
 import tricksters from "./tricksters/data"
 import yurugi from "./yurugi/data"
+import recycle from "./recycle/data"
 
 const projects = [
     {
@@ -64,6 +65,10 @@ const projects = [
     {
         name: "yurugi",
         data: yurugi
+    },
+    {
+        name: "recycle",
+        data: recycle
     }
 ]
 

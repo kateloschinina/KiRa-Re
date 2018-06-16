@@ -33,7 +33,7 @@ class Menu extends Component {
                         </button>
                     ) }
                 </div>
-                <HoverImage src={about} hoverSrc={aboutBold} />
+                <a href="/about"><HoverImage src={about} hoverSrc={aboutBold} /></a>
             </div>
         )
     }

@@ -7,6 +7,8 @@ import "./Graph.css"
 import graphData from "./graphHelpers"
 import edgesWeWant from "./graphInput"
 
+const nodesOpennessState = Array(graphData.howManyCategories)
+
 class App extends Component {
     constructor(props) {
         super(props)
@@ -17,7 +19,7 @@ class App extends Component {
         redirect: false,
         redirectTo: "/",
         projectProps: {},
-        nodesOpennessState: Array(graphData.howManyCategories)
+        // nodesOpennessState: Array(graphData.howManyCategories)
     }
 
     initiateGraph(nodes, edges) {
@@ -37,6 +39,14 @@ class App extends Component {
 
     componentDidUpdate() {
         this.updateGraph()
+    }
+
+    changeOpenessStateForNode(nodeId, value) {
+        const statesCopy = [...this.state.nodesOpennessState]
+
+        statesCopy[nodeId] = value
+
+        this.setState({nodesOpennessState: statesCopy})
     }
 
     updateGraph() {
@@ -71,45 +81,52 @@ class App extends Component {
                         })
                     }
                 } else {
-                    console.log(this.state.nodesOpennessState);
-                    edgesWeWant.filter(edge => edge.to).forEach(edge => {
-                        if (edge.from === nodeId && !this.state.nodesOpennessState[edge.from]) {
-                            const nodeImage = edge.to > graphData.howManyCategories ? graphData.allInputArray[
-                                edge.to - 1
-                            ].data.planet : graphData.allInputArray[
-                                edge.to - 1
-                            ].image
+                    if (nodesOpennessState[nodeId]) {
+                        edgesWeWant.filter(edge => edge.to).forEach(edge => {
+                            if(edge.from === nodeId) {
+                                try {
+                                    this.nodes.remove([
+                                        {
+                                            id: edge.to
+                                        }
+                                    ])
+                                } catch (error) {
+                                    console.log(error)
+                                }
+                            }
+                        })
 
-                            const nodeSize = edge.to > graphData.howManyCategories ? 30 : 40
-
-                            try {
-                                this.nodes.add([
-                                    {
-                                        id: edge.to,
-                                        shape: "circularImage",
-                                        image: nodeImage,
-                                        size: nodeSize
-                                    }
-                                ])
-                            } catch (error) {
-                                console.log(error)
+                        nodesOpennessState[nodeId] = false
+                        // this.changeOpenessStateForNode(nodeId, false)
+                    } else {
+                        edgesWeWant.filter(edge => edge.to).forEach(edge => {
+                            if (edge.from === nodeId) {
+                                const nodeImage = edge.to > graphData.howManyCategories ? graphData.allInputArray[
+                                    edge.to - 1
+                                ].data.planet : graphData.allInputArray[
+                                    edge.to - 1
+                                ].image
+    
+                                const nodeSize = edge.to > graphData.howManyCategories ? 30 : 40
+    
+                                try {
+                                    this.nodes.add([
+                                        {
+                                            id: edge.to,
+                                            shape: "circularImage",
+                                            image: nodeImage,
+                                            size: nodeSize
+                                        }
+                                    ])
+                                } catch (error) {
+                                    console.log(error)
+                                }
                             }
 
-                            this.state.nodesOpennessState[edge.from] = true
-                        } else if(edge.from === nodeId && this.state.nodesOpennessState[edge.from] === true) {
-                            try {
-                                this.nodes.remove([
-                                    {
-                                        id: edge.to
-                                    }
-                                ])
-                            } catch (error) {
-                                console.log(error)
-                            }
-
-                            this.state.nodesOpennessState[edge.from] = false
-                        }
-                    })
+                            nodesOpennessState[nodeId] = true
+                            // this.changeOpenessStateForNode(nodeId, true)
+                        })
+                    }
                 }
             }
         }

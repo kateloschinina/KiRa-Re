@@ -7,6 +7,7 @@ import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 
 import logo from "./../../images/logo/logo-background.png"
+import dot from "./../../images/background/dot.png"
 
 class LandingPage extends Component {
     constructor(props) {
@@ -26,6 +27,7 @@ class LandingPage extends Component {
         return (
             <div className="landing-page">
                 <img className="landing-page__background" src={logo} alt="logo" />
+                <img className="rotating-dot" src={dot} alt="rotating-got" />
                 <Menu changeShowGraphState={this.changeShowGraphState} showGraph={this.state.showGraph} />
                 { this.state.showGraph ? <Graph /> : <AllProjectsPage /> }
                 <Footer />

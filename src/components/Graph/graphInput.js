@@ -31,12 +31,12 @@ const edgesWeWant = [
     // still
     { from: id("still"), to: id("mountain") },
     { from: id("still"), to: id("serpent") },
-    { from: id("still"), to: id("drawingsea") },
+    { from: id("still"), to: id("drawingSea") },
     // { from: id("still"), to: id("filmVideo") },
 
     // sound
     { from: id("sound"), to: id("mountain") },
-    { from: id("sound"), to: id("drawingsea") },
+    { from: id("sound"), to: id("drawingSea") },
 
     // interactive
     { from: id("interactive"), to: id("accord") },
@@ -92,7 +92,7 @@ export default edgesWeWant
 //     // projects
 //     { id: 1, shape: 'circularImage', image: projectBird.mainImage, size: 30 },
 //     { id: 2, shape: 'circularImage', image: contemplation, size: 30 },
-//     { id: 3, shape: 'circularImage', image: drawingsea, size: 30 },
+//     { id: 3, shape: 'circularImage', image: drawingSea, size: 30 },
 //     { id: 4, shape: 'circularImage', image: echo, size: 30 },
 //     { id: 5, shape: 'circularImage', image: elegies, size: 30 },
 //     { id: 6, shape: 'circularImage', image: king, size: 30 },

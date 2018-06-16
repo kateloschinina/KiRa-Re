@@ -50,6 +50,7 @@ const edgesWeWant = [
     { from: id("filmVideo"), to: id("promovideos") },
     { from: id("filmVideo"), to: id("projections") },
     { from: id("filmVideo"), to: id("animamundi") },
+    { from: id("filmVideo"), to: id("secretCinema") },
 
     // projections
     // { from: id("projections"), to: id("secretCinema") },
@@ -65,8 +66,8 @@ const edgesWeWant = [
     { from: id("lco"), to: id("ovalspace") },
 
     // secret cinema
-    { from: id("secretCinema"), to: id("tricksters") },
-    { from: id("secretCinema"), to: id("ballet") },
+    // { from: id("secretCinema"), to: id("tricksters") },
+    // { from: id("secretCinema"), to: id("ballet") },
 
     // vessel
     { from: id("vessel"), to: id("serpent") },

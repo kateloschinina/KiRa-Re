@@ -1,4 +1,4 @@
-.menu--container {
+.menu__container {
     top: 0;
     z-index: 10;
     margin: auto;
@@ -8,7 +8,13 @@
     text-align: center;
 }
 
-.menu--container img {
-    height: 18px;
+.menu__container img {
+    height: 13px;
     padding: 5px;
+}
+
+.menu__appearance-switch img {
+    border: 1px solid white;
+    margin: 5px;
+    padding: 20px;
 }

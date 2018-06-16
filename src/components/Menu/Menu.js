@@ -8,16 +8,15 @@ import allProjects from "./../../images/menu/all-projects.png"
 import allProjectsBold from "./../../images/menu/all-projects-bold.png"
 import interactive from "./../../images/menu/interactive.png"
 import interactiveBold from "./../../images/menu/interactive-bold.png"
-import dot from "./../../images/menu/dot.png"
 
 class Menu extends Component {
     render() {
         return (
-            <div className="menu--container">
-                <HoverImage src={interactive} hoverSrc={interactiveBold} />
-                <img src={dot} alt="dot" />
-                <HoverImage src={allProjects} hoverSrc={allProjectsBold} />
-                <img src={dot} alt="dot" />
+            <div className="menu__container">
+                <div className="menu__appearance-switch">
+                    <HoverImage src={interactive} hoverSrc={interactiveBold} />
+                    <HoverImage src={allProjects} hoverSrc={allProjectsBold} />
+                </div>
                 <HoverImage src={about} hoverSrc={aboutBold} />
             </div>
         )

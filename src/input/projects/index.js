@@ -13,6 +13,7 @@ import tricksters from "./tricksters/data"
 import yurugi from "./yurugi/data"
 import recycle from "./recycle/data"
 import two from "./two/data"
+import serpent from "./serpent/data"
 
 const projects = [
     {
@@ -74,6 +75,10 @@ const projects = [
     {
         name: "two",
         data: two
+    },
+    {
+        name: "serpent",
+        data: serpent
     }
 ]
 

@@ -70,8 +70,8 @@ const graphData = {
         },
         physics: {
             barnesHut: {
-                gravitationalConstant: -2000,
-                centralGravity: 0.2,
+                gravitationalConstant: -1000,
+                centralGravity: 0.01,
                 springLength: 50,
                 damping: 0.5,
                 avoidOverlap: 0.9

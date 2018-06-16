@@ -20,52 +20,53 @@ const edgesWeWant = [
     { from: id("installation"), to: id("tricksters") },
     { from: id("installation"), to: id("symbiosis") },
     { from: id("installation"), to: id("accord") },
+    { from: id("installation"), to: id("echo") },
 
     // holographic
     { from: id("holographic"), to: id("animamundi") },
-    { from: id("holographic"), to: id("lifeinbalance") },
+    { from: id("holographic"), to: id("lifeInBalance") },
 
     // performance
-    { from: id("performance"), to: id("lifeinbalance") },
+    { from: id("performance"), to: id("lifeInBalance") },
 
     // still
     { from: id("still"), to: id("mountain") },
     { from: id("still"), to: id("serpent") },
-    { from: id("still"), to: id("drawingsea") },
+    { from: id("still"), to: id("drawingSea") },
     // { from: id("still"), to: id("filmVideo") },
 
     // sound
     { from: id("sound"), to: id("mountain") },
-    { from: id("sound"), to: id("drawingsea") },
+    { from: id("sound"), to: id("drawingSea") },
 
     // interactive
     { from: id("interactive"), to: id("accord") },
     { from: id("interactive"), to: id("symbiosis") },
-
-    // accord
-    { from: id("accord"), to: id("nebula") },
+    { from: id("interactive"), to: id("nebula") },
 
     // film video
     { from: id("filmVideo"), to: id("vessel") },
     { from: id("filmVideo"), to: id("promovideos") },
     { from: id("filmVideo"), to: id("projections") },
     { from: id("filmVideo"), to: id("animamundi") },
+    { from: id("filmVideo"), to: id("secretCinema") },
 
     // projections
-    { from: id("projections"), to: id("secretCinema") },
-    { from: id("projections"), to: id("lco") },
-    { from: id("projections"), to: id("stlukes") },
-    { from: id("projections"), to: id("soundbath") },
-    { from: id("projections"), to: id("elegies") },
-    { from: id("projections"), to: id("wordlife") },
+    // { from: id("projections"), to: id("secretCinema") },
+    // { from: id("projections"), to: id("lco") },
+    // { from: id("projections"), to: id("contemplation") },
+    // { from: id("projections"), to: id("soundbath") },
+    // { from: id("projections"), to: id("elegies") },
+    // { from: id("projections"), to: id("wordlife") },
+
 
     // lco
     { from: id("lco"), to: id("aldwich") },
     { from: id("lco"), to: id("ovalspace") },
 
     // secret cinema
-    { from: id("secretCinema"), to: id("tricksters") },
-    { from: id("secretCinema"), to: id("ballet") },
+    // { from: id("secretCinema"), to: id("tricksters") },
+    // { from: id("secretCinema"), to: id("ballet") },
 
     // vessel
     { from: id("vessel"), to: id("serpent") },
@@ -73,15 +74,9 @@ const edgesWeWant = [
     { from: id("vessel"), to: id("sphere") },
 
     // promo videos
-    { from: id("promovideos"), to: id("musicVideo") },
+    { from: id("promovideos"), to: id("musicVideos") },
     { from: id("promovideos"), to: id("fashion") },
     { from: id("promovideos"), to: id("rambert") },
-
-    // music videos
-    { from: id("musicVideo"), to: id("king") },
-    { from: id("musicVideo"), to: id("polarbear") },
-    { from: id("musicVideo"), to: id("echo") },
-    { from: id("musicVideo"), to: id("piano") },
 
     // fashion
     { from: id("fashion"), to: id("recycle") },
@@ -96,7 +91,7 @@ export default edgesWeWant
 //     // projects
 //     { id: 1, shape: 'circularImage', image: projectBird.mainImage, size: 30 },
 //     { id: 2, shape: 'circularImage', image: contemplation, size: 30 },
-//     { id: 3, shape: 'circularImage', image: drawingsea, size: 30 },
+//     { id: 3, shape: 'circularImage', image: drawingSea, size: 30 },
 //     { id: 4, shape: 'circularImage', image: echo, size: 30 },
 //     { id: 5, shape: 'circularImage', image: elegies, size: 30 },
 //     { id: 6, shape: 'circularImage', image: king, size: 30 },
@@ -116,7 +111,7 @@ export default edgesWeWant
 //     { id: 20, shape: 'circularImage', image: yurugi, size: 30 },
 //     { id: 21, shape: 'circularImage', image: soundbath, size: 30 },
 //     { id: 22, shape: 'circularImage', image: wordlife, size: 30 },
-//     { id: 23, shape: 'circularImage', image: lifeinbalance, size: 30 },
+//     { id: 23, shape: 'circularImage', image: lifeInBalance, size: 30 },
 //     { id: 24, shape: 'circularImage', image: serpent, size: 30 },
 
 //     // categories

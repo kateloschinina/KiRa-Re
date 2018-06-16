@@ -6,7 +6,7 @@ import AllProjectsPage from "./../AllProjectsPage/AllProjectsPage"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 
-import logo from "./../../images/logo-background.png"
+import logo from "./../../images/logo/logo-background.png"
 
 class LandingPage extends Component {
     constructor(props) {

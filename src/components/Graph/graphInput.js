@@ -24,10 +24,10 @@ const edgesWeWant = [
 
     // holographic
     { from: id("holographic"), to: id("animamundi") },
-    { from: id("holographic"), to: id("lifeinbalance") },
+    { from: id("holographic"), to: id("lifeInBalance") },
 
     // performance
-    { from: id("performance"), to: id("lifeinbalance") },
+    { from: id("performance"), to: id("lifeInBalance") },
 
     // still
     { from: id("still"), to: id("mountain") },
@@ -42,9 +42,7 @@ const edgesWeWant = [
     // interactive
     { from: id("interactive"), to: id("accord") },
     { from: id("interactive"), to: id("symbiosis") },
-
-    // accord
-    { from: id("accord"), to: id("nebula") },
+    { from: id("interactive"), to: id("nebula") },
 
     // film video
     { from: id("filmVideo"), to: id("vessel") },
@@ -113,7 +111,7 @@ export default edgesWeWant
 //     { id: 20, shape: 'circularImage', image: yurugi, size: 30 },
 //     { id: 21, shape: 'circularImage', image: soundbath, size: 30 },
 //     { id: 22, shape: 'circularImage', image: wordlife, size: 30 },
-//     { id: 23, shape: 'circularImage', image: lifeinbalance, size: 30 },
+//     { id: 23, shape: 'circularImage', image: lifeInBalance, size: 30 },
 //     { id: 24, shape: 'circularImage', image: serpent, size: 30 },
 
 //     // categories

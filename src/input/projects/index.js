@@ -7,6 +7,8 @@ import secretCinema from "./secret-cinema/data"
 import bird from "./bird/data"
 import echo from "./echo/data"
 import drawingSea from "./drawing-sea/data"
+import nebula from "./nebula/data"
+import lifeInBalance from "./life-in-balance/data"
 
 const projects = [
     {
@@ -44,6 +46,14 @@ const projects = [
     {
         name: "echo",
         data: echo
+    },
+    {
+        name: "nebula",
+        data: nebula
+    },
+    {
+        name: "lifeInBalance",
+        data: lifeInBalance
     }
 ]
 

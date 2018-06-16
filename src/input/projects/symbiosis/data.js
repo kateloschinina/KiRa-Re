@@ -36,8 +36,9 @@ const projectPage = [
     },
     {
         tag: "gallery",
-        highlight: "bla bla highlight",
+        
         images: [
+            
             {
                 original: breathing,
                 thumbnail: breathing

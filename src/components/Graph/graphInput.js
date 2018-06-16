@@ -67,15 +67,9 @@ const edgesWeWant = [
     { from: id("vessel"), to: id("sphere") },
 
     // promo videos
-    { from: id("promovideos"), to: id("musicVideo") },
+    { from: id("promovideos"), to: id("musicVideos") },
     { from: id("promovideos"), to: id("fashion") },
     { from: id("promovideos"), to: id("rambert") },
-
-    // music videos
-    { from: id("musicVideo"), to: id("king") },
-    { from: id("musicVideo"), to: id("polarbear") },
-    { from: id("musicVideo"), to: id("echo") },
-    { from: id("musicVideo"), to: id("piano") },
 
     // fashion
     { from: id("fashion"), to: id("recycle") },

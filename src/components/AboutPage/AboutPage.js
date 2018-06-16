@@ -1,8 +1,6 @@
 import React, { Component } from "react"
-import ReactPlayer from "react-player"
 
 import "./AboutPage.css"
-import input from "./../../../src/input/index"
 
 class AboutPage extends Component {
     render() {

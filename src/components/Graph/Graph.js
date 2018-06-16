@@ -17,7 +17,7 @@ class App extends Component {
         redirect: false,
         redirectTo: "/",
         projectProps: {},
-        nodesState: Array(graphData.graph.nodes.length)
+        nodesOpennessState: Array(graphData.howManyCategories)
     }
 
     initiateGraph(nodes, edges) {
@@ -71,8 +71,9 @@ class App extends Component {
                         })
                     }
                 } else {
+                    console.log(this.state.nodesOpennessState);
                     edgesWeWant.filter(edge => edge.to).forEach(edge => {
-                        if (edge.from === nodeId) {
+                        if (edge.from === nodeId && !this.state.nodesOpennessState[edge.from]) {
                             const nodeImage = edge.to > graphData.howManyCategories ? graphData.allInputArray[
                                 edge.to - 1
                             ].data.planet : graphData.allInputArray[
@@ -93,6 +94,20 @@ class App extends Component {
                             } catch (error) {
                                 console.log(error)
                             }
+
+                            this.state.nodesOpennessState[edge.from] = true
+                        } else if(edge.from === nodeId && this.state.nodesOpennessState[edge.from] === true) {
+                            try {
+                                this.nodes.remove([
+                                    {
+                                        id: edge.to
+                                    }
+                                ])
+                            } catch (error) {
+                                console.log(error)
+                            }
+
+                            this.state.nodesOpennessState[edge.from] = false
                         }
                     })
                 }

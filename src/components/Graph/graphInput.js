@@ -7,15 +7,22 @@ const id = nodeName => {
 }
 
 const edgesWeWant = [
+    // dot
+    { from: id("dot"), to: id("filmVideo") },
+    { from: id("dot"), to: id("still") },
+    { from: id("dot"), to: id("interactive") },
+    { from: id("dot"), to: id("holographic") },
+    { from: id("dot"), to: id("performance") },
+    { from: id("dot"), to: id("installation") },
+    { from: id("dot"), to: id("sound") },
+
     // installation
     { from: id("installation"), to: id("tricksters") },
     { from: id("installation"), to: id("symbiosis") },
     { from: id("installation"), to: id("accord") },
 
     // holographic
-    { from: id("holographic"), to: id("performance") },
     { from: id("holographic"), to: id("animamundi") },
-    { from: id("holographic"), to: id("filmVideo") },
     { from: id("holographic"), to: id("lifeinbalance") },
 
     // performance

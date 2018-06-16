@@ -4,7 +4,6 @@ import ImageGallery from "react-image-gallery"
 
 import "./ProjectPage.css"
 import input from "./../../../src/input/index"
-import logo from "./../../images/logo/0-logo.png"
 
 class ProjectPage extends Component {
     render() {

@@ -1,27 +1,8 @@
-.front-page-logo {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 200px;
-    margin: 20px;
-}
-
-.front-page-pointer {
-    position: absolute;
-    top: 120px;
-    left: 10px;
-    width: 30px;
-    margin: 20px;
-}
-
-.landing-page {
-    background-color: black;
-}
-
-.front-page-background {
+.landing-page__background {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
+    z-index: -1;
 }

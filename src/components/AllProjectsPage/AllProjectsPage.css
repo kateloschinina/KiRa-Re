@@ -1,0 +1,17 @@
+@import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+.all-project-page__container {
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.all-project-page__content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -5,6 +5,7 @@ import accord from "./accord/data"
 import musicvideos from "./music-videos/data"
 import secretCinema from "./secret-cinema/data"
 import bird from "./bird/data"
+import echo from "./echo/data"
 import drawingSea from "./drawing-sea/data"
 
 const projects = [
@@ -39,6 +40,10 @@ const projects = [
     {
         name: "drawingSea",
         data: drawingSea
+    },
+    {
+        name: "echo",
+        data: echo
     }
 ]
 

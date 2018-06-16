@@ -20,6 +20,7 @@ const edgesWeWant = [
     { from: id("installation"), to: id("tricksters") },
     { from: id("installation"), to: id("symbiosis") },
     { from: id("installation"), to: id("accord") },
+    { from: id("installation"), to: id("echo") },
 
     // holographic
     { from: id("holographic"), to: id("animamundi") },

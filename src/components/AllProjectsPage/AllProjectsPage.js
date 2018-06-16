@@ -6,12 +6,11 @@ import Planet from "./../Planet/Planet"
 
 class AllProjectsPage extends Component {
     render() {
-        console.log(input.projects);
         return (
             <div className="all-project-page__container">
                 <div className="all-project-page__content">
-                    {input.projects.map(project => {
-                        return <a href={`/${project.name}`}><Planet mainImage={project.data.planet}
+                    {input.projects.map((project, key) => {
+                        return <a href={`/${project.name}`} key={`planet-${key}`}><Planet mainImage={project.data.planet}
                             blurredImage={project.data.hoveredPlanet} /></a>
                     })}
                 </div>

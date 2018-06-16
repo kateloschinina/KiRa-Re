@@ -14,8 +14,24 @@ class Menu extends Component {
         return (
             <div className="menu__container">
                 <div className="menu__appearance-switch">
-                    <HoverImage src={interactive} hoverSrc={interactiveBold} />
-                    <HoverImage src={allProjects} hoverSrc={allProjectsBold} />
+                    { this.props.showGraph ? (
+                        <button disabled>
+                            <img src={interactive} />
+                        </button>
+                    ) : (
+                        <button onClick={this.props.changeShowGraphState}>
+                            <HoverImage src={interactive} hoverSrc={interactiveBold} />
+                        </button>
+                    ) }
+                    { this.props.showGraph ? (
+                        <button onClick={this.props.changeShowGraphState} >
+                            <HoverImage src={allProjects} hoverSrc={allProjectsBold}/>
+                        </button>
+                    ) : (
+                        <button disabled>
+                            <img src={allProjects} src={allProjects} />
+                        </button>
+                    ) }
                 </div>
                 <HoverImage src={about} hoverSrc={aboutBold} />
             </div>

@@ -1,3 +1,4 @@
+import dot from './dot.png'
 import filmVideo from './film-video.png'
 import fashion from './fashion.png'
 import lco from './lco.png'
@@ -13,8 +14,14 @@ import interactive from './interactive.png'
 
 const categories = [
     {
+        name: 'dot',
+        image: dot,
+        pioneer: true
+    },
+    {
         name: 'filmVideo',
-        image: filmVideo
+        image: filmVideo,
+        pioneer: true
     },
     {
         name: 'fashion',
@@ -26,15 +33,18 @@ const categories = [
     },
     {
         name: 'holographic',
-        image: holographic
+        image: holographic,
+        pioneer: true
     },
     {
         name: 'performance',
-        image: performance
+        image: performance,
+        pioneer: true
     },
     {
         name: 'installation',
-        image: installation
+        image: installation,
+        pioneer: true
     },
     {
         name: 'promovideos',
@@ -50,17 +60,19 @@ const categories = [
     },
     {
         name: 'sound',
-        image: sound
+        image: sound,
+        pioneer: true
     },
     {
         name: 'still',
-        image: still
+        image: still,
+        pioneer: true
     },
     {
         name: 'interactive',
-        image: interactive
+        image: interactive,
+        pioneer: true
     }   
 ]
-
 
 export default categories

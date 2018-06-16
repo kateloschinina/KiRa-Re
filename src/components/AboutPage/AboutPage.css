@@ -1,20 +1,20 @@
 @import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
-.project-page {
+.about-page {
     background-image: url("./../../images/background/sandwet.jpg");
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.project-page__container {
+.about-page__container {
     max-width: 800px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.5);
     padding-bottom: 40px;
 }
 
-.project-page__content {
+.about-page__content {
     margin: 0 60px 0 60px;
     text-align: justify;
     -moz-text-align-last: center;
@@ -22,7 +22,7 @@
     color: white;
 }
 
-.project-page__content h1 {
+.about-page__content h1 {
     font-size: 64px;
     line-height: 1.3em;
     margin-bottom: 1em;
@@ -30,33 +30,23 @@
     text-transform: uppercase;
 }
 
-.project-page__content p {
+.about-page__content p {
     font-size: 18px;
     margin-bottom: 1.8em;
 }
 
-.project-page__content .project-page__content__highlight {
-    font-weight: 200;
-    font-size: 14px;
-    margin-top: 4em;
-}
-
-.project-page__content__video {
-    margin: auto;
-}
-
-.project-page__close a {
+.about-page__close a {
     color: white;
     text-align: right;
     text-decoration: none;
 }
 
-.project-page__close a p {
+.about-page__close a p {
     margin: 0 30px 0 20px;
     font-size: 40px;
     font-weight: 400;
 }
 
-.project-page__close a p:hover {
+.about-page__close a p:hover {
     font-weight: 800;
 }

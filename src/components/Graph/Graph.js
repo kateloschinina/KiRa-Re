@@ -34,6 +34,8 @@ class App extends Component {
         const edges = graphData.graph.edges       
         
         this.initiateGraph(nodes, edges)
+
+        nodesOpennessState[0] = true
     }
 
     componentDidUpdate() {
@@ -72,7 +74,7 @@ class App extends Component {
                         })
                     }
                 } else {
-                    if (nodesOpennessState[nodeId]) {
+                    if (nodesOpennessState[nodeId-1]) {
                         edgesWeWant.filter(edge => edge.to).forEach(edge => {
                             if(edge.from === nodeId) {
                                 try {
@@ -87,7 +89,7 @@ class App extends Component {
                             }
                         })
 
-                        nodesOpennessState[nodeId] = false
+                        nodesOpennessState[nodeId-1] = false
                     } else {
                         edgesWeWant.filter(edge => edge.to).forEach(edge => {
                             if (edge.from === nodeId) {
@@ -113,7 +115,7 @@ class App extends Component {
                                 }
                             }
 
-                            nodesOpennessState[nodeId] = true
+                            nodesOpennessState[nodeId-1] = true
                         })
                     }
                 }

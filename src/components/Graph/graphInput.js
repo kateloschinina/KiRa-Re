@@ -47,10 +47,11 @@ const edgesWeWant = [
     // projections
     { from: id("projections"), to: id("secretCinema") },
     { from: id("projections"), to: id("lco") },
-    { from: id("projections"), to: id("stlukes") },
+    { from: id("projections"), to: id("contemplation") },
     { from: id("projections"), to: id("soundbath") },
     { from: id("projections"), to: id("elegies") },
     { from: id("projections"), to: id("wordlife") },
+
 
     // lco
     { from: id("lco"), to: id("aldwich") },

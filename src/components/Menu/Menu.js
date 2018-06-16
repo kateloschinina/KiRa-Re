@@ -16,7 +16,7 @@ class Menu extends Component {
                 <div className="menu__appearance-switch">
                     { this.props.showGraph ? (
                         <button disabled>
-                            <img src={interactive} />
+                            <img src={interactive} alt="interactive-inactive" />
                         </button>
                     ) : (
                         <button onClick={this.props.changeShowGraphState}>
@@ -29,7 +29,7 @@ class Menu extends Component {
                         </button>
                     ) : (
                         <button disabled>
-                            <img src={allProjects} src={allProjects} />
+                            <img src={allProjects} alt="all-projects-inactive"/>
                         </button>
                     ) }
                 </div>

@@ -50,8 +50,8 @@ const projectPage = [
                 original: icosahedron,
                 thumbnail: icosahedron
             },
-    
-    
+        ]
+    },
     {
         tag: "paragraph",
         text:
@@ -78,7 +78,8 @@ const projectPage = [
                 original: icosahedron,
                 thumbnail: icosahedron
             }
-            \
+        ]
+    }
 ]
 
 export default {

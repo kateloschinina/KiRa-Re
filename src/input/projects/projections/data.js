@@ -15,13 +15,10 @@ const projectPage = [
 		text: '`I have created projection design for "Secret Cinema", LCO "Imagined Occasions" projecting onto gasometer and a tube train, for Wordlife 10th Birthday event, projected onto Sheffield Museum, for LSO St.Lukes and Savoy Hotel, and for numerous other events and performances.'
 
 	},
-	
-
-
 	{
-	tag: 'video',
-	url: 'https://vimeo.com/102670746',
-	highlight: 'Formations'
+		tag: 'video',
+		url: 'https://vimeo.com/102670746',
+		highlight: 'Formations'
 	},
 	{
 	 	tag: 'gallery',
@@ -29,11 +26,10 @@ const projectPage = [
 	 	images: [
 	 		{
 	 			original: contemplation,
-	 			thumbnail: contemplation
-			 }
-			
-	 	]
-	 }
+				 thumbnail: contemplation
+			}
+		]
+	}
 ]
 
 export default {

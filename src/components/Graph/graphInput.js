@@ -45,12 +45,12 @@ const edgesWeWant = [
     { from: id("filmVideo"), to: id("animamundi") },
 
     // projections
-    { from: id("projections"), to: id("secretCinema") },
-    { from: id("projections"), to: id("lco") },
-    { from: id("projections"), to: id("contemplation") },
-    { from: id("projections"), to: id("soundbath") },
-    { from: id("projections"), to: id("elegies") },
-    { from: id("projections"), to: id("wordlife") },
+    // { from: id("projections"), to: id("secretCinema") },
+    // { from: id("projections"), to: id("lco") },
+    // { from: id("projections"), to: id("contemplation") },
+    // { from: id("projections"), to: id("soundbath") },
+    // { from: id("projections"), to: id("elegies") },
+    // { from: id("projections"), to: id("wordlife") },
 
 
     // lco

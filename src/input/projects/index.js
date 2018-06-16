@@ -9,6 +9,7 @@ import echo from "./echo/data"
 import drawingSea from "./drawing-sea/data"
 import nebula from "./nebula/data"
 import lifeInBalance from "./life-in-balance/data"
+import tricksters from "./tricksters/data"
 
 const projects = [
     {
@@ -54,6 +55,10 @@ const projects = [
     {
         name: "lifeInBalance",
         data: lifeInBalance
+    },
+    {
+        name: "tricksters",
+        data: tricksters
     }
 ]
 

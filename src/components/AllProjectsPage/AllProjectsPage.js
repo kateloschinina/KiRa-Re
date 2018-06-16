@@ -11,8 +11,8 @@ class AllProjectsPage extends Component {
             <div className="all-project-page__container">
                 <div className="all-project-page__content">
                     {input.projects.map(project => {
-                        return <Planet mainImage={project.data.planet}
-                            blurredImage={project.data.hoveredPlanet} />
+                        return <a href={`/${project.name}`}><Planet mainImage={project.data.planet}
+                            blurredImage={project.data.hoveredPlanet} /></a>
                     })}
                 </div>
             </div>

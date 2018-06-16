@@ -41,15 +41,18 @@ const projectPage = [
             
             {
                 original: breathing,
-                thumbnail: breathing
+                thumbnail: breathing,
+                description: "stupid description one"
             },
             {
                 original: flower,
-                thumbnail: flower
+                thumbnail: flower,
+                description: "stupid description two"
             },
             {
                 original: icosahedron,
-                thumbnail: icosahedron
+                thumbnail: icosahedron,
+                description: "stupid description three"
             },
         ]
     },

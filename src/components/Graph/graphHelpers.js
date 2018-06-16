@@ -61,12 +61,22 @@ const graphData = {
         },
         edges: {
             color: "lightgray",
-            width: 2,
+            width: 2,       
             arrows: {
                 to: { enabled: false, scaleFactor: 1, type: "bar" },
                 middle: { enabled: false, scaleFactor: 1, type: "bar" },
                 from: { enabled: false, scaleFactor: 1, type: "bar" }
             }
+        },
+        physics: {
+            barnesHut: {
+                gravitationalConstant: -1000,
+                centralGravity: 0.01,
+                springLength: 50,
+                damping: 0.5,
+                avoidOverlap: 0.9
+            },
+            minVelocity: 0.75
         }
     }
 }

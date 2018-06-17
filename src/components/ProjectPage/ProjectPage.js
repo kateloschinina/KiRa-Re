@@ -5,6 +5,10 @@ import ImageGallery from "react-image-gallery"
 import "./ProjectPage.css"
 import input from "./../../../src/input/index"
 
+import HoverImage from "react-hover-image"
+import circleWithDot from "./../../images/icons/circle-with-dot.png"
+import circleWithCross from "./../../images/icons/circle-with-cross.png"
+
 class ProjectPage extends Component {
     render() {
         const selectedProject = Object.keys(input.projects).find(key => {
@@ -18,9 +22,7 @@ class ProjectPage extends Component {
             <div className="project-page">
                 <div className="project-page__container">
                     <div className="project-page__close">
-                        <a href="/">
-                            <p>x</p>
-                        </a>
+                        <HoverImage src={circleWithDot} hoverSrc={circleWithCross} />
                     </div>
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {

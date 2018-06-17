@@ -43,18 +43,12 @@
     margin: auto;
 }
 
-.project-page__close a {
-    color: white;
-    text-align: right;
-    text-decoration: none;
+.project-page__close {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.project-page__close a p {
-    margin: 0 30px 0 20px;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.project-page__close a p:hover {
-    font-weight: 800;
+.project-page__close img {
+    height: 30px;
+    margin: 10px;
 }

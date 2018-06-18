@@ -1,4 +1,4 @@
-import planet from './contemplation-planet.png'
+import planet from './projections-planet.png'
 
 // images
 // IMPORT IMAGES FROM GALLER USING THE FOLLOWING FORMAT
@@ -25,7 +25,7 @@ const projectPage = [
 	 	highlight: '"Contemplation" at St.Lukes',
 	 	images: [
 	 		{
-	 			original: contemplation,
+				 original: contemplation,
 				 thumbnail: contemplation
 			}
 		]

@@ -68,16 +68,16 @@ const graphData = {
                 from: { enabled: false, scaleFactor: 1, type: "bar" }
             }
         },
-        physics: {
-            barnesHut: {
-                gravitationalConstant: -1000,
-                centralGravity: 0.01,
-                springLength: 50,
-                damping: 0.5,
-                avoidOverlap: 0.9
-            },
-            minVelocity: 0.75
-        }
+        // physics: {
+        //     barnesHut: {
+        //         gravitationalConstant: -1000,
+        //         centralGravity: 0.01,
+        //         springLength: 50,
+        //         damping: 0.5,
+        //         avoidOverlap: 0.9
+        //     },
+        //     minVelocity: 0.75
+        // }
     }
 }
 

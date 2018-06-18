@@ -10,8 +10,6 @@ const edgesWeWant = [
     // dot
     { from: id("dot"), to: id("filmVideo") },
     { from: id("dot"), to: id("still") },
-    { from: id("dot"), to: id("interactive") },
-    { from: id("dot"), to: id("holographic") },
     { from: id("dot"), to: id("performance") },
     { from: id("dot"), to: id("installation") },
     { from: id("dot"), to: id("sound") },

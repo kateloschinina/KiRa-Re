@@ -32,8 +32,7 @@ const categories = [
     },
     {
         name: 'holographic',
-        image: holographic,
-        pioneer: true
+        image: holographic
     },
     {
         name: 'performance',
@@ -65,8 +64,7 @@ const categories = [
     },
     {
         name: 'interactive',
-        image: interactive,
-        pioneer: true
+        image: interactive
     }   
 ]
 

@@ -2,12 +2,12 @@ import symbiosis from "./symbiosis/data"
 import projections from "./projections/data"
 import sphere from "./sphere/data"
 import accord from "./accord/data"
-import musicvideos from "./music-videos/data"
+import musicVideos from "./music-videos/data"
 import secretCinema from "./secret-cinema/data"
 import bird from "./bird/data"
 import echo from "./echo/data"
 import drawingSea from "./drawing-sea/data"
-import nebula from "./nebula/data"
+import nebulae from "./nebulae/data"
 import lifeInBalance from "./life-in-balance/data"
 import tricksters from "./tricksters/data"
 import yurugi from "./yurugi/data"
@@ -15,6 +15,10 @@ import recycle from "./recycle/data"
 import two from "./two/data"
 import serpent from "./serpent/data"
 import projectsPlanet from "./projects/data"
+import vessel from "./vessel/data"
+import fashion from "./fashion/data"
+import rambert from "./rambert/data"
+
 
 const projects = [
     {
@@ -35,7 +39,7 @@ const projects = [
     },
     {
         name: "musicVideos",
-        data: musicvideos
+        data: musicVideos
     },
     {
         name: "bird",
@@ -54,8 +58,8 @@ const projects = [
         data: echo
     },
     {
-        name: "nebula",
-        data: nebula
+        name: "nebulae",
+        data: nebulae
     },
     {
         name: "lifeInBalance",
@@ -84,6 +88,18 @@ const projects = [
     {
         name: "projects",
         data: projectsPlanet
+    },
+    {
+        name: "fashion",
+        data: fashion
+    },
+    {
+        name: "vessel",
+        data: vessel
+    },
+    {
+        name: "rambert",
+        data: rambert
     }
 ]
 

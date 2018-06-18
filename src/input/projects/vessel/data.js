@@ -1,4 +1,4 @@
-import planet from './nebula-planet.png'
+import planet from './vessel-planet.png'
 
 // images
 // IMPORT IMAGES FROM GALLERY USING THE FOLLOWING FORMAT
@@ -7,7 +7,7 @@ import planet from './nebula-planet.png'
 const projectPage = [
 	{
 		tag: 'header',
-		text: 'Nebula'
+		text: 'vessel'
 	},
 	{
 		tag: 'paragraph',

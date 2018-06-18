@@ -17,15 +17,15 @@ const edgesWeWant = [
     // 
     // film video
     { from: id("filmVideo"), to: id("projections") },
-    { from: id("filmVideo"), to: id("promovideos") },
+    { from: id("filmVideo"), to: id("promoVideos") },
     { from: id("filmVideo"), to: id("projects") },
     { from: id("filmVideo"), to: id("hollographic") },
 
     // promo videos
-    { from: id("promovideos"), to: id("musicVideos") },
-    { from: id("promovideos"), to: id("fashion") },
-    { from: id("promovideos"), to: id("rambert") },
-    { from: id("promovideos"), to: id("vessel") },
+    { from: id("promoVideos"), to: id("musicVideos") },
+    { from: id("promoVideos"), to: id("fashion") },
+    { from: id("promoVideos"), to: id("rambert") },
+    { from: id("promoVideos"), to: id("vessel") },
 
     // holographic
     { from: id("holographic"), to: id("zsl") },

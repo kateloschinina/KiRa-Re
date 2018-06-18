@@ -1,12 +1,9 @@
 import dot from './dot.png'
 import filmVideo from './film-video.png'
-import fashion from './fashion.png'
-import lco from './lco.png'
 import holographic from './holographic.png'
 import performance from './performance.png'
 import installation from './installation.png'
-import promovideos from './promovideos.png'
-import vessel from './vessel.png'
+import promoVideos from './promo-videos.png'
 import sound from './sound.png'
 import still from './still.png'
 import interactive from './interactive.png'
@@ -23,14 +20,6 @@ const categories = [
         pioneer: true
     },
     {
-        name: 'fashion',
-        image: fashion
-    },
-    {
-        name: 'lco',
-        image: lco
-    },
-    {
         name: 'holographic',
         image: holographic
     },
@@ -45,12 +34,8 @@ const categories = [
         pioneer: true
     },
     {
-        name: 'promovideos',
-        image: promovideos
-    },
-    {
-        name: 'vessel',
-        image: vessel
+        name: 'promoVideos',
+        image: promoVideos
     },
     {
         name: 'sound',

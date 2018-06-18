@@ -18,6 +18,8 @@ import projectsPlanet from "./projects/data"
 import vessel from "./vessel/data"
 import fashion from "./fashion/data"
 import rambert from "./rambert/data"
+import animamundi from "./animamundi/data"
+import zsl from "./zsl/data"
 
 
 const projects = [
@@ -100,6 +102,14 @@ const projects = [
     {
         name: "rambert",
         data: rambert
+    },
+    {
+        name: "animamundi",
+        data: animamundi
+    },
+    {
+        name: "zsl",
+        data: zsl
     }
 ]
 

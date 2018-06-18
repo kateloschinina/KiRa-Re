@@ -1,4 +1,4 @@
-import planet from './nebulae-planet.jpg'
+import planet from './animamundi-planet.png'
 
 // images
 // IMPORT IMAGES FROM GALLERY USING THE FOLLOWING FORMAT
@@ -7,7 +7,7 @@ import planet from './nebulae-planet.jpg'
 const projectPage = [
 	{
 		tag: 'header',
-		text: 'Nebulae'
+		text: 'animamundi'
 	},
 	{
 		tag: 'paragraph',

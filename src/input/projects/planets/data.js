@@ -1,4 +1,4 @@
-import planet from './echo-planet.png'
+import planet from './planets-planet.jpg'
 
 // images
 // IMPORT IMAGES FROM GALLERY USING THE FOLLOWING FORMAT
@@ -7,7 +7,7 @@ import planet from './echo-planet.png'
 const projectPage = [
 	{
 		tag: 'header',
-		text: 'Echo'
+		text: 'planets'
 	},
 	{
 		tag: 'paragraph',

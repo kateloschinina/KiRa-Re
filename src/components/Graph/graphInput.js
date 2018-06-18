@@ -49,7 +49,7 @@ const edgesWeWant = [
     // 
     // still
     { from: id("still"), to: id("planets") },
-    { from: id("still"), to: id("drawingsea") },
+    { from: id("still"), to: id("drawingSea") },
 
     // 
     // sound

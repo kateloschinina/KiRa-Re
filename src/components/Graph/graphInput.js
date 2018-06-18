@@ -19,7 +19,7 @@ const edgesWeWant = [
     { from: id("filmVideo"), to: id("projections") },
     { from: id("filmVideo"), to: id("promoVideos") },
     { from: id("filmVideo"), to: id("projects") },
-    { from: id("filmVideo"), to: id("hollographic") },
+    { from: id("filmVideo"), to: id("holographic") },
 
     // promo videos
     { from: id("promoVideos"), to: id("musicVideos") },

@@ -14,6 +14,7 @@ import yurugi from "./yurugi/data"
 import recycle from "./recycle/data"
 import two from "./two/data"
 import serpent from "./serpent/data"
+import projectsPlanet from "./projects/data"
 
 const projects = [
     {
@@ -79,6 +80,10 @@ const projects = [
     {
         name: "serpent",
         data: serpent
+    },
+    {
+        name: "projects",
+        data: projectsPlanet
     }
 ]
 

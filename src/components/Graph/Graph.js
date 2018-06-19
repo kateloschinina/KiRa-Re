@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Redirect } from "react-router"
 
 import vis from "vis"
 import "./Graph.css"
@@ -68,7 +67,7 @@ class App extends Component {
                                         }
                                     ])
                                 } catch (error) {
-                                    console.log('Internal logging, the error catched was:', error)
+                                    console.log('Internal logging, the error catched was:', error.message)
                                 }
                             }
                         })

@@ -30,19 +30,14 @@ class LandingPage extends Component {
     renderContent() {
         switch (this.state.show) {
             case 'interactiveMap':
-                return <Graph 
-                    show={this.state.show}
-                    changeStateTo={this.changeStateTo} />
-                break
+                return
             case 'allProjects':
                 return <AllProjectsPage
                     changeStateTo={this.changeStateTo} />
-                break
             case 'about':
                 return <ProjectPage 
                     project='about'
                     changeStateTo={this.changeStateTo} />
-                break
             default:
                 return <ProjectPage 
                     project={this.state.show}
@@ -51,6 +46,7 @@ class LandingPage extends Component {
     }
 
     render() {
+        const isGraphHidden = !(this.state.show === 'interactiveMap')
         return (
             <div className="landing-page">
                 <img className="landing-page__background" src={logo} alt="logo" />
@@ -58,6 +54,11 @@ class LandingPage extends Component {
                 <Menu changeStateTo={this.changeStateTo}
                     show={this.state.show} />
                 { this.renderContent() }
+                <div className={`hidden-${isGraphHidden}`}>
+                    <Graph
+                        show={this.state.show}
+                        changeStateTo={this.changeStateTo} />
+                </div>
                 <Footer />
             </div>
         )

@@ -49,6 +49,7 @@ class LandingPage extends Component {
     }
 
     render() {
+        const isGraphHidden = !(this.state.show === 'interactiveMap')
         return (
             <div className="landing-page">
                 <img className="landing-page__background" src={logo} alt="logo" />
@@ -56,9 +57,11 @@ class LandingPage extends Component {
                 <Menu changeStateTo={this.changeStateTo}
                     show={this.state.show} />
                 { this.renderContent() }
-                <Graph 
-                    show={this.state.show}
-                    changeStateTo={this.changeStateTo} />
+                <div className={`hidden-${isGraphHidden}`}>
+                    <Graph
+                        show={this.state.show}
+                        changeStateTo={this.changeStateTo} />
+                </div>
                 <Footer />
             </div>
         )

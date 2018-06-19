@@ -16,3 +16,10 @@
     max-height: 68vh;
     overflow: scroll;
 }
+
+.planet__container {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+}

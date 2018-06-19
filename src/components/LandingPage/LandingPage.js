@@ -22,37 +22,37 @@ class LandingPage extends Component {
         show: 'interactiveMap'
     }
     
-    changeStateToInteractive(e) {
-        e.preventDefault()
+    changeStateToInteractive() {
         this.setState({ show: 'interactiveMap' })
     }
 
-    changeStateToAllProjects(e) {
-        e.preventDefault()
+    changeStateToAllProjects() {
         this.setState({ show: 'allProjects' })
     }
 
-    changeStateToAbout(e) {
-        e.preventDefault()
+    changeStateToAbout() {
+        this.setState({ show: 'about' })
+    }
+
+    changeSetToProject(name) {
         this.setState({ show: 'about' })
     }
 
     renderContent() {
         switch (this.state.show) {
             case 'interactiveMap':
-                return <Graph />
+                return <Graph show={this.state.show} />
                 break
             case 'allProjects':
                 return <AllProjectsPage
                     changeStateToInteractive={this.changeStateToInteractive}
                     changeStateToAllProjects={this.changeStateToAllProjects}
-                    changeStateToAbout={this.changeStateToAbout} />
+                    changeStateToAbout={this.changeStateToAbout}
+                     />
                 break
             case 'about':
                 return <ProjectPage project='about'
-                    changeStateToInteractive={this.changeStateToInteractive}
-                    changeStateToAllProjects={this.changeStateToAllProjects}
-                    changeStateToAbout={this.changeStateToAbout} />
+                    changeStateToInteractive={this.changeStateToInteractive} />
                 break
             default:
                 return <ProjectPage project={this.state.show}

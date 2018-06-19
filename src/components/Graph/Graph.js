@@ -61,17 +61,18 @@ class App extends Component {
 
                 if (nodeId > graphData.howManyCategories) {
                     if (nodeId <= graphData.allInputArray.length) {
-                        this.setState({ redirect: true })
-                        this.setState({
-                            redirectTo: `/projects/${
-                                graphData.allInputArray[nodeId - 1].name
-                            }`
-                        })
-                        this.setState({
-                            projectProps:
-                                graphData.allInputArray[nodeId - 1].data
-                                    .projectPage
-                        })
+                        // this.setState({ redirect: true })
+                        // this.setState({
+                        //     redirectTo: `/projects/${
+                        //         graphData.allInputArray[nodeId - 1].name
+                        //     }`
+                        // })
+                        // this.setState({
+                        //     projectProps:
+                        //         graphData.allInputArray[nodeId - 1].data
+                        //             .projectPage
+                        // })
+                        // show={this.state.show}
                     }
                 } else {
                     if (nodesOpennessState[nodeId-1]) {

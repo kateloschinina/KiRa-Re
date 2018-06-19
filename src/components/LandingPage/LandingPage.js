@@ -16,6 +16,7 @@ class LandingPage extends Component {
         this.changeStateToInteractive = this.changeStateToInteractive.bind(this)
         this.changeStateToAllProjects = this.changeStateToAllProjects.bind(this)
         this.changeStateToAbout = this.changeStateToAbout.bind(this)
+        this.changeSetToProject = this.changeSetToProject.bind(this)
     }
 
     state = {
@@ -34,8 +35,9 @@ class LandingPage extends Component {
         this.setState({ show: 'about' })
     }
 
-    changeSetToProject(name) {
-        this.setState({ show: 'about' })
+    changeSetToProject(e, name) {
+        e.preventDefault();
+        this.setState({ show: name })
     }
 
     renderContent() {
@@ -48,7 +50,7 @@ class LandingPage extends Component {
                     changeStateToInteractive={this.changeStateToInteractive}
                     changeStateToAllProjects={this.changeStateToAllProjects}
                     changeStateToAbout={this.changeStateToAbout}
-                     />
+                    changeSetToProject={this.changeSetToProject} />
                 break
             case 'about':
                 return <ProjectPage project='about'

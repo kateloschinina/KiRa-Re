@@ -10,8 +10,9 @@ class AllProjectsPage extends Component {
             <div className="all-project-page__container">
                 <div className="all-project-page__content">
                     {input.projects.map((project, key) => {
-                        return <a href={`/projects/${project.name}`} key={`planet-${key}`}><Planet mainImage={project.data.planet}
-                            blurredImage={project.data.hoveredPlanet} /></a>
+                        return <Planet mainImage={project.data.planet}
+                            blurredImage={project.data.hoveredPlanet}
+                            onClick={e => this.props.changeStateToInteractive(e)} />
                     })}
                 </div>
             </div>

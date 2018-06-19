@@ -5,6 +5,7 @@ import Menu from "./../Menu/Menu"
 import AllProjectsPage from "./../AllProjectsPage/AllProjectsPage"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
+import ProjectPage from "./../ProjectPage/ProjectPage"
 
 import logo from "./../../images/logo/logo-background.png"
 import dot from "./../../images/background/dot.png"
@@ -12,15 +13,50 @@ import dot from "./../../images/background/dot.png"
 class LandingPage extends Component {
     constructor(props) {
         super(props)
-        this.changeShowGraphState = this.changeShowGraphState.bind(this)
+        this.changeStateToInteractive = this.changeStateToInteractive.bind(this)
+        this.changeStateToAllProjects = this.changeStateToAllProjects.bind(this)
+        this.changeStateToAbout = this.changeStateToAbout.bind(this)
     }
 
     state = {
-        showGraph: true
+        show: 'interactiveMap'
     }
     
-    changeShowGraphState() {
-        this.setState({ showGraph: !this.state.showGraph })
+    changeStateToInteractive(e) {
+        e.preventDefault()
+        this.setState({ show: 'interactiveMap' })
+    }
+
+    changeStateToAllProjects(e) {
+        e.preventDefault()
+        this.setState({ show: 'allProjects' })
+    }
+
+    changeStateToAbout(e) {
+        e.preventDefault()
+        this.setState({ show: 'about' })
+    }
+
+    renderContent() {
+        switch (this.state.show) {
+            case 'interactiveMap':
+                return <Graph />
+                break
+            case 'allProjects':
+                return <AllProjectsPage
+                    changeStateToInteractive={this.changeStateToInteractive}
+                    changeStateToAllProjects={this.changeStateToAllProjects}
+                    changeStateToAbout={this.changeStateToAbout} />
+                break
+            case 'about':
+                return <ProjectPage project='about' />
+                break
+            default:
+                return <ProjectPage project={this.state.show}
+                    changeStateToInteractive={this.changeStateToInteractive}
+                    changeStateToAllProjects={this.changeStateToAllProjects}
+                    changeStateToAbout={this.changeStateToAbout} />
+        }
     }
 
     render() {
@@ -28,8 +64,11 @@ class LandingPage extends Component {
             <div className="landing-page">
                 <img className="landing-page__background" src={logo} alt="logo" />
                 <img className="rotating-dot" src={dot} alt="rotating-got" />
-                <Menu changeShowGraphState={this.changeShowGraphState} showGraph={this.state.showGraph} />
-                { this.state.showGraph ? <Graph /> : <AllProjectsPage /> }
+                <Menu changeStateToInteractive={this.changeStateToInteractive}
+                    changeStateToAllProjects={this.changeStateToAllProjects}
+                    changeStateToAbout={this.changeStateToAbout}
+                    show={this.state.show} />
+                { this.renderContent() }
                 <Footer />
             </div>
         )

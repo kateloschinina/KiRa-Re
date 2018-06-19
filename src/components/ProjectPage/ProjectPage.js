@@ -11,18 +11,20 @@ import circleWithCross from "./../../images/icons/circle-with-cross.png"
 
 class ProjectPage extends Component {
     render() {
-        const selectedProject = Object.keys(input.projects).find(key => {
+        const projectAndOther = [...input.projects, ...input.other]
+        const selectedProject = Object.keys(projectAndOther).find(key => {
             return (
-                input.projects[key].name === this.props.match.params.projectName
+                projectAndOther[key].name === this.props.project
             )
         })
-        const pageData = input.projects[selectedProject].data.projectPage
+        const pageData = projectAndOther[selectedProject].data.projectPage
+        console.log(this.props.changeStateToInteractive);
 
         return (
             <div className="project-page">
                 <div className="project-page__container">
                     <div className="project-page__close">
-                        <HoverImage src={circleWithDot} hoverSrc={circleWithCross} />
+                        <HoverImage src={circleWithDot} hoverSrc={circleWithCross} onClick={e => this.props.changeStateToInteractive(e)} />
                     </div>
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {

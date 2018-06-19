@@ -1,18 +1,18 @@
 @import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 .project-page {
-    background-image: url("./../../images/background/sandwet.jpg");
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;
-    min-height: 90vh;
 }
 
 .project-page__container {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding-bottom: 40px;
+    background: rgba(0, 0, 0, 0.7);
+
+    max-height: 68vh;
+    overflow: scroll;
 }
 
 .project-page__content {

@@ -5,6 +5,7 @@ import Menu from "./../Menu/Menu"
 import AllProjectsPage from "./../AllProjectsPage/AllProjectsPage"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
+import ProjectPage from "./../ProjectPage/ProjectPage"
 
 import logo from "./../../images/logo/logo-background.png"
 import dot from "./../../images/background/dot.png"
@@ -12,15 +13,41 @@ import dot from "./../../images/background/dot.png"
 class LandingPage extends Component {
     constructor(props) {
         super(props)
-        this.changeShowGraphState = this.changeShowGraphState.bind(this)
+        this.changeStateTo = this.changeStateTo.bind(this)
     }
 
     state = {
-        showGraph: true
+        show: 'interactiveMap'
     }
-    
-    changeShowGraphState() {
-        this.setState({ showGraph: !this.state.showGraph })
+
+    changeStateTo(e, name) {
+        if (e.preventDefault) {
+            e.preventDefault()
+        }
+        this.setState({ show: name })
+    }
+
+    renderContent() {
+        switch (this.state.show) {
+            case 'interactiveMap':
+                return <Graph 
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
+                break
+            case 'allProjects':
+                return <AllProjectsPage
+                    changeStateTo={this.changeStateTo} />
+                break
+            case 'about':
+                return <ProjectPage 
+                    project='about'
+                    changeStateTo={this.changeStateTo} />
+                break
+            default:
+                return <ProjectPage 
+                    project={this.state.show}
+                    changeStateTo={this.changeStateTo} />
+        }
     }
 
     render() {
@@ -28,8 +55,9 @@ class LandingPage extends Component {
             <div className="landing-page">
                 <img className="landing-page__background" src={logo} alt="logo" />
                 <img className="rotating-dot" src={dot} alt="rotating-got" />
-                <Menu changeShowGraphState={this.changeShowGraphState} showGraph={this.state.showGraph} />
-                { this.state.showGraph ? <Graph /> : <AllProjectsPage /> }
+                <Menu changeStateTo={this.changeStateTo}
+                    show={this.state.show} />
+                { this.renderContent() }
                 <Footer />
             </div>
         )

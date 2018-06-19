@@ -15,12 +15,6 @@ class App extends Component {
         this.updateGraph = this.updateGraph.bind(this)
     }
 
-    state = {
-        redirect: false,
-        redirectTo: "/",
-        projectProps: {}
-    }
-
     initiateGraph(nodes, edges) {
         this.edges = new vis.DataSet()
         this.edges.add(graphData.graph.edges)
@@ -61,17 +55,7 @@ class App extends Component {
 
                 if (nodeId > graphData.howManyCategories) {
                     if (nodeId <= graphData.allInputArray.length) {
-                        this.setState({ redirect: true })
-                        this.setState({
-                            redirectTo: `/projects/${
-                                graphData.allInputArray[nodeId - 1].name
-                            }`
-                        })
-                        this.setState({
-                            projectProps:
-                                graphData.allInputArray[nodeId - 1].data
-                                    .projectPage
-                        })
+                        this.props.changeStateTo(event, graphData.allInputArray[nodeId - 1].name)
                     }
                 } else {
                     if (nodesOpennessState[nodeId-1]) {
@@ -128,9 +112,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                {this.state.redirect ? (
-                    <Redirect to={this.state.redirectTo} />
-                ) : null}
                 <div id="interactive-graph" />
             </div>
         )

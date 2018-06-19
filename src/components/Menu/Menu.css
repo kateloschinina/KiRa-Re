@@ -3,27 +3,19 @@
     z-index: 10;
     margin: auto;
     width: 800px;
+    margin-top: 24px;
 
     padding-top: 40px;
     text-align: center;
 }
 
 .menu__container img {
-    height: 13px;
+    height: 18px;
     padding: 5px;
 }
 
-.menu__appearance-switch button {
+.menu__appearance-switch a {
     border: 1px solid white;
-    background: black;
-
-    margin: 5px;
-    padding: 8px;
-}
-
-.menu__appearance-switch button:disabled {
-    border: 1px solid white;
-    opacity: 0.5;
     background: black;
 
     margin: 5px;

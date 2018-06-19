@@ -30,9 +30,7 @@ class LandingPage extends Component {
     renderContent() {
         switch (this.state.show) {
             case 'interactiveMap':
-                return <Graph 
-                    show={this.state.show}
-                    changeStateTo={this.changeStateTo} />
+                return
                 break
             case 'allProjects':
                 return <AllProjectsPage
@@ -58,6 +56,9 @@ class LandingPage extends Component {
                 <Menu changeStateTo={this.changeStateTo}
                     show={this.state.show} />
                 { this.renderContent() }
+                <Graph 
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
                 <Footer />
             </div>
         )

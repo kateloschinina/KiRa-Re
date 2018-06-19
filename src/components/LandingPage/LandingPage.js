@@ -21,21 +21,26 @@ class LandingPage extends Component {
     }
 
     changeStateTo(e, name) {
-        e.preventDefault();
+        if (e.preventDefault) {
+            e.preventDefault()
+        }
         this.setState({ show: name })
     }
 
     renderContent() {
         switch (this.state.show) {
             case 'interactiveMap':
-                return <Graph show={this.state.show} />
+                return <Graph 
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
                 break
             case 'allProjects':
                 return <AllProjectsPage
                     changeStateTo={this.changeStateTo} />
                 break
             case 'about':
-                return <ProjectPage project='about'
+                return <ProjectPage 
+                    project='about'
                     changeStateTo={this.changeStateTo} />
                 break
             default:

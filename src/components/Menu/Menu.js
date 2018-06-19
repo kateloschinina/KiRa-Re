@@ -14,11 +14,11 @@ class Menu extends Component {
     render() {
         return (
             <div className="menu__container">
-                <HoverImage src={interactive} hoverSrc={interactiveBold} onClick={this.props.changeStateToInteractive} />
+                <HoverImage src={interactive} hoverSrc={interactiveBold} onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
                 <img src={dot} alt="dot" />
-                <HoverImage src={allProjects} hoverSrc={allProjectsBold} onClick={this.props.changeStateToAllProjects} />
+                <HoverImage src={allProjects} hoverSrc={allProjectsBold} onClick={e => this.props.changeStateTo(e, 'allProjects')} />
                 <img src={dot} alt="dot" />
-                <HoverImage src={about} hoverSrc={aboutBold} onClick={this.props.changeStateToAbout} />
+                <HoverImage src={about} hoverSrc={aboutBold} onClick={e => this.props.changeStateTo(e, 'about')} />
             </div>
         )
     }

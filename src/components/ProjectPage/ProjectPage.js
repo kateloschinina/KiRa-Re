@@ -18,13 +18,13 @@ class ProjectPage extends Component {
             )
         })
         const pageData = projectAndOther[selectedProject].data.projectPage
-        console.log(this.props.changeStateToInteractive);
+        console.log(projectAndOther[selectedProject]);
 
         return (
             <div className="project-page">
                 <div className="project-page__container">
                     <div className="project-page__close">
-                        <HoverImage src={circleWithDot} hoverSrc={circleWithCross} onClick={e => this.props.changeStateToInteractive(e)} />
+                        <HoverImage src={circleWithDot} hoverSrc={circleWithCross} onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
                     </div>
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {

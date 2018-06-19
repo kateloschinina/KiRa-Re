@@ -13,29 +13,14 @@ import dot from "./../../images/background/dot.png"
 class LandingPage extends Component {
     constructor(props) {
         super(props)
-        this.changeStateToInteractive = this.changeStateToInteractive.bind(this)
-        this.changeStateToAllProjects = this.changeStateToAllProjects.bind(this)
-        this.changeStateToAbout = this.changeStateToAbout.bind(this)
-        this.changeSetToProject = this.changeSetToProject.bind(this)
+        this.changeStateTo = this.changeStateTo.bind(this)
     }
 
     state = {
         show: 'interactiveMap'
     }
-    
-    changeStateToInteractive() {
-        this.setState({ show: 'interactiveMap' })
-    }
 
-    changeStateToAllProjects() {
-        this.setState({ show: 'allProjects' })
-    }
-
-    changeStateToAbout() {
-        this.setState({ show: 'about' })
-    }
-
-    changeSetToProject(e, name) {
+    changeStateTo(e, name) {
         e.preventDefault();
         this.setState({ show: name })
     }
@@ -47,20 +32,16 @@ class LandingPage extends Component {
                 break
             case 'allProjects':
                 return <AllProjectsPage
-                    changeStateToInteractive={this.changeStateToInteractive}
-                    changeStateToAllProjects={this.changeStateToAllProjects}
-                    changeStateToAbout={this.changeStateToAbout}
-                    changeSetToProject={this.changeSetToProject} />
+                    changeStateTo={this.changeStateTo} />
                 break
             case 'about':
                 return <ProjectPage project='about'
-                    changeStateToInteractive={this.changeStateToInteractive} />
+                    changeStateTo={this.changeStateTo} />
                 break
             default:
-                return <ProjectPage project={this.state.show}
-                    changeStateToInteractive={this.changeStateToInteractive}
-                    changeStateToAllProjects={this.changeStateToAllProjects}
-                    changeStateToAbout={this.changeStateToAbout} />
+                return <ProjectPage 
+                    project={this.state.show}
+                    changeStateTo={this.changeStateTo} />
         }
     }
 
@@ -69,9 +50,7 @@ class LandingPage extends Component {
             <div className="landing-page">
                 <img className="landing-page__background" src={logo} alt="logo" />
                 <img className="rotating-dot" src={dot} alt="rotating-got" />
-                <Menu changeStateToInteractive={this.changeStateToInteractive}
-                    changeStateToAllProjects={this.changeStateToAllProjects}
-                    changeStateToAbout={this.changeStateToAbout}
+                <Menu changeStateTo={this.changeStateTo}
                     show={this.state.show} />
                 { this.renderContent() }
                 <Footer />

@@ -49,7 +49,10 @@ class LandingPage extends Component {
                     changeStateToAbout={this.changeStateToAbout} />
                 break
             case 'about':
-                return <ProjectPage project='about' />
+                return <ProjectPage project='about'
+                    changeStateToInteractive={this.changeStateToInteractive}
+                    changeStateToAllProjects={this.changeStateToAllProjects}
+                    changeStateToAbout={this.changeStateToAbout} />
                 break
             default:
                 return <ProjectPage project={this.state.show}

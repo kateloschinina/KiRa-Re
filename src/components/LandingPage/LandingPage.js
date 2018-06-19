@@ -31,16 +31,13 @@ class LandingPage extends Component {
         switch (this.state.show) {
             case 'interactiveMap':
                 return
-                break
             case 'allProjects':
                 return <AllProjectsPage
                     changeStateTo={this.changeStateTo} />
-                break
             case 'about':
                 return <ProjectPage 
                     project='about'
                     changeStateTo={this.changeStateTo} />
-                break
             default:
                 return <ProjectPage 
                     project={this.state.show}

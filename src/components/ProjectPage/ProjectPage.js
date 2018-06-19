@@ -18,7 +18,6 @@ class ProjectPage extends Component {
             )
         })
         const pageData = projectAndOther[selectedProject].data.projectPage
-        console.log(projectAndOther[selectedProject]);
 
         return (
             <div className="project-page">

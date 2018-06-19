@@ -67,7 +67,7 @@ class App extends Component {
                                         }
                                     ])
                                 } catch (error) {
-                                    console.log('Internal logging, the error catched was:', error)
+                                    console.log('Internal logging, the error catched was:', error.message)
                                 }
                             }
                         })

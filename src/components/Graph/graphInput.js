@@ -25,16 +25,18 @@ const edgesWeWant = [
     { from: id("promoVideos"), to: id("musicVideos") },
     { from: id("promoVideos"), to: id("fashion") },
     { from: id("promoVideos"), to: id("rambert") },
-    { from: id("promoVideos"), to: id("vessel") },
+
+    // projects
+    { from: id("projects"), to: id("vessel") },
 
     // holographic
     { from: id("holographic"), to: id("zsl") },
     { from: id("holographic"), to: id("animamundi") },
-    { from: id("holographic"), to: id("lifeInBalance") },
+    { from: id("holographic"), to: id("lightbeing") },
 
     //
     // performance
-    { from: id("performance"), to: id("lifeInBalance") },
+    { from: id("performance"), to: id("lightbeing") },
     
     // 
     // installation

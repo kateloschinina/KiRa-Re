@@ -2,7 +2,7 @@ import accord from "./accord/data"
 import animamundi from "./animamundi/data"
 import drawingSea from "./drawing-sea/data"
 import fashion from "./fashion/data"
-import lifeInBalance from "./life-in-balance/data"
+import lightbeing from "./lightbeing/data"
 import musicVideos from "./music-videos/data"
 import nebulae from "./nebulae/data"
 import planets from "./planets/data"
@@ -32,8 +32,8 @@ const projects = [
         data: fashion
     },
     {
-        name: "lifeInBalance",
-        data: lifeInBalance
+        name: "lightbeing",
+        data: lightbeing
     },
     {
         name: "musicVideos",

@@ -26,9 +26,6 @@ const edgesWeWant = [
     { from: id("promoVideos"), to: id("fashion") },
     { from: id("promoVideos"), to: id("rambert") },
 
-    // projects
-    { from: id("projects"), to: id("vessel") },
-
     // holographic
     { from: id("holographic"), to: id("zsl") },
     { from: id("holographic"), to: id("animamundi") },
@@ -48,6 +45,9 @@ const edgesWeWant = [
     { from: id("interactive"), to: id("symbiosis") },
     { from: id("interactive"), to: id("accord") },
 
+    // projects
+    { from: id("projects"), to: id("vessel") },
+
     // 
     // still
     { from: id("still"), to: id("planets") },
@@ -56,6 +56,7 @@ const edgesWeWant = [
     // 
     // sound
     { from: id("sound"), to: id("planets") },
+    { from: id("sound"), to: id("voicelandscape") },
 
     // // lco
     // { from: id("lco"), to: id("aldwich") },

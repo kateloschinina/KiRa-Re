@@ -1,4 +1,4 @@
-import planet from './projects-planet.png'
+import planet from './voicelandscape-planet.png'
 
 // images
 // IMPORT IMAGES FROM GALLERY USING THE FOLLOWING FORMAT
@@ -7,7 +7,7 @@ import planet from './projects-planet.png'
 const projectPage = [
 	{
 		tag: 'header',
-		text: 'ptojects'
+		text: 'Voice Landscapes'
 	},
 	{
 		tag: 'paragraph',

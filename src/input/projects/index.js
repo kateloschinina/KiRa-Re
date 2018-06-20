@@ -7,12 +7,12 @@ import musicVideos from "./music-videos/data"
 import nebulae from "./nebulae/data"
 import planets from "./planets/data"
 import projections from "./projections/data"
-import projectsPlanet from "./projects/data"
 import rambert from "./rambert/data"
 import symbiosis from "./symbiosis/data"
 import tricksters from "./tricksters/data"
 import vessel from "./vessel/data"
 import zsl from "./zsl/data"
+import voicelandscape from "./voicelandscape/data"
 
 const projects = [
     {
@@ -52,10 +52,6 @@ const projects = [
         data: projections
     },
     {
-        name: "projects",
-        data: projectsPlanet
-    },
-    {
         name: "rambert",
         data: rambert
     },
@@ -74,6 +70,10 @@ const projects = [
     {
         name: "zsl",
         data: zsl
+    },
+    {
+        name: "voicelandscape",
+        data: voicelandscape
     }
 ]
 

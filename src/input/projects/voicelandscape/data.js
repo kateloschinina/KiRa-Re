@@ -12,7 +12,18 @@ const projectPage = [
 	{
 		tag: 'paragraph',
 		text: 'TBD'
+	}, 
+	{
+		tag: "video",
+        url: "https://vimeo.com/238185921",
+		highlight:'#1'
+	},
+	{
+		tag: "video",
+		url: "https://vimeo.com/238189329",
+		highlight:'#2'
 	}
+	
 ] 
 
 export default {

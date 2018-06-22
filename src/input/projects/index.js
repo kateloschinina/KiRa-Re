@@ -2,17 +2,17 @@ import accord from "./accord/data"
 import animamundi from "./animamundi/data"
 import drawingSea from "./drawing-sea/data"
 import fashion from "./fashion/data"
-import lifeInBalance from "./life-in-balance/data"
+import lightbeing from "./lightbeing/data"
 import musicVideos from "./music-videos/data"
 import nebulae from "./nebulae/data"
 import planets from "./planets/data"
 import projections from "./projections/data"
-import projectsPlanet from "./projects/data"
 import rambert from "./rambert/data"
 import symbiosis from "./symbiosis/data"
 import tricksters from "./tricksters/data"
 import vessel from "./vessel/data"
 import zsl from "./zsl/data"
+import voicelandscape from "./voicelandscape/data"
 
 const projects = [
     {
@@ -32,8 +32,8 @@ const projects = [
         data: fashion
     },
     {
-        name: "lifeInBalance",
-        data: lifeInBalance
+        name: "lightbeing",
+        data: lightbeing
     },
     {
         name: "musicVideos",
@@ -50,10 +50,6 @@ const projects = [
     {
         name: "projections",
         data: projections
-    },
-    {
-        name: "projects",
-        data: projectsPlanet
     },
     {
         name: "rambert",
@@ -74,6 +70,10 @@ const projects = [
     {
         name: "zsl",
         data: zsl
+    },
+    {
+        name: "voicelandscape",
+        data: voicelandscape
     }
 ]
 

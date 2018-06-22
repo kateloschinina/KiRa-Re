@@ -27,7 +27,7 @@ const projectPage = [
 
 	{
 		tag: 'video',
-		url: 'https://vimeo.com/188573535',
+		url: 'https://www.youtube.com/watch?v=pBu1oxc356k',
 		highlight: '"Meatman, Piano Tuner, Prostitute", Vessels'
 	},
 

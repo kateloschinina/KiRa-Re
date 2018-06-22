@@ -7,6 +7,7 @@ import promoVideos from './promo-videos.png'
 import sound from './sound.png'
 import still from './still.png'
 import interactive from './interactive.png'
+import projects from './projects.png'
 
 const categories = [
     {
@@ -50,7 +51,11 @@ const categories = [
     {
         name: 'interactive',
         image: interactive
-    }   
+    },
+    {
+        name: 'projects',
+        image: projects    
+    },   
 ]
 
 export default categories

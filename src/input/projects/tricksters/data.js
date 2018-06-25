@@ -5,7 +5,7 @@ import planet from './tricksters-planet.png'
 // import [imageName] from './gallery/[imageName].jpg'
 import shadow from './gallery/shadow.jpg'
 import shadows from './gallery/shadows.jpg'
-import tricksters from './gallery/tricksters.jpg'
+import tricksters from './gallery/tricksters.png'
 
 const projectPage = [
 	{

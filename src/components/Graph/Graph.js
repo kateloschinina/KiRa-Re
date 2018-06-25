@@ -52,9 +52,9 @@ class App extends Component {
             doubleClick: event => {
                 const nodeId = event.nodes[0]
 
-                if (nodeId > graphData.howManyCategories) {
+                if (nodeId > graphData.howManyCategories || nodeId === 1) {
                     if (nodeId <= graphData.allInputArray.length) {
-                        this.props.changeStateTo(event, graphData.allInputArray[nodeId - 1].name)
+                        this.props.changeStateTo(event, nodeId === 1 ? 'about' : graphData.allInputArray[nodeId - 1].name)
                     }
                 } else {
                     if (nodesOpennessState[nodeId-1]) {

@@ -46,7 +46,7 @@ const graphData = {
             borderWidthSelected: 4,
             size: 30,
             color: {
-                border: "#444",
+                border: "#eee",
                 background: "#000",
                 highlight: {
                     border: "#888",

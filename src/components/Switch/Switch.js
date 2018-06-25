@@ -12,8 +12,6 @@ class Switch extends Component {
 
 	render() {
 		const changeTo = this.props.show === "interactiveMap" ? "allProjects" : "interactiveMap"
-		console.log(this.props.show)
-		console.log(changeTo)
 		return (
 			<div className="switch__container" onClick={e => this.props.changeStateTo(e, changeTo)}>
 				<img className="switch__rotating-dot" src={dot} alt="rotating-dot" />

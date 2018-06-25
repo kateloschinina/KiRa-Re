@@ -18,7 +18,6 @@ class LandingPage extends Component {
     }
 
     changeStateTo(e, name) {
-        console.log('blya');
         if (e.preventDefault) {
             e.preventDefault()
         }

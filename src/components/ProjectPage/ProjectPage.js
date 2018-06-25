@@ -54,6 +54,13 @@ class ProjectPage extends Component {
                                             <ImageGallery items={pageElement.images} />
                                         </div>
                                     )
+                                case "sound":
+                                    return (
+                                        <div key={`sound-${key}`}>
+                                            <p className='project-page__content__highlight'>{pageElement.highlight}</p>
+                                            <ReactPlayer className='project-page__content__video' url={pageElement.url} />
+                                        </div>
+                                    )
                                 default:
                                     return (
                                         <p key={`paragraph-${key}`}>KiRa is awesome</p>

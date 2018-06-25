@@ -14,7 +14,7 @@ class LandingPage extends Component {
     }
 
     state = {
-        show: 'allProjects'
+        show: 'interactiveMap'
     }
 
     changeStateTo(e, name) {

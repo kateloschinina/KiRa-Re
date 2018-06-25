@@ -21,7 +21,7 @@ const pioneerNodes = input.categories
             id: id(category.name),
             shape: nodeOptions.categories.shape,
             image: category.image || category.name,
-            size: nodeOptions.categories.size
+            size: key === 0 ? 70 : nodeOptions.categories.size
         }
     })
 

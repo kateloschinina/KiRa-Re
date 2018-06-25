@@ -49,7 +49,6 @@ class LandingPage extends Component {
         const isGraphHidden = !(this.state.show === 'interactiveMap')
         return (
             <div className="landing-page__background">
-                <img className="landing-page__background" src={logo} alt="logo" />
                 <img className="rotating-dot" src={dot} alt="rotating-got" />
                 { this.renderContent() }
                 <div className={`hidden-${isGraphHidden}`}>

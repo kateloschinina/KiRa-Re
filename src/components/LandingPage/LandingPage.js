@@ -14,10 +14,11 @@ class LandingPage extends Component {
     }
 
     state = {
-        show: 'interactiveMap'
+        show: 'allProjects'
     }
 
     changeStateTo(e, name) {
+        console.log('blya');
         if (e.preventDefault) {
             e.preventDefault()
         }
@@ -46,7 +47,9 @@ class LandingPage extends Component {
         const isGraphHidden = !(this.state.show === 'interactiveMap')
         return (
             <div className="landing-page__background">
-                <Switch />
+                <Switch
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
                 { this.renderContent() }
                 <div className={`hidden-${isGraphHidden}`}>
                     <Graph

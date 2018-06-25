@@ -15,11 +15,6 @@ const projectPage = [
 	},
 	{
 		tag: 'sound',
-<<<<<<< HEAD
-		url: 'https://soundcloud.com/kira-zhigalina/1mercury',
-		highlight: '"Mercury'
-	},
-=======
 		url: 'https://soundcloud.com/kira-zhigalina/8neptune',
 		highlight: 'neptune'
 	},
@@ -58,7 +53,6 @@ const projectPage = [
 		url: 'https://soundcloud.com/kira-zhigalina/1mercury',
 		highlight: 'mercury'
 	}
->>>>>>> 9da047d0323c6db6a6fa0f3775ecf80d0f9868d9
 ] 
 
 export default {

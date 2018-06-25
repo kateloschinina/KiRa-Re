@@ -12,7 +12,12 @@ const projectPage = [
 	{
 		tag: 'paragraph',
 		text: 'TBD'
-	}
+	},
+	{
+		tag: 'sound',
+		url: 'https://soundcloud.com/kira-zhigalina/1mercury',
+		highlight: '"Mercury'
+	},
 ] 
 
 export default {

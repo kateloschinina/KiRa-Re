@@ -1,14 +1,11 @@
 import React, { Component } from "react"
 import "./LandingPage.css"
 
-import Menu from "./../Menu/Menu"
+import Switch from "./../Switch/Switch"
 import AllProjectsPage from "./../AllProjectsPage/AllProjectsPage"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 import ProjectPage from "./../ProjectPage/ProjectPage"
-
-import logo from "./../../images/logo/logo-background.png"
-import dot from "./../../images/background/dot.png"
 
 class LandingPage extends Component {
     constructor(props) {
@@ -49,10 +46,9 @@ class LandingPage extends Component {
         const isGraphHidden = !(this.state.show === 'interactiveMap')
         return (
             <div className="landing-page__background">
-                {/* <img className="landing-page__background" src={logo} alt="logo" />
-                <img className="rotating-dot" src={dot} alt="rotating-got" />
-                <Menu changeStateTo={this.changeStateTo}
-                    show={this.state.show} /> */}
+                <Switch
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
                 { this.renderContent() }
                 <div className={`hidden-${isGraphHidden}`}>
                     <Graph

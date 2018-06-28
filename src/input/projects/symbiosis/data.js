@@ -3,7 +3,19 @@ import planet from "./symbiosis-planet.png"
 // images
 import breathing from "./gallery/breathing.jpg"
 import flower from "./gallery/flower.jpg"
-import icosahedron from "./gallery/icosahedron.jpg"
+import leeds from "./gallery/leeds.jpg"
+import playsym from "./gallery/playsym.jpg"
+import inside from "./gallery/symbiosis-inside.jpg"
+import moon from "./gallery/moon.jpg"
+import p from "./gallery/p.jpeg"
+import lightwaves from "./gallery/symbiosis-lightwaves1.JPG"
+import outside from "./gallery/symbiosis-outside.jpg"
+import symjelly from "./gallery/symjelly.png"
+import liverpool from "./gallery/Scocoon-Liv17.jpg"
+import liv from "./gallery/symbiosis@liverpool.jpg"
+import breathingme from "./gallery/breathingme.jpg"
+
+
 
 const projectPage = [
     {
@@ -13,7 +25,7 @@ const projectPage = [
     {
         tag: "paragraph",
         text:
-            "The project «Symbiosis» is an interactive biofeedback installation. Merging technology with art it creates a connective experience, through bringing awareness to the primordial action of breath."
+            "The project «Symbiosis» is an interactive biofeedback installation. Merging technology with art it creates a connective experience, through bringing awareness to the breath."
     },
     {
         tag: "paragraph",
@@ -27,6 +39,35 @@ const projectPage = [
         highlight:
             "Symbiosis #6 at Lightwaves, Salford Quays, Manchester December 2017"
     },
+    {
+        tag: "gallery",
+        highlight: "Symbiosis 2017-2018",
+        
+        images: [
+            
+            {
+                original: inside,
+                thumbnail: inside,
+                description: "@LeedsLightNight"
+    
+            },
+             {
+                original: leeds,
+                thumbnail: leeds,
+                description: "@LeedsLightNight"
+            },
+            {
+                original: flower,
+                thumbnail: flower,
+                description: "center piece"
+            },
+            {
+                original: lightwaves,
+                thumbnail: lightwaves,
+                description: "@Lightwaves, Salford Quays"
+            },
+            
+         
 
     {
         tag: "video",
@@ -36,53 +77,51 @@ const projectPage = [
     },
     {
         tag: "gallery",
+        highlight: "Symbiosis 2017",
         
         images: [
             
             {
                 original: breathing,
                 thumbnail: breathing,
-                description: "stupid description one"
+                description: "@Nowhere"
             },
             {
-                original: flower,
-                thumbnail: flower,
-                description: "stupid description two"
+                original: symjelly,
+                thumbnail: symjelly,
+                description: "@Nowhere"
             },
             {
-                original: icosahedron,
-                thumbnail: icosahedron,
-                description: "stupid description three"
+                original: moon,
+                thumbnail: moon,
+                description: "@Nowhere"
             },
         ]
     },
     {
         tag: "paragraph",
         text:
-            "The project «Symbiosis» is an interactive biofeedback installation. The aim is to merge technology with art to create an organic experience that connects people on a primordial level, through bringing awareness to the connecting principle of breath."
-    },
-    {
-        tag: "paragraph",
-        text:
-            "The project «Symbiosis» is an interactive biofeedback installation. Merge technology with art to create an organic experience that connects people on a primordial level, through bringing awareness to the connecting principle of breath."
+            "«Symbiosis» is in continuous development, originated from the nympth stage below, which was using belt sensors and two people installation. Now it had progressed to 8 people immersive dome with non invasive seat sensors."
     },
     {
         tag: "gallery",
-        highlight: "bla bla highlight",
+        highlight: "Symbiosis 'Cocoon' 2015-2017",
         images: [
             {
-                original: breathing,
-                thumbnail: breathing
+                original: breathingme,
+                thumbnail: breathingme
             },
             {
-                original: flower,
-                thumbnail: flower
+                original: liverpool,
+                thumbnail: liverpool
             },
             {
-                original: icosahedron,
-                thumbnail: icosahedron
+                original: liv,
+                thumbnail: liv
             }
         ]
+    }
+]
     }
 ]
 

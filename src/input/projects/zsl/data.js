@@ -11,8 +11,26 @@ const projectPage = [
 	},
 	{
 		tag: 'paragraph',
-		text: 'TBD'
-	}
+		text: 'These are series of works commissioned by Musion Technology (musion.co.uk) and ZSL – Zoological Society of London to raise awareness of climate change and endangerement of species.'
+	},
+	{   
+		tag: "video",
+        url: "https://vimeo.com/28724188",
+		highlight: 'Microcosm (Potosi Fish)'
+	},
+
+	{   
+		tag: "video",
+        url: "https://vimeo.com/30087846",
+		highlight: 'Life in Balance'
+	},
+
+	{   
+		tag: "video",
+        url: "https://vimeo.com/29569734",
+		highlight: 'Partula Snail'
+	},
+
 ] 
 
 export default {

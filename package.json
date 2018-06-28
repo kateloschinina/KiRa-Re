@@ -2,7 +2,7 @@
   "name": "kira-re",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kateloschinina.github.io/KiRa-Re/",
+  "homepage": "https://dotkira.com/",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

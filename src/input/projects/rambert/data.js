@@ -11,7 +11,7 @@ const projectPage = [
 	},
 	{
 		tag: 'paragraph',
-		text: 'TBD'
+		text: 'Promo commissioned for New Choreographers Night at Southbank'
 	}, 
 	{   
 		tag: "video",

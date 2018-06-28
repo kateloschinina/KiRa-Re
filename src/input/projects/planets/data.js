@@ -11,7 +11,7 @@ const projectPage = [
 	},
 	{
 		tag: 'paragraph',
-		text: 'TBD'
+		text: 'Series of paintings representing planets of our solar systems with each individual sound. The planet sizes are in ratio to real planet sizes, and the sound were created tracing each individual circumference to create harmony of each sphere.'
 	},
 	{
 		tag: 'sound',

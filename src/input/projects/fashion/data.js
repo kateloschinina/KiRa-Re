@@ -10,10 +10,6 @@ const projectPage = [
 		text: 'RE-CYCLE STYLE SERIES'
 	},
 	{
-		tag: 'paragraph',
-		text: 'TBD'
-	},
-	{
 		tag: 'video',
 		url: 'https://vimeo.com/182006791',
 		highlight: 'Shintou(#4)'

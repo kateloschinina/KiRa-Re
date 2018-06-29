@@ -4,18 +4,13 @@ import planet from "./symbiosis-planet.png"
 import breathing from "./gallery/breathing.jpg"
 import flower from "./gallery/flower.jpg"
 import leeds from "./gallery/leeds.jpg"
-import playsym from "./gallery/playsym.jpg"
 import inside from "./gallery/symbiosis-inside.jpg"
 import moon from "./gallery/moon.jpg"
-import p from "./gallery/p.jpeg"
 import lightwaves from "./gallery/symbiosis-lightwaves1.JPG"
-import outside from "./gallery/symbiosis-outside.jpg"
 import symjelly from "./gallery/symjelly.png"
 import liverpool from "./gallery/Scocoon-Liv17.jpg"
 import liv from "./gallery/symbiosis@liverpool.jpg"
 import breathingme from "./gallery/breathingme.jpg"
-
-
 
 const projectPage = [
     {
@@ -32,7 +27,6 @@ const projectPage = [
         text:
             "Using custom build software and sensors Symbiosis vidualises participant's breathing in moving LED lights."
     },
-
     {
         tag: "video",
         url: "https://vimeo.com/251900220",
@@ -66,9 +60,8 @@ const projectPage = [
                 thumbnail: lightwaves,
                 description: "@Lightwaves, Salford Quays"
             },
-            
-         
-
+        ],
+    },
     {
         tag: "video",
         url: "https://vimeo.com/251900220",
@@ -78,9 +71,7 @@ const projectPage = [
     {
         tag: "gallery",
         highlight: "Symbiosis 2017",
-        
-        images: [
-            
+        images: [   
             {
                 original: breathing,
                 thumbnail: breathing,
@@ -120,8 +111,6 @@ const projectPage = [
                 thumbnail: liv
             }
         ]
-    }
-]
     }
 ]
 

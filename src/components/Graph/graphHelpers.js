@@ -21,7 +21,7 @@ const pioneerNodes = input.categories
             id: id(category.name),
             shape: nodeOptions.categories.shape,
             image: category.image || category.name,
-            size: key === 0 ? 70 : nodeOptions.categories.size
+            size: key === 0 ? 55 : nodeOptions.categories.size
         }
     })
 
@@ -46,7 +46,7 @@ const graphData = {
             borderWidthSelected: 4,
             size: 30,
             color: {
-                border: "#eee",
+                border: "#ddd",
                 background: "#000",
                 highlight: {
                     border: "#888",

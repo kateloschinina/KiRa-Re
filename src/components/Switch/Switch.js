@@ -6,10 +6,6 @@ import allProjects from "./../../images/menu/all-projects-sq.png"
 import interactive from "./../../images/menu/interactive-sq.png"
 
 class Switch extends Component {
-	constructor(props) {
-        super(props)
-	}
-
 	render() {
 		const changeTo = this.props.show === "interactiveMap" ? "allProjects" : "interactiveMap"
 		return (

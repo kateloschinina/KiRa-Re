@@ -22,8 +22,7 @@ const projectPage = [
 		tag: "video",
 		url: "https://vimeo.com/238189329",
 		highlight:'#2'
-	}
-	
+	}	
 ] 
 
 export default {

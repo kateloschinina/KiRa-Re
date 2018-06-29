@@ -22,32 +22,24 @@ const projectPage = [
 		images: [
 			{
 				original: nebulae1,
-				thumbnail: nebulae1,
-				
-		   }, 
-		   {
-			original: nebulae2,
-			thumbnail: nebulae2,
-			
-	   },
-	   {
-		original: nebulae3,
-		thumbnail: nebulae3,
-		
-   },
-   {
-	tag: 'video',
-	url: 'https://vimeo.com/218715113',
-	highlight: '"Nebulae" and "Accord"'
-},
-
-
-
-	
-	   ]
-   }
-	
-] 
+				thumbnail: nebulae1
+			},
+			{
+				original: nebulae2,
+				thumbnail: nebulae2
+			},
+			{
+				original: nebulae3,
+				thumbnail: nebulae3
+			}
+		],
+	},
+	{
+		tag: 'video',
+		url: 'https://vimeo.com/218715113',
+		highlight: '"Nebulae" and "Accord"'
+	}	
+]
 
 export default {
 	planet,

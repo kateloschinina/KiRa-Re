@@ -18,7 +18,6 @@ const projectPage = [
         url: "https://vimeo.com/64372456",
 		highlight: 'Rambert Promotional Video'
 	}
-	
 ] 
 
 export default {

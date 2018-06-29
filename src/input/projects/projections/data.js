@@ -19,7 +19,6 @@ const projectPage = [
 	{
 		tag: 'paragraph',
 		text: '`I have created projection design for "Secret Cinema", LCO "Imagined Occasions" projecting onto gasometer and a tube train, for Wordlife 10th Birthday event, projected onto Sheffield Museum, for LSO St.Lukes and Savoy Hotel, and for numerous other events and performances.'
-
 	},
 	{
 		tag: 'video',
@@ -30,10 +29,10 @@ const projectPage = [
 	 	tag: 'gallery',
 	 	highlight: 'Commissioned Projections',
 	 	images: [
-	 		{
-				 original: secretcinema,
-				 thumbnail: secretcinema,
-				 description: "Secret Cinema : Red Shoes"
+			{
+				original: secretcinema,
+				thumbnail: secretcinema,
+				description: "Secret Cinema : Red Shoes"
 			}, 
 			{
 				original: contemplation,
@@ -41,30 +40,30 @@ const projectPage = [
 				description: "Contemplation at St.Lukes"
 		   },
 		   {
-			original: wordlife,
-			thumbnail: wordlife,
-			description: "Wordlife at Sheffield Museum"
-	       },
-	   {
-		original: ovalspace,
-		thumbnail: ovalspace,
-		description: "LCO Imagined Occasions at Oval Space"
-   },
-   {
-	original: aldwych,
-	thumbnail: aldwych,
-	description: "LCO Imagined Occasions at Aldwych Tube"
-},
-{
-	original: elegies,
-	thumbnail: elegies,
-	description: "'Elegies' at the Commonwealth Institute"
-},
-{
-	original: unfashionshow,
-	thumbnail: unfashionshow,
-	description: "Unfashion Show at Cochrane Theatre"
-}
+			   original: wordlife,
+			   thumbnail: wordlife,
+			   description: "Wordlife at Sheffield Museum"
+			},
+			{
+				original: ovalspace,
+				thumbnail: ovalspace,
+				description: "LCO Imagined Occasions at Oval Space"
+			},
+			{
+				original: aldwych,
+				thumbnail: aldwych,
+				description: "LCO Imagined Occasions at Aldwych Tube",
+			},
+			{
+				original: elegies,
+				thumbnail: elegies,
+				description: "'Elegies' at the Commonwealth Institute"
+			},
+			{
+				original: unfashionshow,
+				thumbnail: unfashionshow,
+				description: "Unfashion Show at Cochrane Theatre"
+			}
 		]
 	}
 ]

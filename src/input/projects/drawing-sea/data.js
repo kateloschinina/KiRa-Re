@@ -35,45 +35,38 @@ const projectPage = [
 		images: [
 			{
 				original: firewaters,
-				thumbnail: firewaters,
-			
-		   }, 
-		   {
+				thumbnail: firewaters
+			},
+			{
 			   original: animal,
-			   thumbnail: animal,
-			   
-		  },
-		  {
-		   original: crack,
-		   thumbnail: crack,
-		   
-		  },
-	  {
-	   original: moumtaims,
-	   thumbnail: moumtaims,
-	   
-  },
-  {
-   original: openimg,
-   thumbnail: openimg,
-   
-},
-{
-   original: ripple,
-   thumbnail: ripple,
-   
-},
-{
-   original: sand1,
-   thumbnail: sand1,
-},
-{
-	original: sandwet,
-	thumbnail: sandwet,
- }
-  
-	   ]
-   }
+			   thumbnail: animal
+			},
+			{
+				original: crack,
+				thumbnail: crack
+			},
+			{
+				original: moumtaims,
+				thumbnail: moumtaims
+			},
+			{
+				original: openimg,
+				thumbnail: openimg
+			},
+			{
+				original: ripple,
+				thumbnail: ripple
+			},
+			{
+				original: sand1,
+				thumbnail: sand1
+			},
+			{
+				original: sandwet,
+				thumbnail: sandwet
+			}
+		]
+	}
 ]
 
 export default {

@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import './Switch.css'
 
 import dot from "./../../images/background/dot.png"
-import allProjects from "./../../images/menu/all-projects.png"
-import interactive from "./../../images/menu/interactive.png"
+import allProjects from "./../../images/menu/all-projects-sq.png"
+import interactive from "./../../images/menu/interactive-sq.png"
 
 class Switch extends Component {
 	constructor(props) {

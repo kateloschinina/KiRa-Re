@@ -1,21 +1,24 @@
-.all-project-page__container {
+.all-project-page {
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.all-project-page__content {
+.all-project-page__container {
     max-width: 800px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
 
+    max-height: 90vh;
+    overflow: scroll;
+}
+
+.all-project-page__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
 
-    height: 85vh;
-    overflow: scroll;
+    margin: 0 60px 60px 60px;
+    color: white;
 }
 
 .planet__container {
@@ -23,4 +26,14 @@
     height: 100px;
     width: 100px;
     margin: 25px;
+}
+
+.all-project-page__close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.all-project-page__close img {
+    height: 30px;
+    margin: 10px;
 }

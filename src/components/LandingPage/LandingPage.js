@@ -29,8 +29,7 @@ class LandingPage extends Component {
             case 'interactiveMap':
                 return
             case 'allProjects':
-                return <AllProjectsPage
-                    changeStateTo={this.changeStateTo} />
+                return
             case 'about':
                 return <ProjectPage 
                     project='about'
@@ -43,7 +42,7 @@ class LandingPage extends Component {
     }
 
     render() {
-        const isGraphHidden = !(this.state.show === 'interactiveMap')
+        const isGraphHidden = !(this.state.show === 'interactiveMap' || this.state.show === 'allProjects')
         return (
             <div className="landing-page__background">
                 <Switch

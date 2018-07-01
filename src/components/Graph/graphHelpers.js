@@ -14,14 +14,36 @@ const id = nodeName => {
     return allInputArray.findIndex(element => element.name === nodeName) + 1
 }
 
-const pioneerNodes = input.categories
-    .filter(category => category.pioneer === true)
+// const pioneerNodes = input.categories
+//     .filter(category => category.pioneer === true)
+//     .map((category, key) => {
+//         return {
+//             id: id(category.name),
+//             shape: nodeOptions.categories.shape,
+//             image: category.image || category.name,
+//             size: key === 0 ? 60 : nodeOptions.categories.size
+//         }
+//     })
+
+const categoryNodes = input.categories
+    // .filter(category => category.pioneer === true)
     .map((category, key) => {
         return {
             id: id(category.name),
             shape: nodeOptions.categories.shape,
             image: category.image || category.name,
             size: key === 0 ? 60 : nodeOptions.categories.size
+        }
+    })
+
+const pioneerNodes = input.projects
+    // .filter(category => category.pioneer === true)
+    .map((project, key) => {
+        return {
+            id: id(project.name),
+            shape: nodeOptions.categories.shape,
+            image: project.data.planet,
+            size: 60
         }
     })
 
@@ -38,7 +60,8 @@ const graphData = {
     howManyCategories: input.categories.length,
     graph: {
         nodes,
-        edges
+        edges,
+        categoryNodes
     },
     options: {
         nodes: {
@@ -68,16 +91,11 @@ const graphData = {
                 from: { enabled: false, scaleFactor: 1, type: "bar" }
             }
         },
-        // physics: {
-        //     barnesHut: {
-        //         gravitationalConstant: -1000,
-        //         centralGravity: 0.01,
-        //         springLength: 50,
-        //         damping: 0.5,
-        //         avoidOverlap: 0.9
-        //     },
-        //     minVelocity: 0.75
-        // }
+        physics: {
+            barnesHut: {
+                avoidOverlap: 0.000001
+            }
+        }
     }
 }
 

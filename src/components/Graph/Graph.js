@@ -39,6 +39,12 @@ class App extends Component {
         let container = document.getElementById("interactive-graph")
         let options = graphData.options
 
+        if (this.props.show === "allProjects") {
+            console.log('here');
+            this.nodes.add(graphData.graph.categoryNodes)
+            console.log(this.nodes);
+        }
+
         this.Network = new vis.Network(
             container,
             Object.assign({}, this.props.graph, {

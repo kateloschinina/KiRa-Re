@@ -1,4 +1,4 @@
-import planet from './nebulae-planet.jpg'
+import planet from './nebulae-planet.png'
 
 // images
 // IMPORT IMAGES FROM GALLERY USING THE FOLLOWING FORMAT

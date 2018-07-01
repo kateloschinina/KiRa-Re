@@ -82,7 +82,7 @@ class App extends Component {
                                     edge.to - 1
                                 ].image
     
-                                const nodeSize = edge.to > graphData.howManyCategories ? 30 : 37.5
+                                const nodeSize = edge.to > graphData.howManyCategories ? 50 : 40
     
                                 try {
                                     this.nodes.add([

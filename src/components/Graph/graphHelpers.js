@@ -3,7 +3,7 @@ import edgesWeWant from "./graphInput"
 
 const nodeOptions = {
     categories: {
-        size: 45,
+        size: 40,
         shape: "circularImage"
     }
 }
@@ -21,7 +21,7 @@ const pioneerNodes = input.categories
             id: id(category.name),
             shape: nodeOptions.categories.shape,
             image: category.image || category.name,
-            size: key === 0 ? 55 : nodeOptions.categories.size
+            size: key === 0 ? 60 : nodeOptions.categories.size
         }
     })
 

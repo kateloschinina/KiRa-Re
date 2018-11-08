@@ -44,6 +44,7 @@ const edgesWeWant = [
     // interactive
     { from: id("interactive"), to: id("symbiosis") },
     { from: id("interactive"), to: id("accord") },
+    { from: id("interactive"), to: id("SoI")},
 
     // projects
     { from: id("projects"), to: id("vessel") },

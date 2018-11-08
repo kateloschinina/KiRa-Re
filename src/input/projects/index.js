@@ -13,6 +13,7 @@ import tricksters from "./tricksters/data"
 import vessel from "./vessel/data"
 import zsl from "./zsl/data"
 import voicelandscape from "./voicelandscape/data"
+import SoI from "./SoI/data"
 
 const projects = [
     {
@@ -74,6 +75,12 @@ const projects = [
     {
         name: "voicelandscape",
         data: voicelandscape
+    },
+
+    {
+
+        name: "SoI",
+        data: SoI
     }
 ]
 

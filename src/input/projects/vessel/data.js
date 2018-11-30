@@ -8,7 +8,6 @@ import snake2 from './gallery/IMG_3143.jpg'
 import snake3 from './gallery/IMG_3189.jpg'
 import snake4 from './gallery/IMG_3227.jpg'
 
-
 const projectPage = [
 	{
 		tag: 'header',
@@ -28,28 +27,24 @@ const projectPage = [
         url: "https://vimeo.com/188573535",
 		highlight: 'Sphere segment'
 	},
-
-	{   tag: 'gallery',
+	{
+		tag: 'gallery',
 		highlight: 'Serpent',
 		images: [
 			{
 				original: snake1,
 				thumbnail: snake1,
-				
-		   }, 
-		   {
-			   original: snake2,
-			   thumbnail: snake2,
-			  
-		  },
-		  {
-		   original: snake3,
-		   thumbnail: snake3,
-		   
-		  }
+			},
+			{
+				original: snake2,
+				thumbnail: snake2,
+			},
+			{
+				original: snake3,
+				thumbnail: snake3,
+			}
 		]
 	}
-
 ] 
 
 export default {

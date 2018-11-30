@@ -20,7 +20,8 @@ const projectPage = [
 	{
 		tag: 'video',
 		url: 'https://vimeo.com/37022390',
-		highlight: 'Аnima Mundi'}
+		highlight: 'Аnima Mundi'
+	}
 ] 
 
 export default {

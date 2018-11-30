@@ -22,7 +22,6 @@ const projectPage = [
 		url: 'https://vimeo.com/28814091',
 		highlight: '@Kinetica ArtFair 2011'
 	},
-	
 ] 
 
 export default {

@@ -15,8 +15,6 @@ import liverpool from "./gallery/Scocoon-Liv17.jpg"
 import liv from "./gallery/symbiosis@liverpool.jpg"
 import breathingme from "./gallery/breathingme.jpg"
 
-
-
 const projectPage = [
     {
         tag: "header",
@@ -32,7 +30,6 @@ const projectPage = [
         text:
             "Using custom build software and sensors Symbiosis vidualises participant's breathing in moving LED lights."
     },
-
     {
         tag: "video",
         url: "https://vimeo.com/251900220",
@@ -42,9 +39,7 @@ const projectPage = [
     {
         tag: "gallery",
         highlight: "Symbiosis 2017-2018",
-        
-        images: [
-            
+        images: [  
             {
                 original: inside,
                 thumbnail: inside,
@@ -66,9 +61,8 @@ const projectPage = [
                 thumbnail: lightwaves,
                 description: "@Lightwaves, Salford Quays"
             },
-            
-         
-
+        ],
+    },
     {
         tag: "video",
         url: "https://vimeo.com/251900220",
@@ -78,9 +72,7 @@ const projectPage = [
     {
         tag: "gallery",
         highlight: "Symbiosis 2017",
-        
-        images: [
-            
+        images: [   
             {
                 original: breathing,
                 thumbnail: breathing,
@@ -120,8 +112,6 @@ const projectPage = [
                 thumbnail: liv
             }
         ]
-    }
-]
     }
 ]
 

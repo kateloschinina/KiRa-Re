@@ -23,18 +23,15 @@ const projectPage = [
 			{
 				original: shadow,
 				thumbnail: shadow,
-				
-		   }, 
-		   {
-			   original: shadows,
-			   thumbnail: shadows,
-			  
-		  },
-		  {
-		   original: tricksters,
-		   thumbnail: tricksters,
-		   
-		  }
+			},
+			{
+				original: shadows,
+				thumbnail: shadows,
+			},
+			{
+				original: tricksters,
+				thumbnail: tricksters,
+			}
 		]
 	}
 ]

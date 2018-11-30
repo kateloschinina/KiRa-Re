@@ -4,9 +4,12 @@ import planet from "./symbiosis-planet.png"
 import breathing from "./gallery/breathing.jpg"
 import flower from "./gallery/flower.jpg"
 import leeds from "./gallery/leeds.jpg"
+// import playsym from "./gallery/playsym.jpg"
 import inside from "./gallery/symbiosis-inside.jpg"
 import moon from "./gallery/moon.jpg"
+// import p from "./gallery/p.jpeg"
 import lightwaves from "./gallery/symbiosis-lightwaves1.JPG"
+// import outside from "./gallery/symbiosis-outside.jpg"
 import symjelly from "./gallery/symjelly.png"
 import liverpool from "./gallery/Scocoon-Liv17.jpg"
 import liv from "./gallery/symbiosis@liverpool.jpg"
@@ -36,9 +39,7 @@ const projectPage = [
     {
         tag: "gallery",
         highlight: "Symbiosis 2017-2018",
-        
-        images: [
-            
+        images: [  
             {
                 original: inside,
                 thumbnail: inside,

@@ -18,7 +18,7 @@ const edgesWeWant = [
     // film video
     { from: id("filmVideo"), to: id("projections") },
     { from: id("filmVideo"), to: id("promoVideos") },
-    { from: id("filmVideo"), to: id("projects") },
+    { from: id("filmVideo"), to: id("vessel") },
     { from: id("filmVideo"), to: id("holographic") },
 
     // promo videos
@@ -44,9 +44,7 @@ const edgesWeWant = [
     // interactive
     { from: id("interactive"), to: id("symbiosis") },
     { from: id("interactive"), to: id("accord") },
-
-    // projects
-    { from: id("projects"), to: id("vessel") },
+    { from: id("interactive"), to: id("SoI")},
 
     // 
     // still

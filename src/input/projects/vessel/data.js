@@ -6,7 +6,7 @@ import planet from './vessel-planet.png'
 import snake1 from './gallery/IMG_3138.jpg'
 import snake2 from './gallery/IMG_3143.jpg'
 import snake3 from './gallery/IMG_3189.jpg'
-import snake4 from './gallery/IMG_3227.jpg'
+// import snake4 from './gallery/IMG_3227.jpg'
 
 const projectPage = [
 	{

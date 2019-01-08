@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <div className="footer--container">
 				<div className="footer">
-					<p>&copy; KiRa, 2018</p><a href="https://www.facebook.com/kirazhi"><img src={facebook}  alt="facebook" /></a>
+					<p>&copy; KiRa, 2018</p><a href="https://www.facebook.com/kirazhi" target="_blank"><img src={facebook} alt="facebook"/></a>
 				</div>
             </div>
         )

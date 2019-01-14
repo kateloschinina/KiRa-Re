@@ -6,6 +6,7 @@ import "./ProjectPage.css"
 import input from "./../../../src/input/index"
 
 import HoverImage from "react-hover-image"
+import { Link } from "react-router-dom"
 import circleWithDot from "./../../images/icons/circle-with-dot.png"
 import circleWithCross from "./../../images/icons/circle-with-cross.png"
 
@@ -24,9 +25,16 @@ class ProjectPage extends Component {
             <div className="project-page">
                 <div className="project-page__container">
                     <div className="project-page__close">
-                        <HoverImage src={circleWithDot}
-                            hoverSrc={circleWithCross}
-                            onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
+                        {this.props.match && this.props.match.params && this.props.match.params.projectName ? (
+                            <Link to="/">
+                                <HoverImage src={circleWithDot}
+                                    hoverSrc={circleWithCross} />
+                            </Link>
+                        ) : (
+                            <HoverImage src={circleWithDot}
+                                hoverSrc={circleWithCross}
+                                onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
+                        )}
                     </div>
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {

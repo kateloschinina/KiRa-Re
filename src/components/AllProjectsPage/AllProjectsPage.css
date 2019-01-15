@@ -1,7 +1,6 @@
 .all-project-page__container {
     background-size: cover;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 175px 40px 175px;
 
     height: 100vh;
     overflow: scroll;

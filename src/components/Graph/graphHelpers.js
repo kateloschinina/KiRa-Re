@@ -42,8 +42,8 @@ const graphData = {
     },
     options: {
         nodes: {
-            borderWidth: 4,
-            borderWidthSelected: 4,
+            borderWidth: 2,
+            borderWidthSelected: 2,
             size: 30,
             color: {
                 border: "#ddd",

@@ -9,6 +9,7 @@ import HoverImage from "react-hover-image"
 import { Link } from "react-router-dom"
 import circleWithDot from "./../../images/icons/circle-with-dot.png"
 import circleWithCross from "./../../images/icons/circle-with-cross.png"
+import copyLink from "./../../images/icons/copy-link.png"
 
 class ProjectPage extends Component {
     render() {
@@ -35,6 +36,9 @@ class ProjectPage extends Component {
                                 hoverSrc={circleWithCross}
                                 onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
                         )}
+                    </div>
+                    <div className="project-page__copy-link">
+                        <img src={copyLink} />
                     </div>
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {

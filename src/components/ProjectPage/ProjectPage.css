@@ -48,7 +48,18 @@
     right: 20px;
 }
 
+.project-page__copy-link {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
 .project-page__close img {
     height: 30px;
+    margin: 10px;
+}
+
+.project-page__copy-link img {
+    height: 25px;
     margin: 10px;
 }

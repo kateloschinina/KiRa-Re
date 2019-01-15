@@ -12,13 +12,12 @@
     margin: 10px;
 }
 
-.switch__text {
+.switch__icon {
     position: absolute;
     top: 0;
     left: 0;
 
     width: 150px;
-    height: 150px;
     max-width: 20vw;
     max-height: 20vw;
     margin: 0;

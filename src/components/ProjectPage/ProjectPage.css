@@ -9,6 +9,7 @@
 
     max-height: 100vh;
     overflow: scroll;
+    padding: 0 160px 30px 160px;
 }
 
 .project-page__content {
@@ -42,8 +43,9 @@
 }
 
 .project-page__close {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .project-page__close img {

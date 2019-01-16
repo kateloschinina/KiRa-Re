@@ -2,12 +2,13 @@
 
 .project-page {
     background-size: cover;
+    background: rgba(0, 0, 0, 0.7);
+
+    height: 100vh;
 }
 
 .project-page__container {
-    background: rgba(0, 0, 0, 0.7);
-
-    height: calc(100vh - 25vw - 40px);
+    height: calc(100% - 40px);
     overflow: scroll;
     padding: 0 160px 30px 160px;
 }
@@ -40,6 +41,11 @@
 
 .project-page__content__video {
     margin: auto;
+    max-width: 100%;
+}
+
+.project-page__content img {
+    max-width: 100%;
 }
 
 .project-page__close {
@@ -66,6 +72,7 @@
 
 @media only screen and (max-width: 768px) {
     .project-page__container {
+        height: calc(100% - 25vw - 40px);
         padding: 0 10px 0 10px;
         margin-top: 25vw;
         margin-bottom: 40px;

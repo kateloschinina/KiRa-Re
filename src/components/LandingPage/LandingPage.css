@@ -6,9 +6,10 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url('../../images/logo/logo-background.png');
+    background-image: url('../../images/background/0-background.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 }
 
 .hidden-true {

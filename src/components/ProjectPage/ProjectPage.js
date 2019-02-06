@@ -7,6 +7,7 @@ import input from "./../../../src/input/index"
 
 import HoverImage from "react-hover-image"
 import { Link } from "react-router-dom"
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import circleWithDot from "./../../images/icons/circle-with-dot.png"
 import circleWithCross from "./../../images/icons/circle-with-cross.png"
 import copyLink from "./../../images/icons/copy-link.png"
@@ -38,7 +39,10 @@ class ProjectPage extends Component {
                         )}
                     </div>
                     <div className="project-page__copy-link">
-                        <img src={copyLink} />
+                        <CopyToClipboard text={`https://dotkira.com/projects/${this.props.project}`}
+                            onCopy={() => this.setState({ copied: true })}>
+                            <img src={copyLink} />
+                        </CopyToClipboard>
                     </div>
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {

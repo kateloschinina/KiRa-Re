@@ -42,7 +42,7 @@ const graphData = {
     },
     options: {
         nodes: {
-            borderWidth: 2,
+            borderWidth: 1,
             borderWidthSelected: 2,
             size: 30,
             color: {
@@ -56,6 +56,13 @@ const graphData = {
                     border: "#555",
                     background: "#000"
                 }
+            },
+            shadow: {
+                enabled: true,
+                color: 'rgba(255,255,255,1)',
+                size: 60,
+                x: 0,
+                y: 0
             },
             font: { color: "#eeeeee" }
         },

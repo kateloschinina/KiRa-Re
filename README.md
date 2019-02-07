@@ -8,3 +8,10 @@ $ brew install yarn
 $ yarn install
 $ yarn start
 ```
+
+## To deploy to production
+
+```
+$ yarn predeploy
+$ yarn deploy
+```

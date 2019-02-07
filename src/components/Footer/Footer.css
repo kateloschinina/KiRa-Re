@@ -8,7 +8,6 @@
     width: 115px;
     height: 100%;
     
-    /* display: flex; */
     padding: 0 20px 0 20px;
 
     color: white;
@@ -17,16 +16,16 @@
 }
 
 .facebook {
-    height: 18px;
-    margin: 0 0 10px 10px;
+    height: 16px;
+    margin: 0 10px 11px 0;
 }
 
 .instagram {
     height: 18px;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 0;
 }
 
 .vimeo {
-    height: 30px;
-    margin: -10px 0 5px 2px;
+    height: 32px;
+    margin: 0 0 4px 0;
 }

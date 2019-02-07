@@ -13,6 +13,15 @@ import circleWithCross from "./../../images/icons/circle-with-cross.png"
 import copyLink from "./../../images/icons/copy-link.png"
 
 class ProjectPage extends Component {
+    constructor(props) {
+        super(props)
+        // this.changeStateTo = this.changeStateTo.bind(this)
+    }
+
+    state = {
+        copied: false
+    }
+
     render() {
         const projectAndOther = [...input.projects, ...input.other]
 
@@ -44,6 +53,11 @@ class ProjectPage extends Component {
                             <img src={copyLink} />
                         </CopyToClipboard>
                     </div>
+                    {this.state.copied ? (
+                        <div className="project-page__copied">
+                            <p className="project-page__note">copied</p>
+                        </div>
+                    ) : ('')}
                     <div className="project-page__content">
                         {pageData.map((pageElement, key) => {
                             switch (pageElement.tag) {

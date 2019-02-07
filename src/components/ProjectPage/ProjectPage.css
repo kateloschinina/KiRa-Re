@@ -61,6 +61,18 @@
     right: 20px;
 }
 
+.project-page__copied {
+    position: absolute;
+    top: 90px;
+    right: 25px;
+}
+
+.project-page__note {
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+}
+
 .project-page__close img {
     height: 30px;
     margin: 10px;

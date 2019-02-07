@@ -1,4 +1,4 @@
-import dot from './dot.png'
+import dotOne from './dot-one.png'
 import filmVideo from './film-video.png'
 import holographic from './holographic.png'
 import performance from './performance.png'
@@ -12,7 +12,7 @@ import projects from './projects.png'
 const categories = [
     {
         name: 'dot',
-        image: dot,
+        image: dotOne,
         pioneer: true
     },
     {

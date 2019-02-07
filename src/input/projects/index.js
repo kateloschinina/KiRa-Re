@@ -76,7 +76,6 @@ const projects = [
         name: "voicelandscape",
         data: voicelandscape
     },
-
     {
 
         name: "SoI",

@@ -49,7 +49,7 @@ class App extends Component {
         )
 
         const events = {
-            doubleClick: event => {
+            click: event => {
                 const nodeId = event.nodes[0]
 
                 if (nodeId > graphData.howManyCategories || nodeId === 1) {
@@ -105,7 +105,7 @@ class App extends Component {
             }
         }
 
-        this.Network.on("doubleClick", events["doubleClick"])
+        this.Network.on("click", events["click"])
     }
 
     render() {

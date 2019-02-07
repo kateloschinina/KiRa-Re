@@ -8,11 +8,11 @@ const id = nodeName => {
 
 const edgesWeWant = [
     // dot
-    { from: id("dot"), to: id("filmVideo") },
-    { from: id("dot"), to: id("still") },
-    { from: id("dot"), to: id("performance") },
-    { from: id("dot"), to: id("installation") },
-    { from: id("dot"), to: id("sound") },
+    // { from: id("dot"), to: id("filmVideo") },
+    // { from: id("dot"), to: id("still") },
+    // { from: id("dot"), to: id("performance") },
+    // { from: id("dot"), to: id("installation") },
+    // { from: id("dot"), to: id("sound") },
 
     // 
     // film video

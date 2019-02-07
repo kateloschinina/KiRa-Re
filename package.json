@@ -5,10 +5,12 @@
   "homepage": "https://kateloschinina.github.io/KiRa-Re/",
   "dependencies": {
     "react": "^16.3.2",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.3.2",
     "react-hover-image": "^1.0.0",
     "react-image-gallery": "^0.8.7",
     "react-player": "^1.5.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "vis": "^4.21.0"
   },

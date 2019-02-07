@@ -2,21 +2,21 @@
 
 .project-page {
     background-size: cover;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background: rgba(0, 0, 0, 0.7);
+
+    height: 100vh;
 }
 
 .project-page__container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7);
-
-    max-height: 90vh;
+    height: calc(100% - 40px);
     overflow: scroll;
+    padding: 0 160px 30px 160px;
 }
 
 .project-page__content {
-    margin: 0 60px 60px 60px;
+    max-width: 800px;
+
+    margin: 0 auto;
     color: white;
 }
 
@@ -30,6 +30,7 @@
 
 .project-page__content p {
     font-size: 18px;
+    font-weight: 200;
     margin-bottom: 1.8em;
 }
 
@@ -41,14 +42,52 @@
 
 .project-page__content__video {
     margin: auto;
+    max-width: 100%;
+}
+
+.project-page__content img {
+    max-width: 100%;
 }
 
 .project-page__close {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.project-page__copy-link {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.project-page__copied {
+    position: absolute;
+    top: 90px;
+    right: 25px;
+}
+
+.project-page__note {
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
 }
 
 .project-page__close img {
     height: 30px;
     margin: 10px;
+}
+
+.project-page__copy-link img {
+    height: 25px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .project-page__container {
+        height: calc(100% - 25vw - 40px);
+        padding: 0 10px 0 10px;
+        margin-top: 25vw;
+        margin-bottom: 40px;
+    }
 }

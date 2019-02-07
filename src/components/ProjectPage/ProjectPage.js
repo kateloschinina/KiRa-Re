@@ -13,11 +13,6 @@ import circleWithCross from "./../../images/icons/circle-with-cross.png"
 import copyLink from "./../../images/icons/copy-link.png"
 
 class ProjectPage extends Component {
-    constructor(props) {
-        super(props)
-        // this.changeStateTo = this.changeStateTo.bind(this)
-    }
-
     state = {
         copied: false
     }
@@ -50,7 +45,7 @@ class ProjectPage extends Component {
                     <div className="project-page__copy-link">
                         <CopyToClipboard text={`https://dotkira.com/projects/${this.props.project}`}
                             onCopy={() => this.setState({ copied: true })}>
-                            <img src={copyLink} />
+                            <img src={copyLink} alt="copy-icon" />
                         </CopyToClipboard>
                     </div>
                     {this.state.copied ? (

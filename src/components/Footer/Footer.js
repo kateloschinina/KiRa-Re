@@ -11,9 +11,9 @@ class Footer extends Component {
 				<div className="footer">
 					<p>&copy; KiRa, 2018</p>
                     <div className="icons">
-                        <a href="https://www.facebook.com/kirazhi" target="_blank"><img  className="facebook" src={facebook} alt="facebook"/></a>
-                        <a href="https://www.instagram.com/light_ray5" target="_blank"><img className="instagram" src={instagram} alt="instagram"/></a>
-                        <a href="https://vimeo.com/user4844437" target="_blank"><img className="vimeo" src={vimeo} alt="vimeo"/></a>
+                        <a href="https://www.facebook.com/kirazhi" target="_blank" rel="noopener noreferrer"><img  className="facebook" src={facebook} alt="facebook"/></a>
+                        <a href="https://www.instagram.com/light_ray5" target="_blank" rel="noopener noreferrer"><img className="instagram" src={instagram} alt="instagram"/></a>
+                        <a href="https://vimeo.com/user4844437" target="_blank" rel="noopener noreferrer"><img className="vimeo" src={vimeo} alt="vimeo"/></a>
                     </div>
 				</div>
             </div>

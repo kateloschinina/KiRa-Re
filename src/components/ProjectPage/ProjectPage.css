@@ -1,93 +1,93 @@
-@import "./../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+@import './../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 
 .project-page {
-    background-size: cover;
-    background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.7);
 
-    height: 100vh;
+  height: 100vh;
 }
 
 .project-page__container {
-    height: calc(100% - 40px);
-    overflow: scroll;
-    padding: 0 160px 30px 160px;
+  height: calc(100% - 40px);
+  overflow-y: scroll;
+  padding: 0 160px 30px 160px;
 }
 
 .project-page__content {
-    max-width: 800px;
+  max-width: 800px;
 
-    margin: 0 auto;
-    color: white;
+  margin: 0 auto;
+  color: white;
 }
 
 .project-page__content h1 {
-    font-size: 56px;
-    line-height: 1.3em;
-    margin-bottom: 1em;
-    font-weight: 200;
-    text-transform: uppercase;
+  font-size: 56px;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 
 .project-page__content p {
-    font-size: 18px;
-    font-weight: 200;
-    margin-bottom: 1.8em;
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 1.8em;
 }
 
 .project-page__content .project-page__content__highlight {
-    font-weight: 200;
-    font-size: 14px;
-    margin-top: 4em;
+  font-weight: 200;
+  font-size: 14px;
+  margin-top: 4em;
 }
 
 .project-page__content__video {
-    margin: auto;
-    max-width: 100%;
+  margin: auto;
+  max-width: 100%;
 }
 
 .project-page__content img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .project-page__close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .project-page__copy-link {
-    position: absolute;
-    top: 60px;
-    right: 20px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
 }
 
 .project-page__copied {
-    position: absolute;
-    top: 90px;
-    right: 25px;
+  position: absolute;
+  top: 90px;
+  right: 25px;
 }
 
 .project-page__note {
-    font-size: 12px;
-    font-weight: 200;
-    color: white;
+  font-size: 12px;
+  font-weight: 200;
+  color: white;
 }
 
 .project-page__close img {
-    height: 30px;
-    margin: 10px;
+  height: 30px;
+  margin: 10px;
 }
 
 .project-page__copy-link img {
-    height: 25px;
-    margin: 10px;
+  height: 25px;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-    .project-page__container {
-        height: calc(100% - 25vw - 40px);
-        padding: 0 10px 0 10px;
-        margin-top: 25vw;
-        margin-bottom: 40px;
-    }
+  .project-page__container {
+    height: calc(100% - 25vw - 40px);
+    padding: 0 10px 0 10px;
+    margin-top: 25vw;
+    margin-bottom: 40px;
+  }
 }

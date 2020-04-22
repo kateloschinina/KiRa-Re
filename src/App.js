@@ -4,6 +4,7 @@ import './App.css'
 
 import LandingPage from './components/LandingPage/LandingPage'
 import ProjectPage from './components/ProjectPage/ProjectPage'
+import ContactPage from './components/ContactPage/ContactPage'
 
 class App extends Component {
 	render() {
@@ -12,6 +13,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" exact component={LandingPage} />
 					<Route path="/KiRa-Re/" exact component={LandingPage} />
+					<Route exact path="/projects/contactPage" component={ContactPage} />
 					<Route exact path="/projects/:projectName" component={ProjectPage} />
 				</Switch>
 			</Router>

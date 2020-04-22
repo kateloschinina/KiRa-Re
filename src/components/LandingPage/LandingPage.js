@@ -6,6 +6,7 @@ import AllProjectsPage from "./../AllProjectsPage/AllProjectsPage"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 import ProjectPage from "./../ProjectPage/ProjectPage"
+import ContactPage from "./../ContactPage/ContactPage"
 
 class LandingPage extends Component {
     constructor(props) {
@@ -32,11 +33,13 @@ class LandingPage extends Component {
                 return <AllProjectsPage
                     changeStateTo={this.changeStateTo} />
             case 'about':
-                return <ProjectPage 
+                return <ProjectPage
                     project='about'
                     changeStateTo={this.changeStateTo} />
+            case 'contactPage':
+                return <ContactPage changeStateTo={this.changeStateTo} />
             default:
-                return <ProjectPage 
+                return <ProjectPage
                     project={this.state.show}
                     changeStateTo={this.changeStateTo} />
         }
@@ -49,13 +52,15 @@ class LandingPage extends Component {
                 <Switch
                     show={this.state.show}
                     changeStateTo={this.changeStateTo} />
-                { this.renderContent() }
+                {this.renderContent()}
                 <div className={`hidden-${isGraphHidden}`}>
                     <Graph
                         show={this.state.show}
                         changeStateTo={this.changeStateTo} />
                 </div>
-                <Footer />
+                <Footer
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
             </div>
         )
     }

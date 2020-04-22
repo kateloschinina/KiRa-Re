@@ -15,6 +15,11 @@
     line-height: 1.2em;
 }
 
+.contact {
+    margin-bottom: 30vh;
+    cursor: pointer;
+}
+
 .facebook {
     height: 16px;
     margin: 0 10px 11px 0;

@@ -18,6 +18,11 @@ class LandingPage extends Component {
         show: 'interactiveMap'
     }
 
+    componentDidMount() {
+        if (this.props.match.params.projectName) this.setState({show: this.props.match.params.projectName})
+        else if (this.props.location.pathname === '/projects/contactPage') this.setState({ show: 'contactPage' })
+    }
+
     changeStateTo(e, name) {
         if (e.preventDefault) {
             e.preventDefault()
@@ -47,6 +52,7 @@ class LandingPage extends Component {
 
     render() {
         const isGraphHidden = !(this.state.show === 'interactiveMap')
+
         return (
             <div className="landing-page__background">
                 <Switch

@@ -72,7 +72,7 @@ class ContactPage extends Component {
 						<h1>I want to hear from you!</h1>
 						<form onSubmit={this.handleSubmit}>
 							<p>
-								<label>What's your name?: <input type="text" name="name" value={name} onChange={this.handleChange} /></label>
+								<label>What's your name? <input type="text" name="name" value={name} onChange={this.handleChange} /></label>
 							</p>
 							<p>
 								<label>How can I contact you back? <input type="email" name="email" value={email} onChange={this.handleChange} /></label>

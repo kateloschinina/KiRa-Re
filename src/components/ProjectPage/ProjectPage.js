@@ -27,12 +27,14 @@ class ProjectPage extends Component {
             )
         })
         const pageData = projectAndOther[selectedProject].data.projectPage
+        const origin = window.location.origin === 'http://localhost:3000' ? window.location.origin : 'www.dotkira.com'
 
         return (
             <div className="project-page">
                 <div className="project-page__container">
                     <div className="project-page__close">
-                        {this.props.match && this.props.match.params && this.props.match.params.projectName ? (
+                        {(this.props.match && this.props.match.params && this.props.match.params.projectName) ||
+                            (this.props.location.pathname !== '/') ? (
                             <Link to="/">
                                 <HoverImage src={circleWithDot}
                                     hoverSrc={circleWithCross} />
@@ -44,7 +46,7 @@ class ProjectPage extends Component {
                             )}
                     </div>
                     <div className="project-page__copy-link">
-                        <CopyToClipboard text={`${window.location.origin}/projects/${this.props.project || this.props.match.params.projectName}`}
+                        <CopyToClipboard text={`${origin}/projects/${this.props.project || this.props.match.params.projectName}`}
                             onCopy={() => this.setState({ copied: true })}>
                             <img src={copyLink} alt="copy-icon" />
                         </CopyToClipboard>

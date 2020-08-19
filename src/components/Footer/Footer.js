@@ -10,7 +10,7 @@ class Footer extends Component {
         return (
             <div className="footer--container">
                 <div className="footer">
-                    <p className="contact" onClick={e => this.props.changeStateTo(e, changeTo)}>Write me!</p>
+                    <p className="contact" onClick={e => this.props.changeStateTo(e, changeTo)}>Contact</p>
                     <p>&copy; KiRa, 2018</p>
                     <div className="icons">
                         <a href="https://www.facebook.com/kirazhi" target="_blank" rel="noopener noreferrer"><img className="facebook" src={facebook} alt="facebook" /></a>

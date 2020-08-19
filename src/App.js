@@ -9,8 +9,8 @@ class App extends Component {
 		return (
 			<Router basename={process.env.PUBLIC_URL}>
 				<Switch>
-					<Route exact path="/" exact component={LandingPage} />
-					<Route path="/KiRa-Re/" exact component={LandingPage} />
+					<Route exact path="/" component={LandingPage} />
+					<Route path="/KiRa-Re/" component={LandingPage} />
 					<Route exact path="/projects/contactPage" component={LandingPage} />
 					<Route exact path="/projects/:projectName" component={LandingPage} />
 				</Switch>

@@ -65,7 +65,7 @@ const projectPage = [
     },
     {
         tag: "video",
-        url: "https://vimeo.com/251900220",
+        url: "https://vimeo.com/225671557",
         highlight:
             "Symbiosis #4 at Nowhere Festival, Spain, July 2017"
     },

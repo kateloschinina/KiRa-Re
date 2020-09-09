@@ -15,6 +15,11 @@ const projectPage = [
 	},
 	{
 		tag: 'video',
+		url: 'https://www.youtube.com/watch?v=ws6wVDKU8dQ',
+		highlight: '"Crumbs", Sieben'
+	},
+	{
+		tag: 'video',
 		url: 'https://www.youtube.com/watch?v=Xo6jgmzSV8I',
 		highlight: '"Once We Were Wild", King Capisce'
 	},

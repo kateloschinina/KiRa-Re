@@ -27,6 +27,11 @@ const projectPage = [
         tag: "gallery",
         highlight: "Sound of Infinity",
         images: [  
+			{
+                original: box,
+                thumbnail: box,
+                description: "@NoisilyFestival"
+            },
             {
                 original: lightnight,
                 thumbnail: lightnight,
@@ -38,11 +43,7 @@ const projectPage = [
                 thumbnail: Soiroff,
                 description: "@LeedsLightNight"
             },
-            {
-                original: box,
-                thumbnail: box,
-                description: "@NoisilyFestival"
-            },
+          
   
         ],
     },

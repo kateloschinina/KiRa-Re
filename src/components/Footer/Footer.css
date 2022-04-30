@@ -1,7 +1,7 @@
 .footer--container {
     position: absolute; 
-    width: 100vw;
     bottom: 0;
+    width: 115px;
 }
 
 .footer {
@@ -13,6 +13,11 @@
     color: white;
     font-size: 14px;
     line-height: 1.2em;
+}
+
+.contact {
+    margin-bottom: 30vh;
+    cursor: pointer;
 }
 
 .facebook {

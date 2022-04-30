@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { withRouter } from "react-router-dom";
 import ReactPlayer from "react-player"
 import ImageGallery from "react-image-gallery"
 
@@ -22,28 +23,30 @@ class ProjectPage extends Component {
 
         const selectedProject = Object.keys(projectAndOther).find(key => {
             return (
-                projectAndOther[key].name ===(this.props.project || this.props.match.params.projectName)
+                projectAndOther[key].name === (this.props.project || this.props.match.params.projectName)
             )
         })
         const pageData = projectAndOther[selectedProject].data.projectPage
+        const origin = window.location.origin === 'http://localhost:3000' ? window.location.origin : 'www.dotkira.com'
 
         return (
             <div className="project-page">
                 <div className="project-page__container">
                     <div className="project-page__close">
-                        {this.props.match && this.props.match.params && this.props.match.params.projectName ? (
+                        {(this.props.match && this.props.match.params && this.props.match.params.projectName) ||
+                            (this.props.location.pathname !== '/') ? (
                             <Link to="/">
                                 <HoverImage src={circleWithDot}
                                     hoverSrc={circleWithCross} />
                             </Link>
                         ) : (
-                            <HoverImage src={circleWithDot}
-                                hoverSrc={circleWithCross}
-                                onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
-                        )}
+                                <HoverImage src={circleWithDot}
+                                    hoverSrc={circleWithCross}
+                                    onClick={e => this.props.changeStateTo(e, 'interactiveMap')} />
+                            )}
                     </div>
                     <div className="project-page__copy-link">
-                        <CopyToClipboard text={`https://dotkira.com/projects/${this.props.project}`}
+                        <CopyToClipboard text={`${origin}/projects/${this.props.project || this.props.match.params.projectName}`}
                             onCopy={() => this.setState({ copied: true })}>
                             <img src={copyLink} alt="copy-icon" />
                         </CopyToClipboard>
@@ -102,4 +105,4 @@ class ProjectPage extends Component {
     }
 }
 
-export default ProjectPage
+export default withRouter(ProjectPage)

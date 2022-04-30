@@ -1,0 +1,36 @@
+.project-page__container {
+  height: calc(100% - 40px);
+  overflow-y: scroll;
+  padding: 0 160px 30px 160px;
+}
+
+form label {
+	display: grid;
+}
+
+form label input, form label textarea {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: none;
+	border: 1px solid white;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	font-size: 14px;
+}
+
+form label input {
+	height: 36px;
+}
+
+form label textarea {
+	height: 300px;
+}
+
+form button {
+	font-family: 'Muli', sans-serif;
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	font-size: 18px;
+	padding: 10px 30px 10px 30px;
+}

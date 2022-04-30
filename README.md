@@ -11,7 +11,4 @@ $ yarn start
 
 ## To deploy to production
 
-```
-$ yarn predeploy
-$ yarn deploy
-```
+Production is currently running from the `netlify` branch. Just merge your changes into this branch.

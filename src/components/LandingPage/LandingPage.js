@@ -6,6 +6,7 @@ import AllProjectsPage from "./../AllProjectsPage/AllProjectsPage"
 import Graph from "./../Graph/Graph"
 import Footer from "./../Footer/Footer"
 import ProjectPage from "./../ProjectPage/ProjectPage"
+import ContactPage from "./../ContactPage/ContactPage"
 
 class LandingPage extends Component {
     constructor(props) {
@@ -15,6 +16,11 @@ class LandingPage extends Component {
 
     state = {
         show: 'interactiveMap'
+    }
+
+    componentDidMount() {
+        if (this.props.match.params.projectName) this.setState({show: this.props.match.params.projectName})
+        else if (this.props.location.pathname === '/projects/contactPage') this.setState({ show: 'contactPage' })
     }
 
     changeStateTo(e, name) {
@@ -32,11 +38,13 @@ class LandingPage extends Component {
                 return <AllProjectsPage
                     changeStateTo={this.changeStateTo} />
             case 'about':
-                return <ProjectPage 
+                return <ProjectPage
                     project='about'
                     changeStateTo={this.changeStateTo} />
+            case 'contactPage':
+                return <ContactPage changeStateTo={this.changeStateTo} />
             default:
-                return <ProjectPage 
+                return <ProjectPage
                     project={this.state.show}
                     changeStateTo={this.changeStateTo} />
         }
@@ -44,18 +52,21 @@ class LandingPage extends Component {
 
     render() {
         const isGraphHidden = !(this.state.show === 'interactiveMap')
+
         return (
             <div className="landing-page__background">
                 <Switch
                     show={this.state.show}
                     changeStateTo={this.changeStateTo} />
-                { this.renderContent() }
+                {this.renderContent()}
                 <div className={`hidden-${isGraphHidden}`}>
                     <Graph
                         show={this.state.show}
                         changeStateTo={this.changeStateTo} />
                 </div>
-                <Footer />
+                <Footer
+                    show={this.state.show}
+                    changeStateTo={this.changeStateTo} />
             </div>
         )
     }
